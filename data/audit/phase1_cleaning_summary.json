@@ -1,0 +1,21 @@
+{
+  "input_file": "data/raw/physics_dataset_unfiltered.json",
+  "image_dir": "data/images",
+  "input_records": 3605,
+  "retained_records": 1731,
+  "excluded_records": 1874,
+  "exclusion_reason_counts_nonexclusive": {
+    "answer_read_as_excel_date_needs_manual_review": 265,
+    "image_asset_missing_or_unavailable": 1636,
+    "missing_answer": 20,
+    "missing_unit": 56,
+    "suspicious_excel_serial_like_answer_needs_manual_review": 3
+  },
+  "retained_unique_images": 245,
+  "criteria": [
+    "non-empty sample_id, question, reference solution, answer, unit, and image_ref",
+    "image.available is true and the referenced image file exists in image_dir",
+    "exclude answers flagged as Excel date-converted or suspicious serial-like values"
+  ],
+  "important_note": "Reason counts can overlap: one record may be excluded for multiple reasons. No label value was inferred, corrected, or replaced."
+}

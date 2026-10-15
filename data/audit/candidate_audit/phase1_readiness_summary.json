@@ -1,0 +1,41 @@
+{
+  "audit_version": "phase1-readiness-0.2",
+  "dataset_path": "data/processed/physics_dataset_candidate.json",
+  "dataset_name": "physics_multimodal_qa",
+  "records": 1708,
+  "unique_sample_ids": 1708,
+  "duplicate_sample_ids": 0,
+  "required_field_missing_counts": {},
+  "image_files": 255,
+  "unique_image_refs_in_records": 241,
+  "records_with_missing_image_ref": 0,
+  "unreadable_image_files": [],
+  "unique_image_content_hashes_in_image_dir": 208,
+  "unique_image_content_hashes_referenced": 195,
+  "duplicate_image_content_groups": 14,
+  "image_files_in_duplicate_content_groups": 61,
+  "duplicate_exact_question_groups": 10,
+  "records_in_duplicate_exact_question_groups": 22,
+  "split_file": "data/splits/split_assignments.json",
+  "split_leakage": {
+    "cross_split_image_hash_groups": 0,
+    "cross_split_exact_question_groups": 0
+  },
+  "metadata_review_status_counts": {
+    "unreviewed": 1708
+  },
+  "known_visual_mismatch_quarantine_refs": [
+    "180.png",
+    "181.png",
+    "187.png",
+    "188.png"
+  ],
+  "benchmark_verdict": "pilot_candidate_only_not_yet_fully_validated",
+  "limitations": [
+    "Completeness and image decodability do not prove image-question-answer semantic alignment.",
+    "All retained records remain unreviewed for gold-label correctness unless separately adjudicated.",
+    "A manual visual inspection identified four image groups with apparent circuit-topology mismatch; these are quarantined from the Phase 2 candidate.",
+    "The legacy split grouped by image filename, so identical image pixels and exact question text could cross splits.",
+    "The dataset has no native gold labels for multiple interpretations, evidence conflicts, or context-aware selection; those research claims need curated annotations/controlled subsets."
+  ]
+}

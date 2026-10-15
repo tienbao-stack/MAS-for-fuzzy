@@ -1,0 +1,1635 @@
+﻿sample_id,reference_answer,reference_unit,reference_solution_cot
+CH297,450,V,"1. Nhận diện dữ kiện:
+- Điện áp nguồn: U = 150 V, điện trở R = 30 Ω, cảm kháng XL = 90 Ω.
+- Mạch đang ở trạng thái cộng hưởng điện: Z_C = Z_L = 90 Ω.
+
+2. Công thức:
+- Cường độ dòng điện hiệu dụng tại cộng hưởng: I = U / R
+- Điện áp hiệu dụng trên tụ điện: U_C = I * Z_C = (U / R) * Z_L
+
+3. Thay số và tính toán:
+- I = 150 / 30 = 5.00 A
+- U_C = 5.00 * 90 = 450.00 V
+
+4. Kết luận:
+- Điện áp hiệu dụng trên tụ điện là 450.00 V."
+CH302,3,A,"1. Nhận diện dữ kiện:
+- Điện áp hiệu dụng cực đại trên R: U_Rmax = 150 V.
+- Điện trở: R = 50 Ω.
+
+2. Công thức:
+- Định luật Ôm tại trạng thái cộng hưởng: I_max = U_Rmax / R
+
+3. Thay số và tính toán:
+- I_max = 150 / 50 = 3.00 A
+
+4. Kết luận:
+- Cường độ dòng điện hiệu dụng tại cộng hưởng là 3.00 A."
+CH337,31.62,Ω,"1. Nhận diện dữ kiện:
+- Điện trở R = 30 Ω, cảm kháng XL = 80 Ω, dung kháng XC = 70 Ω.
+
+2. Công thức:
+- Tổng trở của đoạn mạch RLC nối tiếp: Z = sqrt(R^2 + (XL - XC)^2)
+
+3. Thay số và tính toán:
+- XL - XC = 80 - 70 = 10 Ω
+- Z = sqrt(30^2 + (80 - 70)^2) = sqrt(900 + 100) = sqrt(1000) ≈ 31.62 Ω
+
+4. Kết luận:
+- Tổng trở Z của đoạn mạch là 31.62 Ω."
+DDT045,125.04,Hz,"1. Nhận diện dữ kiện:
+- Cuộn cảm thuần L = 0.18 H mắc nối tiếp với hai tụ điện giống nhau, mỗi tụ có điện dung C = 18 μF.
+- Theo hình vẽ, khóa K mắc song song với tụ thứ hai (nối tắt tụ đó khi K đóng); trong hình K đang hở nên hai tụ điện mắc nối tiếp với nhau.
+
+2. Công thức:
+- Điện dung tương đương của hai tụ giống nhau mắc nối tiếp: C_eq = (C*C)/(C+C) = C/2
+- Tần số cộng hưởng (dao động riêng) của mạch LC: f = 1/(2*pi*sqrt(L*C_eq))
+
+3. Thay số và tính toán:
+- C_eq = 18/2 = 9.0 μF = 9.0*10^-6 F
+- f = 1/(2*pi*sqrt(0.18*9.0*10^-6))
+- f = 1/(2*pi*sqrt(1.620e-06))
+- f ≈ 125.04 Hz
+
+4. Kết luận:
+- Tần số cộng hưởng của mạch xấp xỉ 125.04 Hz."
+DDT100,67.26,Hz,"1. Nhận diện dữ kiện:
+- Cuộn cảm thuần L = 0.14 H, tụ điện C = 40 μF = 40*10^-6 F.
+- Mạch dao động điện từ tự do chỉ gồm L và C khi khóa K ngắt; các giá trị E, r, R không ảnh hưởng đến tần số dao động riêng của mạch LC.
+
+2. Công thức:
+- Tần số dao động riêng của mạch LC: f = 1/(2*pi*sqrt(LC))
+
+3. Thay số và tính toán:
+- LC = 0.14 * 40*10^-6 = 5.60*10^-6
+- sqrt(LC) = 0.002366 s
+- f = 1/(2*pi * 0.002366) ≈ 67.26 Hz
+
+4. Kết luận:
+- Tần số dao động riêng của mạch là 67.26 Hz."
+DDT101,0.02,s,"1. Nhận diện dữ kiện:
+- Mạch dao động LC có tần số riêng f = 50 Hz.
+
+2. Công thức:
+- Liên hệ giữa chu kỳ T và tần số f: T = 1/f
+
+3. Thay số và tính toán:
+- T = 1/50 = 0.02 s
+
+4. Kết luận:
+- Chu kỳ dao động của mạch là 0.02 s."
+DDT229,Hợp lệ,—,"1. Nhận diện dữ kiện:
+- U_AB = 20 V, U_AM = U_R = 12 V (đoạn chứa R), U_MB = 16 V (đoạn chứa L nối tiếp C).
+
+2. Công thức:
+- Đoạn MB không chứa điện trở nên U_MB vuông pha với U_AM: U_AB^2 = U_AM^2 + U_MB^2.
+
+3. Thay số và tính toán:
+- U_AB^2 = 20^2 = 400
+- U_AM^2 + U_MB^2 = 12^2 + 16^2 = 144 + 256 = 400
+- Độ chênh lệch giữa hai vế: Delta = 400 - 400 = 0.0
+
+4. Kết luận:
+- Bộ ba giá trị điện áp hoàn toàn hợp lệ (độ chênh lệch hai vế bằng 0.0)."
+DDT252,50,V,"1. Nhận diện dữ kiện:
+- U_AM = 30 V, U_MN = 40 V.
+
+2. Công thức:
+- U_AN = sqrt(U_AM^2 + U_MN^2).
+
+3. Thay số và tính toán:
+- U_AN = sqrt(30^2 + 40^2) = sqrt(900 + 1600) = 50.00 V
+
+4. Kết luận:
+- Điện áp giữa A và N là 50.00 V."
+DDT253,40,V,"1. Nhận diện dữ kiện:
+- U_MN = 70 V, U_NB = 30 V.
+
+2. Công thức:
+- U_MB = abs(U_MN - U_NB).
+
+3. Thay số và tính toán:
+- U_MB = abs(70 - 30) = 40.00 V
+
+4. Kết luận:
+- Điện áp giữa M và B là 40.00 V."
+DDT284,240,W,"1. Nhận diện dữ kiện:
+- Mạch RLC nối tiếp tại cộng hưởng, U = 60 V, R = 15 Ω.
+
+2. Công thức:
+- Tại cộng hưởng, Z = R. I = U/R; P = U·I·cosφ, với cosφ = 1 tại cộng hưởng nên P = U·I = U^2/R.
+
+3. Thay số và tính toán:
+- I = 60/15 = 4 A. P = 60 * 4 = 240 W.
+
+4. Kết luận:
+- Dòng điện hiệu dụng là 4 A, công suất tiêu thụ là 240 W."
+DDT297,Mạch cộng hưởng khi Z_L = Z_C (hay ωL = 1/(ωC)).,—,"1. Nhận diện dữ kiện:
+- Mạch RLC nối tiếp gồm điện trở R, cuộn cảm L và tụ điện C (như hình vẽ).
+
+2. Công thức:
+- Điều kiện cộng hưởng: Z_L = Z_C, tức ωL = 1/(ωC).
+
+3. Thay số và tính toán:
+- Đề bài không cho giá trị cụ thể của R, L, C, ω nên không tính được số.
+
+4. Kết luận:
+- Mạch cộng hưởng khi Z_L = Z_C (hay ωL = 1/(ωC))."
+DLO014,6,V,"1. Nhận diện dữ kiện:
+ - R1 = 4 Ω; R2 = 6 Ω; R3 = 10 Ω; U_AB = 10 V. R1 và R2 mắc nối tiếp nhau. Cụm (R1 nt R2) mắc song song với R3.
+
+ 2. Công thức:
+ - Điện trở tương đương của R1 và R2: R12 = R1 + R2
+ - Điện trở tương đương của toàn mạch: 1/R_tđ = 1/R12 + 1/R3
+ - Cường độ dòng điện qua mạch chính: I = U_AB / R_tđ
+ - Hiệu điện thế hai đầu cụm R12: U12 = U_AB (do R12 // R3)
+ - Hiệu điện thế hai đầu R2: U2 = (R2 / R12) * U12
+
+ 3. Thay số và tính toán:
+ - R12 = R1 + R2 = 4 + 6 = 10 Ω
+ - 1/R_tđ = 1/10 + 1/10 = 2/10 => R_tđ = 5 Ω
+ - I = U_AB / R_tđ = 10 / 5 = 2 A
+ - U12 = U_AB = 10 V
+ - U2 = (R2 / R12) * U12 = (6/10) * 10 = 6 V
+
+ 4. Kết luận:
+ - Hiệu điện thế 2 đầu R2 là 6V."
+DLO016,10,V,"1. Nhận diện dữ kiện:
+ - R1 = 4 Ω, R2 = 6 Ω, R3 = 10 Ω, U_AB = 10V. R1 và R2 mắc nối tiếp. Cụm (R1 nt R2) mắc song song với R3.
+
+ 2. Công thức:
+ - Vì (R1 nt R2) // R3 nên U_R3 = U12 = U_AB = 10V
+
+ 3. Thay số và tính toán:
+ - U_R3 = 10V
+
+ 4. Kết luận:
+ - Hiệu điện thế 2 đầu R3 là 10V."
+DLO168,14.72,W,"1. Nhận diện dữ kiện:
+- I = 1.43 A là cường độ dòng điện mạch chính, R1 = 20 Ω, R2 = 30 Ω.
+- Theo hình: cụm (R1 // R2) nối tiếp cụm (R3 // Rb), nên dòng mạch chính chia đôi khi qua R1 và R2.
+- R1 không nhận cả dòng mạch chính, phải tính dòng riêng I1 qua R1.
+
+2. Công thức:
+- Chia dòng trong hai điện trở song song: I1 = I * R2 / (R1 + R2)
+- Công suất tiêu thụ: P1 = I1^2 * R1
+
+3. Thay số và tính toán:
+- I1 = 1.43 * 30 / (20 + 30) = 42.9 / 50 = 0.858 A
+- P1 = I1^2 * R1 = 0.858^2 * 20 ≈ 14.72 W
+
+4. Kết luận:
+- Công suất tiêu thụ trên R1 là 14.72 W."
+DLO188,272.22,W,"1. Nhận diện dữ kiện:
+- Theo hình: giữa A và B có hai nhánh song song, nhánh trên là R1 nối tiếp cụm (R2 song song R3), nhánh dưới là R4 nối tiếp R5.
+- R5 thuộc nhánh dưới nên dòng qua R5 là dòng của nhánh R4 nối tiếp R5, không phải dòng mạch chính.
+- U_AB = 210 V, R4 = 40 Ω, R5 = 50 Ω.
+
+2. Công thức:
+- Hai nhánh song song nên hiệu điện thế mỗi nhánh bằng U_AB.
+- Dòng qua nhánh dưới: I45 = U_AB / (R4 + R5).
+- Công suất trên R5: P5 = I45^2 * R5.
+
+3. Thay số và tính toán:
+- I45 = 210 / (40 + 50) = 210 / 90 = 7/3 A
+- P5 = (7/3)^2 * 50 = 2450 / 9 ≈ 272.22 W
+
+4. Kết luận:
+- Công suất tiêu thụ trên R5 là 272.22 W"
+DLO223,5,V,"1. Nhận diện dữ kiện:
+- Mạch kín: nguồn (ξ, r) nối tiếp bóng đèn.
+- I = 1 A, R_Đ = 4 Ω, r = 1 Ω.
+
+2. Công thức:
+- Định luật Ohm cho toàn mạch: ξ = I * (R_Đ + r)
+
+3. Thay số và tính toán:
+- ξ = 1 * (4 + 1) = 5 V
+
+4. Kết luận:
+- Suất điện động của nguồn là 5 V."
+DLO327,3,Ω,"1. Nhận diện dữ kiện:
+- R1 = 6 Ω, R2 = 3 Ω, R3 = 3 Ω.
+- Theo hình 051: R3 nối tiếp ampe kế nối tiếp R2 tạo thành nhánh trên, nhánh này song song với R1 giữa A và B.
+
+2. Công thức:
+- Nhánh nối tiếp: R23 = R3 + R2
+- Hai nhánh song song: R_td = (R1 * R23) / (R1 + R23)
+
+3. Thay số và tính toán:
+- R23 = 3 + 3 = 6 Ω
+- R_td = (6 * 6) / (6 + 6) = 36 / 12 = 3 Ω
+
+4. Kết luận:
+- Điện trở tương đương toàn mạch là 3 Ω."
+DLO333,Đèn còn lại vẫn sáng và sáng mạnh hơn trước vì nhánh của nó vẫn kín mạch với nguồn qua R1,-,"1. Nhận diện dữ kiện:
+- Theo hình (sơ đồ bên trái): hai đèn Đ1 và Đ2 mắc song song, cụm này nối tiếp điện trở R1 rồi nối vào nguồn U.
+- Giả thiết: một trong hai đèn bị đứt dây tóc nên nhánh của đèn đó bị hở.
+
+2. Công thức:
+- Đoạn mạch song song: hai nhánh có cùng hiệu điện thế và I = I1 + I2; nhánh hở không có dòng nhưng không cắt nhánh còn lại.
+- Hiệu điện thế trên cụm song song: U_ss = U * R_ss / (R1 + R_ss)
+
+3. Thay số và tính toán:
+- Khi một đèn đứt, nhánh của đèn còn lại vẫn nối tiếp R1 và khép kín với nguồn nên vẫn có dòng chạy qua.
+- Điện trở cụm song song tăng từ R_d / 2 lên R_d nên U_ss tăng, đèn còn lại sáng mạnh hơn trước.
+- Đèn còn lại vẫn sáng và sáng mạnh hơn trước vì nhánh của nó vẫn kín mạch với nguồn qua R1
+
+4. Kết luận:
+- Đèn còn lại vẫn sáng và sáng mạnh hơn trước vì nhánh của nó vẫn kín mạch với nguồn qua R1"
+DLO388,0.8,Ω,"1. Nhận diện dữ kiện:
+- R1 = 2 Ω nối tiếp R2 = 2 Ω (nút D ở giữa).
+- Cụm R1 nt R2 mắc song song với R3 = 1 Ω.
+
+2. Công thức:
+- Nối tiếp: R12 = R1 + R2
+- Song song: R_td = R12*R3 / (R12 + R3)
+
+3. Thay số và tính toán:
+- R12 = 2 + 2 = 4 Ω
+- R_td = 4*1 / (4 + 1) = 4/5 = 0.8 Ω
+
+4. Kết luận:
+- Điện trở tương đương của mạch ngoài là 0.8 Ω."
+DLO492,1.46,A,"1. Nhận diện dữ kiện:
+- E = 12 V, r = 1 Ω; đèn D1 loại 6 V - 6 W; đèn D2 loại 3 V - 3 W.
+- Theo hình: D1 mắc thẳng giữa A và B, còn Rb nối tiếp D2 tạo thành nhánh thứ hai cũng nối A với B. Vậy mạch ngoài là D1 song song với (Rb nối tiếp D2).
+- Rb = 2 Ω.
+
+2. Công thức:
+- Điện trở các đèn: R1 = U1^2/P1, R2 = U2^2/P2.
+- Mạch ngoài: R_ngoai = R1*(Rb + R2) / (R1 + Rb + R2).
+- Định luật Ohm toàn mạch: I = E / (r + R_ngoai); U_AB = I * R_ngoai.
+- Dòng qua D1: I1 = U_AB / R1.
+
+3. Thay số và tính toán:
+- R1 = 6^2/6 = 6 Ω; R2 = 3^2/3 = 3 Ω
+- Nhánh dưới: Rb + R2 = 2 + 3 = 5 Ω
+- R_ngoai = 6*5/(6+5) = 30/11 Ω
+- I = 12/(1 + 30/11) = 12/(41/11) = 132/41 A
+- U_AB = (132/41)*(30/11) = 360/41 V
+- I1 = (360/41)/6 = 60/41 A
+- I1 = 1.46 A (làm tròn 2 chữ số thập phân)
+
+4. Kết luận:
+- Cường độ dòng điện qua đèn D1 là 1.46 A."
+DLO606,5.14,V,"1. Nhận diện dữ kiện:
+- R1 = R3 = R4 = 4 Ω; R2 = 2 Ω; U = 6 V; vôn kế có điện trở rất lớn, mắc giữa A và D.
+- Theo sơ đồ: A nối với cực dương nguồn, B nối với cực âm; A - R1 - C; từ C có hai nhánh song song tới B là R2 và (R3 nt R4); D là điểm giữa R3 và R4.
+- Vôn kế lý tưởng nên không có dòng qua vôn kế, mạch giữ nguyên: R1 nt [R2 // (R3 nt R4)].
+
+2. Công thức:
+- R34 = R3 + R4
+- R_CB = R2 * R34/(R2 + R34)
+- R_AB = R1 + R_CB
+- I = U/R_AB; U1 = I * R1; U_CB = U - U1
+- I34 = U_CB/R34; U3 = I34 * R3
+- Số chỉ vôn kế: U_AD = U1 + U3
+
+3. Thay số và tính toán:
+- R34 = 4 + 4 = 8 Ω
+- R_CB = 2 * 8/(2 + 8) = 1.6 Ω
+- R_AB = 4 + 1.6 = 5.6 Ω
+- I = 6/5.6 = 15/14 A
+- U1 = (15/14) * 4 = 30/7 V
+- U_CB = 6 - 30/7 = 12/7 V
+- I34 = (12/7)/8 = 3/14 A
+- U3 = (3/14) * 4 = 6/7 V
+- U_AD = 30/7 + 6/7 = 36/7 ≈ 5.14 V
+
+4. Kết luận:
+- Vôn kế chỉ 5.14 V."
+DLO635,1.33,Ω,"1. Nhận diện dữ kiện:
+- R5 = R6 = 1 Ω; R7 = 4 Ω; R1 = R3 = R4 = 2 Ω. Ampe kế lý tưởng có điện trở bằng 0, vôn kế lý tưởng coi như hở mạch.
+- Từ hình: R7 nối M với B; R5 nối Q (= N) xuống T và R6 nối T với B nên (R5 nt R6) nối N với B.
+- Mạch AB là mạch cầu cân bằng vì R1/R7 = 2/4 = 0.5 và R34/R56 = 1/2 = 0.5, nên M và N cùng điện thế, có thể chập M với N.
+- Khi chập M với N thì R7 và cụm (R5 nt R6) cùng nằm giữa nút chung MN và B, tức mắc song song.
+
+2. Công thức:
+- Nối tiếp: R56 = R5 + R6.
+- Song song: R756 = (R7 * R56) / (R7 + R56).
+
+3. Thay số và tính toán:
+- R56 = R5 + R6 = 1 + 1 = 2 Ω
+- R756 = (4 * 2) / (4 + 2) = 8/6 = 4/3 Ω
+- Làm tròn 2 chữ số thập phân: R756 = 1.33 Ω
+
+4. Kết luận:
+- R756 = 1.33 Ω."
+DLO688,0.25,A,"1. Nhận diện dữ kiện:
+- U_AB = 6 V, R1 = 8 Ω, R2 = R3 = 4 Ω, R4 = 6 Ω; khóa K mở.
+- Sơ đồ: R1 nối A-C, R2 nối C-D, R4 nối A-D, R3 nối D-B (ampe kế nối tiếp R3), K nối C-B.
+- Bỏ qua điện trở của ampe kế, khóa K và dây dẫn.
+- Cần tính cường độ dòng điện qua R2.
+
+2. Công thức:
+- K mở => R1 nt R2 giữa A và D nên I2 = I1.
+- R12 = R1 + R2; R124 = R12*R4/(R12+R4); R_AB = R124 + R3.
+- I = U_AB/R_AB; U_AD = I*R124; I2 = U_AD/R12.
+
+3. Thay số và tính toán:
+- R12 = 8 + 4 = 12 Ω
+- R124 = 12*6/(12+6) = 4 Ω
+- R_AB = 4 + 4 = 8 Ω
+- I = 6/8 = 0.75 A
+- U_AD = 0.75*4 = 3 V
+- I2 = U_AD/R12 = 3/12 = 0.25 A
+
+4. Kết luận:
+- Cường độ dòng điện qua R2 khi K mở là 0.25 A."
+DLO802,0.4,A,"1. Nhận diện dữ kiện:
+ - R1 = 10 Ω; R2 = 50 Ω; R3 = 40 Ω; Rx = 0 Ω; I = 1.0 A. R1 nối tiếp R2, cụm (R1 nt R2) song song với R3, Rx mắc song song với cả mạch. Ampe kế đo cường độ dòng điện toàn mạch.
+
+ 2. Công thức:
+ - Khi Rx = 0, Rx nối tắt toàn bộ mạch điện phía sau. Dòng điện chỉ chạy qua Rx. Do đó, dòng điện I = 1A chính là dòng điện đi qua Rx. Vì Rx nối tắt cả mạch nên hiệu điện thế U_MN = 0. Do đó ta không thể tính toán dựa trên dữ kiện này được.
+ - Khi Rx = 0, ta bỏ qua Rx. Lúc này mạch gồm R3 song song với cụm (R1 nối tiếp R2).
+ - Điện trở tương đương của R1 và R2 là: R12 = R1 + R2 = 10 + 50 = 60 Ω
+ - Điện trở tương đương của toàn mạch là: 1/R_tđ = 1/R12 + 1/R3 => R_tđ = R12*R3 / (R12 + R3) = (60 * 40) / (60 + 40) = 24 Ω.
+ - Hiệu điện thế U_PQ cũng chính là U_MN khi bỏ qua Rx.
+ - Theo định luật Ohm: U_PQ = I * R_tđ = 1.0 * 24 = 24V.
+ - Hiệu điện thế hai đầu R12: U12 = U_PQ = 24V
+ - Cường độ dòng điện qua R1, R2 là I12 = U12/R12 = 24/60 = 0.4A
+
+ 3. Thay số và tính toán:
+ - I2 = I12 = 0.4 A
+
+ 4. Kết luận:
+ - Cường độ dòng điện qua R2 là 0.4 A."
+RLC114,0,W,"1. Nhận diện dữ kiện:
+ - Mạch điện xoay chiều nối tiếp gồm điện trở R = 40Ω, cuộn cảm L = 0.3/pi H, tụ điện C = 100/pi μF. Điện áp hiệu dụng U_AB = 100V, tần số f = 50Hz.
+ 
+
+ 2. Công thức:
+ - Công suất thực tiêu thụ bởi tụ điện lý tưởng luôn bằng 0.
+ 
+
+ 3. Thay số và tính toán:
+ - Không cần tính toán.
+ 
+
+ 4. Kết luận:
+ - Công suất thực tiêu thụ bởi tụ điện C là 0W."
+RLC219,282.84,V,"1. Nhận diện dữ kiện:
+ - Mạch RLC nối tiếp với r = 50Ω, L = 0.5/pi H, C = 100/pi μF, f = 50Hz, U_AB = 200V.
+ 
+
+ 2. Công thức:
+ - Z_L = ωL = 2pifL
+ - Z_C = 1/(ωC) = 1/(2pifC)
+ - U_C = I.Z_C
+ - U_AB = I.Z_AB với Z_AB = sqrt(((r + R))^2 + (Z_L - Z_C)^2) (Ở đây mạch chỉ có r và L, C nối tiếp nên R=0)
+ 
+
+ 3. Thay số và tính toán:
+ - Z_L = 2 * pi.50.(0.5/pi) = 50Ω
+ - Z_C = 1/(2 * pi.50.(100/pi).10^-6) = 100Ω
+ - Z_AB = sqrt((50^2 + (50 - 100))^2) = 50 * sqrt(2) Ω
+ - I = U_AB/Z_AB = 200/(50 * sqrt(2)) = 2 * sqrt(2) A
+ - U_C = I.Z_C = 2 * sqrt(2).100 = 200 * sqrt(2) V
+ 
+
+ 4. Kết luận:
+ - Điện áp hiệu dụng trên tụ điện là 200 * sqrt(2) V."
+RLC232,200,V,"1. Nhận diện dữ kiện:
+ - Mạch RLC nối tiếp, r = 50Ω, L = 0.5/pi H, C = 100/pi μF, U_AB = 200V, f = 50Hz. Vôn kế đo điện áp hiệu dụng hai đầu cuộn dây (r, L).
+ 
+
+ 2. Công thức:
+ - Cảm kháng: Z_L = 2pifL
+ - Dung kháng: Z_C = 1/(2pifC)
+ - Điện áp hiệu dụng hai đầu cuộn dây: U_rL = I.sqrt((r^2 + Z_L^2))
+ - Cường độ dòng điện trong mạch: I = U_AB/Z = U_AB/sqrt(r^2 + (Z_L - Z_C)^2)
+ 
+
+ 3. Thay số và tính toán:
+ - Z_L = 2 * pi.50.(0.5/pi) = 50Ω
+ - Z_C = 1/(2 * pi.50.(100/pi).10^-6) = 100Ω
+ - I = 200/sqrt(50^2 + (50 - 100)^2) = 200/sqrt((2500 + 2500)) = 200/(50 * sqrt(2)) = 2 * sqrt(2) A
+ - U_rL = 2 * sqrt(2).sqrt((50^2 + 50^2)) = 2 * sqrt(2).50 * sqrt(2) = 200V
+ 
+
+ 4. Kết luận:
+ - Điện áp hiệu dụng mà vôn kế đo được là 200V."
+RLC245,487.8,W,"1. Nhận diện dữ kiện:
+ - Mạch RLC nối tiếp với r = 50Ω, L = 0.5/pi H, C = 1000/pi μF, U_AB = 200V, f = 50Hz.
+ 
+
+ 2. Công thức:
+ - Cảm kháng: ZL = 2pifL
+ - Dung kháng: Z_C = 1/(2pifC)
+ - Tổng trở: Z = sqrt(((r + R))^2 + (ZL - Z_C)^2). Vì không có điện trở R ngoài cuộn dây, nên R = 0 => Z = sqrt(r^2 + (ZL - Z_C)^2)
+ - Công suất tiêu thụ: P = (U^2 * r) / Z^2
+ 
+
+ 3. Thay số và tính toán:
+ - ZL = 2 * pi * 50 * (0.5/pi) = 50Ω
+ - Z_C = 1/(2 * pi * 50 * (1000/pi)*10^-6) = 1/(100 * 10^-3) = 10Ω
+ - Z = sqrt(50^2 + (50 - 10)^2) = sqrt((2500 + 1600)) = sqrt(4100) ≈ 64.03Ω
+ - P = (200^2 * 50) / 4100 = (40000 * 50) / 4100 ≈ 487.8 W
+ 
+
+ 4. Kết luận:
+ - Công suất tiêu thụ của mạch là khoảng 487.8 W."
+RLC269,259.4,VA,"1. Nhận diện dữ kiện:
+ - Mạch điện xoay chiều nối tiếp gồm cuộn dây có điện trở nội r = 40Ω, độ tự cảm L = 0.6/pi H, tụ điện C = 100/(3 * pi) μF. Tần số f = 50Hz. Điện áp hiệu dụng trên cuộn dây U_rL = 150V. Yêu cầu tính công suất biểu kiến của đoạn mạch chỉ chứa L và C.
+ 
+
+ 2. Công thức:
+ - Công suất biểu kiến của đoạn mạch chứa L và C: S_LC = U_L.I = U_C.I. Với U_L, U_C là điện áp hiệu dụng hai đầu L, C và I là cường độ dòng điện hiệu dụng qua mạch.
+ - Cảm kháng Z_L = ωL = 2pifL
+ - Dung kháng Z_C = 1/(ωC) = 1/(2pifC)
+ - Điện áp hiệu dụng trên cuộn dây: U_rL = I.sqrt((r^2 + Z_L^2))
+ 
+
+ 3. Thay số và tính toán:
+ - Z_L = 2 * pi.50.(0.6/pi) = 60Ω
+ - Z_C = 1/(2 * pi.50.(100/(3 * pi).10^-6)) = 30Ω
+ - Từ U_rL = I.sqrt((r^2 + Z_L^2)) => I = U_rL / sqrt((r^2 + Z_L^2)) = 150 / sqrt((40^2 + 60^2)) = 150 / sqrt((5200)) = 150/72.11 ≈ 2.08A
+ - U_L = I.Z_L = 2.08.60 = 124.8V
+ - U_C = I.Z_C = 2.08.30 = 62.4V
+ - S_LC = U_L.I = 124.8 * 2.08 ≈ 259.4 V_A hoặc S_LC = U_C.I = 62.4 * 2.08 ≈ 129.7 V_A (có sự sai lệch do làm tròn số).
+ - Do yêu cầu tính công suất biểu kiến S_LC của đoạn mạch chỉ chứa L và C nên ta chỉ cần xét đến U_L hoặc U_C. S_LC=I.U_L = 259.4VA. S_LC=I.U_C=129.7VA
+ 
+
+ 4. Kết luận:
+ - Công suất biểu kiến của đoạn mạch chỉ chứa L và C là xấp xỉ 259.4 V_A. (Đây là đáp án chính xác hơn do việc làm tròn số ít hơn)."
+RLC450,0,$\circ$,"1. Nhận diện dữ kiện:
+ - Mạch điện xoay chiều RLC nối tiếp với R = 30Ω, L = 0.4H, C thay đổi được, U_AB = 120V, ω = 100 rad/s. Ampe kế chỉ giá trị nhỏ nhất khi điều chỉnh C.
+
+ 2. Công thức:
+ - Khi ampe kế chỉ giá trị nhỏ nhất, mạch xảy ra cộng hưởng điện => Z_L = Z_C.
+ - Khi đó, góc lệch pha giữa dòng điện và điện áp là φ = 0.
+
+ 3. Thay số và tính toán:
+ - Do mạch cộng hưởng nên φ = 0
+
+ 4. Kết luận:
+ - Góc lệch pha giữa dòng điện trong mạch chính so với điện áp V_AB là 0."
+RLC466,1,J,"1. Nhận diện dữ kiện:
+ - E = 12V, r = 1Ω, L = 0.5H, R = 5Ω, r_L = 0Ω. Mạch điện gồm nguồn điện có điện trở trong, biến trở và cuộn cảm mắc nối tiếp.
+
+ 2. Công thức:
+ - Định luật Ôm cho toàn mạch: I = E/(R + r + r_L)
+ - Năng lượng từ trường: W = (1/2)LI^2
+
+ 3. Thay số và tính toán:
+ - Dòng điện trong mạch: I = 12V / (5Ω + 1Ω + 0Ω) = 2A
+ - Năng lượng từ trường: W = (1/2) * 0.5H * (2A)^2 = 1J
+
+ 4. Kết luận:
+ - Năng lượng từ trường dự trữ trong cuộn cảm khi R=5Ω và mạch đang ở trạng thái ổn định là 1J."
+TD128,9.43 * 10^-4,μJ,"1. Nhận diện dữ kiện:
+ - C₁ = 2.1 μF, C₂ = 5.46 μF, C₃ = 1.31 μF, C₄ = 9.18 μF mắc như hình vẽ. Hiệu điện thế toàn mạch U = 33.29 V.
+ 
+
+ 2. Công thức:
+ - C₂ và C₃ mắc nối tiếp: 1/C₂₃ = 1/C₂ + 1/C₃
+ - C₂₃ và C₄ mắc song song: C₂₃₄ = C₂₃ + C₄
+ - C₁ và C₂₃₄ mắc nối tiếp: 1/C = 1/C₁ + 1/C₂₃₄
+ - Năng lượng điện trường: W = (1/2)CU^2
+ 
+
+ 3. Thay số và tính toán:
+ - 1/C₂₃ = 1/5.46 + 1/1.31 => C₂₃ ≈ 1.05 μF
+ - C₂₃₄ = 1.05 + 9.18 = 10.23 μF
+ - 1/C = 1/2.1 + 1/10.23 => C ≈ 1.70 μF = 1.70 * 10^-6 F
+ - W = (1/2) * 1.70 * 10^-6 * (33.29)^2 ≈ 9.43 * 10^-4 J
+ 
+
+ 4. Kết luận:
+ - Năng lượng điện trường tích trong toàn mạch là khoảng 9.43 * 10^-4 J."
+TD337,2.5 * 10^-4,μJ,"1. Nhận diện dữ kiện:
+ - Hai tụ điện C₁ = 2 μF, C₂ = 3 μF mắc song song. Hiệu điện thế đặt vào hai đầu mạch AB là U = 10 V.
+ 
+
+ 2. Công thức:
+ - Điện dung tương đương của mạch mắc song song: C = C₁ + C₂
+ - Năng lượng điện trường của toàn mạch: W = 1/2 * C * U^2
+ 
+
+ 3. Thay số và tính toán:
+ - Điện dung tương đương: C = C₁ + C₂ = 2 μF + 3 μF = 5 μF = 5 * 10^-6 F
+ - Năng lượng điện trường: W = 1/2 * C * U^2 = 1/2 * 5 * 10^-6 * 10^2 = 2.5 * 10^-4 J
+ 
+
+ 4. Kết luận:
+ - Năng lượng điện trường của toàn mạch là 2.5 10^-4 J (hay 250 μJ)."
+TD411,36,μC,"1. Nhận diện dữ kiện:
+ - C1 = 6μF, C2 = C3 = 3μF, U = 12V. Khi K ở vị trí 1, C1 được nạp đầy. Khi K ở vị trí 2, C1 phóng điện cho C2 và C3 mắc song song.
+
+ 2. Công thức:
+ - Điện tích ban đầu của C1: Q1 = C1*U
+ - Khi K ở vị trí 2, C2 và C3 mắc song song, điện dung tương đương: C23 = C2 + C3
+ - Điện tích được bảo toàn: Q1 = Q1' + Q23 (với Q1' là điện tích còn lại trên C1 sau khi phóng điện, Q23 là điện tích trên bộ C23)
+ - Hiệu điện thế trên các tụ bằng nhau sau khi phóng điện: U1' = U23
+ - Điện tích trên bộ tụ C23: Q23 = C23*U23
+
+ 3. Thay số và tính toán:
+ - Q1 = C1*U = 6 * 10^-6 * 12 = 72 * 10^-6 (C)
+ - C23 = C2 + C3 = 3 * 10^-6 + 3 * 10^-6 = 6 * 10^-6 (F)
+ - Q1 = Q1' + Q23 và U1' = U23 => C1*U1' + C23*U23 = Q1 => (C1 + C23)*U23 = Q1
+ - => U23 = Q1/(C1 + C23) = 72 * 10^-6 / (6 * 10^-6 + 6 * 10^-6) = 6 (V)
+ - Q23 = C23*U23 = 6 * 10^-6 * 6 = 36 * 10^-6 (C)
+
+ 4. Kết luận:
+ - Điện tích truyền cho nhánh C2 và C3 là 36μC."
+DLO237,10,Ω,"1. Nhận diện dữ kiện:
+- Ba điện trở R1 = 2 Ω, R2 = 3 Ω, R3 = 5 Ω mắc nối tiếp.
+- Bỏ qua điện trở trong của nguồn.
+
+2. Công thức:
+- Điện trở tương đương của đoạn mạch nối tiếp: R = R1 + R2 + R3
+
+3. Thay số và tính toán:
+- R = 2 + 3 + 5 = 10 Ω
+
+4. Kết luận:
+- Điện trở toàn mạch là 10 Ω."
+DLO255,67.2,W,"1. Nhận diện dữ kiện:
+- Theo hình: R1 nối A-C, R2 nối C-D, R3 nối D-B, R4 nối A-D và có dây dẫn nối thẳng C với B.
+- R1 = R2 = R3 = 3 Ω, R4 = 6 Ω, U_AB = 12 V.
+- Dây nối C-B không có điện trở nên C và B là cùng một nút.
+
+2. Công thức:
+- R23 = R2 * R3 / (R2 + R3)
+- R423 = R4 + R23
+- R_AB = R1 * R423 / (R1 + R423)
+- Công suất tiêu thụ toàn mạch: P = U_AB^2 / R_AB
+
+3. Thay số và tính toán:
+- R23 = 3 * 3 / (3 + 3) = 1.5 Ω
+- R423 = 6 + 1.5 = 7.5 Ω
+- R_AB = 3 * 7.5 / (3 + 7.5) = 15/7 Ω
+- P = 12^2 / (15/7) = 144 * 7 / 15 = 67.2 W
+
+4. Kết luận:
+- Công suất tiêu thụ của toàn mạch là 67.2 W."
+DLO339,5,V,"1. Nhận diện dữ kiện:
+- Suất điện động ξ = 6 V, điện trở trong r = 1 Ω, dòng điện trong mạch I = 1 A.
+
+2. Công thức:
+- Hiệu điện thế giữa hai cực của nguồn: U = ξ - I * r
+
+3. Thay số và tính toán:
+- U = 6 - 1 * 1 = 5 V
+
+4. Kết luận:
+- Hiệu điện thế giữa hai cực của nguồn là 5 V."
+DLO341,3,W,"1. Nhận diện dữ kiện:
+- Theo hình: nguồn (ξ, r) nối tiếp điện trở R rồi tới cụm hai đèn Đ1 song song Đ2, tạo thành một vòng kín.
+- Cụm hai đèn song song có điện trở tương đương R_đ = 3 Ω.
+- Hiệu điện thế đặt vào hai đầu cụm đèn U = 3 V.
+
+2. Công thức:
+- Công suất tiêu thụ của một đoạn mạch: P = U^2 / R_đ.
+
+3. Thay số và tính toán:
+- P = 3^2 / 3 = 9 / 3 = 3 W
+
+4. Kết luận:
+- Công suất tiêu thụ trên hai bóng đèn là 3 W"
+DLO356,5,V,"1. Nhận diện dữ kiện:
+- Theo hình: mạch ngoài gồm đèn Đ1 nối tiếp cụm đèn Đ2 song song với biến trở R, tức R_N = 3 + 2 = 5 Ω.
+- ξ = 6 V, r = 1 Ω, I = ξ / (R_N + r) = 6 / 6 = 1 A.
+
+2. Công thức:
+- Hiệu điện thế giữa hai cực của nguồn: U = ξ - I * r
+
+3. Thay số và tính toán:
+- U = 6 - 1 * 1 = 5 V
+
+4. Kết luận:
+- Hiệu điện thế giữa hai cực của nguồn là 5 V"
+DLO446,673.2,V,"1. Nhận diện dữ kiện:
+- R = 10 Ω, m = 6 hàng song song, n = 3 đèn nối tiếp mỗi hàng, mỗi đèn (220 V - 48.4 W).
+- R_D = 220^2 / 48.4 = 1000 Ω đúng bằng điện trở đèn đã cho.
+
+2. Công thức:
+- Đèn sáng bình thường: U_den = 220 V, I_den = P_dm / U_dm
+- Mỗi hàng có n đèn nối tiếp: U_hang = n * U_den, I_hang = I_den
+- Dòng mạch chính: I = m * I_hang
+- U_MN = I * R + U_hang
+
+3. Thay số và tính toán:
+- I_den = 48.4 / 220 = 0.22 A
+- I = 6 * 0.22 = 1.32 A
+- U_hang = 3 * 220 = 660 V
+- U_MN = 1.32 * 10 + 660 = 13.2 + 660 = 673.2 V
+
+4. Kết luận:
+- Để các bóng đèn sáng bình thường thì U_MN = 673.2 V."
+DLO450,2.55,A,"1. Nhận diện dữ kiện:
+- Nút trái L nối với T1 qua 2 Ω và với B1 qua 2 Ω.
+- Cột trái: T1-M1 = 2 Ω, M1-B1 = 2 Ω.
+- Ba nhánh ngang: T1-T2 = 1 + 2 = 3 Ω, M1-M2 = 4 Ω, B1-B2 = 3 Ω.
+- Cột phải: T2-M2 = 2 Ω, M2-B2 = 2 Ω; T2-R = 5 Ω, B2-R = 5 Ω.
+- Hiệu điện thế đặt vào hai đầu mạch: U = 12 V.
+
+2. Công thức:
+- Dùng đối xứng trên - dưới: chập T1 với B1 (nút P), chập T2 với B2 (nút Q).
+- R_td = R_LP + R_PQ + R_QR
+- Định luật Ohm: I = U / R_td
+
+3. Thay số và tính toán:
+- R_LP = 2 * 2 / (2 + 2) = 1 Ω
+- Hai nhánh ngang trên và dưới: 3 * 3 / (3 + 3) = 1.5 Ω; nhánh giữa: 1 + 4 + 1 = 6 Ω
+- R_PQ = 1.5 * 6 / (1.5 + 6) = 1.2 Ω
+- R_QR = 5 * 5 / (5 + 5) = 2.5 Ω
+- R_td = 1 + 1.2 + 2.5 = 4.7 Ω
+- I = 12 / 4.7 ≈ 2.553191 A
+- I = 2.55 A
+
+4. Kết luận:
+- Cường độ dòng điện chạy qua toàn mạch là 2.55 A."
+DLO553,30,Ω,"1. Nhận diện dữ kiện:
+- R1 = R3 = 20 Ω, R2 = 30 Ω, R4 = 80 Ω, điện trở ampe kế RA = 2 Ω.
+- Khóa K đóng nối tắt P với Q nên hai điểm này chập làm một.
+- Mạch trở thành RA nt (R1 // R2) nt (R3 // R4).
+
+2. Công thức:
+- R12 = (R1 * R2)/(R1 + R2)
+- R34 = (R3 * R4)/(R3 + R4)
+- RAB = RA + R12 + R34
+
+3. Thay số và tính toán:
+- R12 = (20 * 30)/(20 + 30) = 600/50 = 12 Ω
+- R34 = (20 * 80)/(20 + 80) = 1600/100 = 16 Ω
+- RAB = 2 + 12 + 16 = 30 Ω
+
+4. Kết luận:
+- RAB = 30 Ω"
+DLO556,0.2,A,"1. Nhận diện dữ kiện:
+- R1 = R3 = 20 Ω, R2 = 30 Ω, R4 = 80 Ω, điện trở ampe kế RA = 2 Ω.
+- Số chỉ ampe kế IA = 0.5 A (dòng mạch chính), khóa K đóng.
+- K đóng nối tắt P với Q nên R1 // R2 (đoạn M-P) và R3 // R4 (đoạn P-B).
+
+2. Công thức:
+- R12 = (R1 * R2)/(R1 + R2)
+- U12 = IA * R12
+- I2 = U12/R2
+
+3. Thay số và tính toán:
+- R12 = (20 * 30)/(20 + 30) = 12 Ω
+- U12 = 0.5 * 12 = 6 V
+- I2 = 6/30 = 0.2 A
+
+4. Kết luận:
+- I2 = 0.2 A"
+DLO558,0.1,A,"1. Nhận diện dữ kiện:
+- R1 = R3 = 20 Ω, R2 = 30 Ω, R4 = 80 Ω, điện trở ampe kế RA = 2 Ω.
+- Số chỉ ampe kế IA = 0.5 A (dòng mạch chính), khóa K đóng.
+- K đóng nối tắt P với Q nên R1 // R2 (đoạn M-P) và R3 // R4 (đoạn P-B).
+
+2. Công thức:
+- R34 = (R3 * R4)/(R3 + R4)
+- U34 = IA * R34
+- I4 = U34/R4
+
+3. Thay số và tính toán:
+- R34 = (20 * 80)/(20 + 80) = 16 Ω
+- U34 = 0.5 * 16 = 8 V
+- I4 = 8/80 = 0.1 A
+
+4. Kết luận:
+- I4 = 0.1 A"
+RLC037,2,A,"1. Nhận diện dữ kiện:
+ - Mạch điện xoay chiều nối tiếp gồm cuộn cảm L = 0.6/pi H, điện trở R = 80Ω, tụ điện C = 50/pi μF. Tần số f = 50Hz. Vôn kế V1 đo điện áp hiệu dụng U_AMN (giữa hai đầu cuộn cảm L và điện trở R) là 200V.
+
+ 2. Công thức:
+ - Công thức tính cảm kháng: Z_L = 2pifL
+ - Điện áp hiệu dụng hai đầu đoạn mạch AMN: U_AMN = Isqrt((R^2 + Z_L^2))
+
+ 3. Thay số và tính toán:
+ - Z_L = 2pifL = 2 * pi.50.(0.6/pi) = 60Ω
+ - U_AMN = Isqrt((R^2 + Z_L^2)) => I = U_AMN/sqrt((R^2 + Z_L^2))
+ - I = 200/sqrt((80^2 + 60^2)) = 200/sqrt((6400 + 3600)) = 200/sqrt(10000) = 200/100 = 2A
+
+ 4. Kết luận:
+ - Cường độ dòng điện hiệu dụng chạy trong toàn mạch là 2A."
+RLC043,320,W,"1. Nhận diện dữ kiện:
+ - Mạch điện xoay chiều nối tiếp gồm cuộn cảm L = 0.6/pi H, điện trở R = 80Ω, tụ điện C = 50/pi μF. Tần số f = 50Hz. Vôn kế V1 đo điện áp hiệu dụng U_AMN (giữa hai đầu cuộn cảm L và điện trở R) là 200V.
+
+ 2. Công thức:
+ - Công thức tính cảm kháng: Z_L = 2pifL
+ - Công thức tính dung kháng: Z_C = 1/(2pifC)
+ - Điện áp hiệu dụng hai đầu đoạn mạch AMN: U_AMN = Isqrt((R^2 + Z_L^2))
+ - Công suất tiêu thụ của toàn mạch: P = RI^2
+
+ 3. Thay số và tính toán:
+ - Z_L = 2 * pi * 50 * (0.6/pi) = 60Ω
+ - Z_C = 1/(2 * pi * 50 * (50/pi)*10^-6) = 200Ω
+ - Từ U_AMN = Isqrt((R^2 + Z_L^2)) => 200 = Isqrt((80^2 + 60^2)) => 200 = I * 100 => I = 2A
+ - P = RI^2 = 80 * 2^2 = 320W
+
+ 4. Kết luận:
+ - Công suất tiêu thụ của toàn mạch là 320W."
+RLC047,-560,VAR,"1. Nhận diện dữ kiện:
+ - Mạch điện xoay chiều nối tiếp gồm cuộn cảm L = 0.6/pi H, điện trở R = 80Ω, tụ điện C = 50/pi μF. Tần số f = 50Hz. Vôn kế V1 đo điện áp hiệu dụng U_AMN (giữa hai đầu cuộn cảm L và điện trở R) là 200V.
+
+ 2. Công thức:
+ - Cảm kháng Z_L = 2pifL
+ - Dung kháng Z_C = 1/(2pifC)
+ - Điện áp hiệu dụng đoạn AMN: U_AMN = sqrt((U_R^2 + U_L^2)) = sqrt(( (IR))^2 + (IZ_L)^2 ) = Isqrt((R^2 + Z_L^2))
+ - Công suất phản kháng của toàn mạch: Q = I^2.(Z_L - Z_C) = (U_AMN/sqrt((R^2 + Z_L^2)))^2.(Z_L - Z_C)
+
+ 3. Thay số và tính toán:
+ - Z_L = 2 * pi.50.(0.6/pi) = 60Ω
+ - Z_C = 1/(2 * pi.50.(50/pi).10^-6) = 200Ω
+ - Q = (200/sqrt((80^2 + 60^2)))^2.(60 - 200)
+ - = (200/100)^2 * (-140)
+ - = 4 * (-140)
+ - = -560 VAR
+
+ 4. Kết luận:
+ - Công suất phản kháng của toàn mạch là Q = -560 VAR."
+RLC073,100sqrt(5),V,"1. Nhận diện dữ kiện:
+ - Mạch điện xoay chiều nối tiếp gồm cuộn cảm L = 0.5/pi H, điện trở R = 100Ω, tụ điện C = 50/pi μF. Tần số f = 50Hz. Vôn kế V2 đo điện áp hiệu dụng trên đoạn mạch RC là U_V2 = 250V.
+
+ 2. Công thức:
+ - Điện trở của tụ điện: Z_C = 1/(ωC) = 1/(2pifC)
+ - Điện áp trên tụ điện: U_C = I*Z_C
+ - Điện áp trên đoạn mạch RC: U_V2 = sqrt((U_R^2 + U_C^2)) = sqrt(((IR))^2 + (IZ_C)^2) = Isqrt((R^2 + Z_C^2))
+ - => U_C/U_V2 = Z_C / sqrt((R^2 + Z_C^2))
+ - => U_C = U_V2 * Z_C / sqrt((R^2 + Z_C^2))
+
+ 3. Thay số và tính toán:
+ - Z_C = 1/(2 * pi*50*50/pi *10^-6) = 1/(5000 * 10^-6) = 200Ω
+ - U_C = 250 * 200 / sqrt((100^2 + 200^2)) = 50000 / sqrt((50000)) = 200/sqrt(5) * sqrt(5) / sqrt(5)= 100 * sqrt(5) V
+ - xấp xỉ 223.6V.
+
+ 4. Kết luận:
+ - Điện áp hiệu dụng trên tụ điện C là 100 * sqrt(5) V (khoảng 223.6V)."
+RLC084,0,W,"1. Nhận diện dữ kiện:
+ - Mạch điện xoay chiều nối tiếp gồm cuộn cảm L, điện trở R và tụ điện C. Vôn kế V2 đo điện áp hiệu dụng hai đầu đoạn mạch RC. Cho L=0.5/piH, R=100Ω, C= 50/pi μF, f=50Hz, U_V2=250V.
+
+ 2. Công thức:
+ - Công suất tiêu thụ trên cuộn cảm thuần là 0.
+
+ 3. Thay số và tính toán:
+ - Không cần thay số.
+
+ 4. Kết luận:
+ - Công suất thực tiêu thụ bởi cuộn cảm thuần L là 0W."
+RLC089,1.44,A,"1. Nhận diện dữ kiện:
+ - Mạch điện xoay chiều nối tiếp gồm điện trở R = 80Ω, tụ điện C = 50/pi μF, cuộn cảm L = 0.7/pi H. Điện áp hiệu dụng U_AB = 220V, tần số f = 50Hz.
+
+ 2. Công thức:
+ - Cảm kháng: Z_L = 2pifL
+ - Dung kháng: Z_C = 1/(2pifC)
+ - Tổng trở: Z = sqrt(R^2 + (Z_L - Z_C)^2)
+ - Cường độ dòng điện hiệu dụng: I = U/Z
+
+ 3. Thay số và tính toán:
+ - Z_L = 2 * pi * 50 * (0.7/pi) = 70Ω
+ - Z_C = 1/(2 * pi * 50 * (50/pi) * 10^-6) = 200Ω
+ - Z = sqrt(80^2 + (70 - 200)^2) = sqrt((6400 + 16900)) = sqrt(23300) ≈ 152.64Ω
+ - I = 220/152.64 ≈ 1.44A
+
+ 4. Kết luận:
+ - Cường độ dòng điện hiệu dụng chạy trong toàn mạch là xấp xỉ 1.44A."
+RLC119,84.32,V,"1. Nhận diện dữ kiện:
+ - Mạch RLC nối tiếp với R = 80Ω, L = 0.6/pi H, C = 50/pi μF, U_AB = 170V, f = 50Hz. Yêu cầu tính UR.
+ 
+
+ 2. Công thức:
+ - 1. Cảm kháng ZL = 2pifL
+ - 2. Dung kháng Z_C = 1/(2pifC)
+ - 3. Tổng trở Z = sqrt(R^2 + (ZL - Z_C)^2)
+ - 4. Định luật Ohm tổng quát: I = U_AB/Z
+ - 5. Điện áp hiệu dụng trên điện trở R: UR = I*R
+ 
+
+ 3. Thay số và tính toán:
+ - 1. ZL = 2 * pi*50*(0.6/pi) = 60Ω
+ - 2. Z_C = 1/(2 * pi*50*(50/pi)*10^-6) = 1/(5000 * 10^-6) = 200Ω
+ - 3. Z = sqrt(80^2 + (60 - 200)^2) = sqrt((6400 + 19600)) = sqrt(26000) = 161.25Ω
+ - 4. I = 170/161.25 ≈ 1.054A
+ - 5. UR = 1.054 * 80 ≈ 84.32V
+ 
+
+ 4. Kết luận:
+ - Điện áp hiệu dụng trên điện trở R là khoảng 84.32V."
+RLC120,63.24,V,"1. Nhận diện dữ kiện:
+ - Mạch RLC nối tiếp với R = 80Ω, L = 0.6/pi H, C = 50/pi μF, U_AB = 170V, f = 50Hz. Cần tìm điện áp hiệu dụng trên cuộn dây L (UL).
+ 
+
+ 2. Công thức:
+ - Cảm kháng: ZL = 2pifL
+ - Dung kháng: Z_C = 1/(2pifC)
+ - Tổng trở: Z = sqrt(R^2 + (ZL - Z_C)^2)
+ - Dòng điện hiệu dụng: I = U_AB/Z
+ - Điện áp hiệu dụng trên cuộn dây: UL = I * ZL
+ 
+
+ 3. Thay số và tính toán:
+ - ZL = 2 * pi * 50 * (0.6/pi) = 60Ω
+ - Z_C = 1/(2 * pi * 50 * (50/pi) * 10^-6) = 1/(5 * 10^-3) = 200Ω
+ - Z = sqrt(80^2 + (60 - 200)^2) = sqrt(80^2 + (-140)^2) = sqrt((6400 + 19600)) = sqrt(26000) = 161.25Ω
+ - I = 170/161.25 ≈ 1.054A
+ - UL = 1.054 * 60 ≈ 63.24V
+ 
+
+ 4. Kết luận:
+ - Điện áp hiệu dụng trên cuộn dây L là xấp xỉ 63.24V."
+RLC125,220.5,VAR,"1. Nhận diện dữ kiện:
+ - Mạch RLC nối tiếp với R = 80Ω, L = 0.6/pi H, C = 50/pi μF = 50 * 10^-6/pi F, U_AB = 170V, f = 50Hz. Yêu cầu tính công suất phản kháng của tụ điện C.
+ 
+
+ 2. Công thức:
+ - 1. Dung kháng của tụ điện: Zc = 1/(ωC) = 1/(2pifC)
+ - 2. Dòng điện hiệu dụng trong mạch: Do mạch nối tiếp nên I = U_AB/Z. Tuy nhiên, đề bài chỉ yêu cầu tính công suất phản kháng của tụ, nên ta không cần tính tổng trở Z của cả mạch. Ta có thể tính dòng điện hiệu dụng qua tụ điện bằng cách lấy hiệu điện thế hai đầu tụ chia cho dung kháng: I = U_C/Z_C. Mà trong mạch nối tiếp, dòng điện qua các phần tử là như nhau, nên I cũng chính là dòng điện chạy trong toàn mạch.
+ - 3. Công suất phản kháng của tụ điện: QC = U_C.I = I^2.Z_C= Uc^2/Z_C
+ 
+
+ 3. Thay số và tính toán:
+ - 1. Zc = 1/(2 * pi*50*50 * 10^-6/pi) = 1/(5000 * 10^-6) = 200Ω
+ - 2. Vì mạch nối tiếp nên dòng điện qua các phần tử là như nhau. Ta có thể tính dòng điện qua tụ (và cũng là dòng điện của toàn mạch) nếu biết hiệu điện thế hai đầu tụ. Tuy nhiên, đề bài chỉ cho U_AB, không cho U_C. Do đó ta sẽ dùng công thức: QC = I^2.Z_C
+ - Để tính I ta cần biết tổng trở Z: Z = sqrt(R^2 + (ZL - Z_C)^2). ZL = ωL = 2pifL = 2 * pi.50.(0.6/pi) = 60Ω
+ - => Z = sqrt(80^2 + (60 - 200)^2) = sqrt((6400 + 19600)) = sqrt(26000) ≈ 161.25Ω
+ - => I = U_AB/Z = 170/161.25 ≈ 1.05A
+ - => QC = (1.05)^2 * 200 ≈ 220.5 VAR
+ - Cách khác, không cần tính I:
+ - U_C = I.Z_C => QC = U_C.I = I.Z_C.I = I^2.Z_C = (U_AB/Z)^2 . Z_C = (170/161.25)^2 * 200 ≈ 220.5 VAR
+ 
+
+ 4. Kết luận:
+ - Công suất phản kháng của tụ điện C là khoảng 220.5 VAR."
+RLC131,0,W,"1. Nhận diện dữ kiện:
+ - Mạch RLC nối tiếp với R = 80Ω, L = 0.6/pi H, C = 50/pi μF, U_AB = 170V, f = 50Hz.
+ 
+
+ 2. Công thức:
+ - Công suất thực tiêu thụ bởi tụ điện lý tưởng luôn bằng 0.
+ 
+
+ 3. Thay số và tính toán:
+ - Không cần tính toán.
+ 
+
+ 4. Kết luận:
+ - Công suất thực tiêu thụ bởi tụ điện C là 0W."
+RLC133,156.2,VA,"1. Nhận diện dữ kiện:
+ - Mạch RLC nối tiếp với R = 80Ω, L = 0.6/pi H, C = 50/pi μF, U_AB = 170V, f = 50Hz. Yêu cầu tính công suất biểu kiến của đoạn mạch chứa cuộn cảm và tụ điện (đoạn mạch LC).
+ 
+
+ 2. Công thức:
+ - Cảm kháng: Z_L = 2pifL
+ - Dung kháng: Z_C = 1/(2pifC)
+ - Điện áp hiệu dụng hai đầu đoạn mạch LC: U_LC = |U_L - U_C| = |I.Z_L - I.Z_C| = I.|Z_L - Z_C|
+ - Công suất biểu kiến đoạn mạch LC: S_LC = U_LC.I
+ 
+
+ 3. Thay số và tính toán:
+ - Z_L = 2 * pi.50.(0.6/pi) = 60Ω
+ - Z_C = 1/(2 * pi.50.(50/pi).10^-6) = 1/(5 * 10^-3) = 200Ω
+ - |Z_L - Z_C| = |60 - 200| = 140Ω
+ - Vì mạch RLC nối tiếp nên I = U_AB/Z với Z là tổng trở toàn mạch. Tuy nhiên đề bài yêu cầu tính công suất biểu kiến của đoạn LC nên ta chỉ cần biết U_LC và I. Ta có: U_LC = I.|Z_L - Z_C| => S_LC = U_LC.I = I.|Z_L - Z_C|.I = I^2.|Z_L - Z_C| = I^2.140
+ - Để tính được I, ta cần biết tổng trở Z của toàn mạch. Z = sqrt((R^2 + (Z_L - Z_C))^2) = sqrt((80^2 + 140^2)) = sqrt((6400+19600)) = sqrt(26000) ≈ 161.25Ω.
+ - I = U_AB/Z = 170/161.25 ≈ 1.054 A
+ - S_LC = (1.054)^2 * 140 ≈ 156.2 V_A
+ 
+
+ 4. Kết luận:
+ - Công suất biểu kiến của đoạn mạch chứa cuộn cảm và tụ điện là xấp xỉ 156.2 V_A."
+RLC136,125,W,"1. Nhận diện dữ kiện:
+ - Mạch RLC nối tiếp với R = 80Ω, L = 0.6/pi H, C = 50/pi μF, U_AB = 170V, f = 50Hz, Uc = 250V.
+ 
+
+ 2. Công thức:
+ - Cảm kháng: Z_L = 2pifL
+ - Dung kháng: Z_C = 1/(2pifC)
+ - Dòng điện qua mạch: I = U_C/Z_C
+ - Công suất tiêu thụ của mạch: P = I^2 * R
+ 
+
+ 3. Thay số và tính toán:
+ - Z_L = 2 * pi * 50 * (0.6/pi) = 60Ω
+ - Z_C = 1/(2 * pi * 50 * (50/pi * 10^-6)) = 200Ω
+ - I = 250/200 = 1.25A
+ - P = (1.25)^2 * 80 = 125W
+ 
+
+ 4. Kết luận:
+ - Công suất tiêu thụ của mạch là 125W."
+RLC157,125,W,"1. Nhận diện dữ kiện:
+ - R = 50Ω, r = 30Ω, L = 0.4/pi H, C = 50/pi μF = 50 * 10^-6/pi F, U = 200V, f = 50Hz, S = 250VA. Mạch RLC nối tiếp.
+ 
+
+ 2. Công thức:
+ - Công suất biểu kiến: S = U.I
+ - Tổng trở của mạch: Z = sqrt(((R+r))^2 + (Z_L - Z_C)^2)
+ - Cảm kháng: Z_L = 2pifL
+ - Dung kháng: Z_C = 1/(2pifC)
+ - Công suất tiêu thụ thực: P = I^2. (R + r) = (U/Z)^2 . (R + r) hoặc P = U.I.cosφ = S.cosφ
+ 
+
+ 3. Thay số và tính toán:
+ - 1. Tính Z_L và Z_C:
+ - Z_L = 2 * pi.50.(0.4/pi) = 40Ω
+ - Z_C = 1/(2 * pi.50.(50 * 10^-6/pi)) = 1/(5000 * 10^-6) = 200Ω
+ - 2. Tính tổng trở Z:
+ - Z = sqrt(((50+30))^2 + (40-200)^2) = sqrt(80^2 + (-160)^2) = sqrt((6400 + 25600)) = sqrt(32000) = 80 * sqrt(5) Ω
+ - 3. Tính cường độ dòng điện I:
+ - I = S/U = 250/200 = 1.25A
+ - 4. Tính công suất tiêu thụ thực P:
+ - P = I^2.(R+r) = (1.25)^2.(50+30) = 1.5625 * 80 = 125W
+ 
+
+ 4. Kết luận:
+ - Công suất tiêu thụ thực của mạch là 125W."
+RLC323,0,W,"1. Nhận diện dữ kiện:
+  - Mạch gồm R = 70 Ω, r = 30 Ω, L = 0.8/pi H, C = (50/pi)*10^-6 F, U_AB = 200 V, f = 50 Hz.
+  - Cần tính công suất thực tiêu thụ bởi phần cảm thuần của cuộn dây (P_L).
+
+2. Công thức:
+  - Phần cảm thuần (độ tự cảm L lý tưởng) chỉ tích trữ và giải phóng năng lượng từ trường mà không có điện trở thuần, do đó không tiêu thụ công suất thực (công suất tác dụng): P_L = 0 W.
+
+3. Thay số và tính toán:
+  - P_L = 0 W (phần cảm thuần không tiêu hao năng lượng dưới dạng nhiệt).
+
+4. Kết luận:
+  - Công suất thực tiêu thụ bởi phần cảm thuần của cuộn dây là 0 W."
+RLC372,47.27,V,"1. Nhận diện dữ kiện:
+  - Mạch gồm R = 60 Ω, L = 0.6/pi H, C = (50/pi)*10^-6 F, U_AB = 120 V, f = 50 Hz.
+  - Cần tính điện áp hiệu dụng trên điện trở R (U_R).
+
+2. Công thức:
+  - Cảm kháng: Z_L = 2*pi*f*L
+  - Dung kháng: Z_C = 1 / (2*pi*f*C)
+  - Tổng trở: Z = sqrt(R^2 + (Z_L - Z_C)^2)
+  - Dòng điện hiệu dụng: I = U_AB / Z
+  - Điện áp hiệu dụng trên điện trở R: U_R = I * R
+
+3. Thay số và tính toán:
+  - Z_L = 60 Ω, Z_C = 200 Ω, Z = 20*sqrt(58) ≈ 152.32 Ω
+  - I = 6 / sqrt(58) ≈ 0.7878 A
+  - U_R = (6 / sqrt(58)) * 60 = 360 / sqrt(58) ≈ 47.27 V
+
+4. Kết luận:
+  - Điện áp hiệu dụng trên điện trở R là 47.27 V."
+RLC383,120,V,"1. Nhận diện dữ kiện:
+  - Mạch RLC nối tiếp gồm R = 60 Ω, L = 0.6/pi H, C biến thiên, U_AB = 120 V, f = 50 Hz.
+  - Mạch xảy ra hiện tượng cộng hưởng điện.
+  - Cần tính điện áp hiệu dụng trên tụ điện C (U_C).
+
+2. Công thức:
+  - Cảm kháng: Z_L = 2*pi*f*L
+  - Khi cộng hưởng điện: Z_C = Z_L và I = U_AB / R
+  - Điện áp hiệu dụng trên tụ điện: U_C = I * Z_C = U_L
+
+3. Thay số và tính toán:
+  - Z_L = 2*pi*50*(0.6/pi) = 60 Ω => Z_C = 60 Ω
+  - I = 120 / 60 = 2 A
+  - U_C = 2 * 60 = 120 V
+
+4. Kết luận:
+  - Điện áp hiệu dụng trên tụ điện C khi xảy ra cộng hưởng điện là 120 V."
+RLC387,240,VA,"1. Nhận diện dữ kiện:
+  - Mạch RLC nối tiếp gồm R = 60 Ω, L = 0.6/pi H, C biến thiên, U_AB = 120 V, f = 50 Hz.
+  - Mạch xảy ra hiện tượng cộng hưởng điện.
+  - Cần tính công suất biểu kiến của toàn mạch S.
+
+2. Công thức:
+  - Khi cộng hưởng điện: I = U_AB / R
+  - Công suất biểu kiến: S = U_AB * I
+
+3. Thay số và tính toán:
+  - I = 120 / 60 = 2 A
+  - S = 120 * 2 = 240 VA
+
+4. Kết luận:
+  - Công suất biểu kiến của toàn mạch khi xảy ra cộng hưởng điện là 240 VA."
+RLC394,135,W,"1. Nhận diện dữ kiện:
+  - Mạch RLC nối tiếp gồm R = 60 Ω, L = 0.6/pi H, tụ C biến thiên, U_AB = 120 V, f = 50 Hz.
+  - Điều chỉnh C để điện áp hiệu dụng trên điện trở R là U_R = 90 V.
+  - Cần tính công suất tiêu thụ thực P của toàn mạch.
+
+2. Công thức:
+  - Cường độ dòng điện hiệu dụng trong mạch: I = U_R / R
+  - Công suất tiêu thụ thực của toàn mạch: P = I^2 * R = U_R^2 / R
+
+3. Thay số và tính toán:
+  - I = 90 / 60 = 1.5 A
+  - P = 1.5^2 * 60 = 2.25 * 60 = 135 W
+
+4. Kết luận:
+  - Công suất tiêu thụ thực của toàn mạch khi U_R = 90 V là 135 W."
+RLC399,106.67,W,"1. Nhận diện dữ kiện:
+  - Mạch RLC nối tiếp gồm R = 60 Ω, L = 0.6/pi H, C biến thiên, U_AB = 120 V, f = 50 Hz.
+  - Điều chỉnh C để công suất biểu kiến của toàn mạch là S = 160 VA.
+  - Cần tính công suất tiêu thụ thực P của toàn mạch.
+
+2. Công thức:
+  - Cường độ dòng điện hiệu dụng: S = U_AB * I => I = S / U_AB
+  - Công suất tiêu thụ thực của toàn mạch: P = I^2 * R
+
+3. Thay số và tính toán:
+  - I = 160 / 120 = 4 / 3 A
+  - P = (4 / 3)^2 * 60 = (16 / 9) * 60 = 320 / 3 ≈ 106.67 W
+
+4. Kết luận:
+  - Công suất tiêu thụ thực của toàn mạch khi S = 160 VA là 106.67 W."
+RLC402,207.85,VA,"1. Nhận diện dữ kiện:
+  - Mạch RLC nối tiếp gồm R = 60 Ω, L = 0.6/pi H, C biến thiên, U_AB = 120 V, f = 50 Hz.
+  - Điều chỉnh C để công suất tiêu thụ thực của toàn mạch là P = 180 W.
+  - Cần tính công suất biểu kiến S của toàn mạch.
+
+2. Công thức:
+  - Công suất tiêu thụ thực: P = I^2 * R => I = sqrt(P / R)
+  - Công suất biểu kiến của toàn mạch: S = U_AB * I
+
+3. Thay số và tính toán:
+  - I = sqrt(180 / 60) = sqrt(3) ≈ 1.7321 A
+  - S = 120 * sqrt(3) ≈ 207.85 VA
+
+4. Kết luận:
+  - Công suất biểu kiến của toàn mạch khi P = 180 W là 207.85 VA."
+TD420,54,μC,"1. Nhận diện dữ kiện:
+ - Hai tụ điện C₁ = 6μF và C₂ = 3μF mắc song song. Hiệu điện thế giữa hai bản tụ là U = 6V.
+
+ 2. Công thức:
+ - Điện dung tương đương của hai tụ mắc song song: C = C₁ + C₂
+ - Điện tích của hệ tụ: Q = C*U
+
+ 3. Thay số và tính toán:
+ - Điện dung tương đương: C = 6μF + 3μF = 9μF = 9 * 10^-6 F
+ - Điện tích hệ tụ: Q = 9 * 10^-6 F * 6V = 54 * 10^-6 * C = 54 μC
+
+ 4. Kết luận:
+ - Điện tích hệ tụ là 54 μC."
+TD429,5,V,"1. Nhận diện dữ kiện:
+ - Suất điện động E₁ = 6V, điện trở trong r₁ = 1Ω (ký hiệu r trong đề bài chính là r₁ trong hình), dòng điện I = 1A chạy qua nguồn E₁ từ cực âm sang cực dương (nghĩa là dòng điện đi ra từ cực dương của nguồn).
+
+ 2. Công thức:
+ - Vì dòng điện đi ra từ cực dương của nguồn E₁ nên nguồn này đang phóng điện. Công thức tính hiệu điện thế giữa hai cực của nguồn điện khi phóng điện là: U = E - I*r
+
+ 3. Thay số và tính toán:
+ - U = E₁ - I*r₁ = 6V - 1A 1Ω = 5V
+
+ 4. Kết luận:
+ - Hiệu điện thế giữa hai cực của nguồn là 5V."
+TD433,0.5,A,"1. Nhận diện dữ kiện:
+ - Đèn có hiệu điện thế định mức U = 6V và công suất định mức P = 3W.
+
+ 2. Công thức:
+ - Công thức liên hệ giữa công suất, hiệu điện thế và cường độ dòng điện là P = U*I
+
+ 3. Thay số và tính toán:
+ - I = P/U = 3W / 6V = 0.5A
+
+ 4. Kết luận:
+ - Cường độ dòng điện định mức của bóng đèn là 0.5A."
+DLO068,1,A,"1. Nhận diện dữ kiện:
+ - R1 = 6Ω, R2 = 3Ω, R3 = 4Ω, R4 = 12Ω, U_AB = 12V. R1 mắc nối tiếp với đoạn mạch gồm R2 nối tiếp với đoạn mạch gồm R3 mắc song song với R4.
+
+ 2. Công thức:
+ - Điện trở tương đương của R3 và R4 mắc song song: 1/R34 = 1/R3 + 1/R4
+ - Điện trở tương đương của R2, R3, R4: R234 = R2 + R34
+ - Điện trở tương đương toàn mạch: R = R1 + R234
+ - Dòng điện toàn mạch: I = U_AB/R
+
+ 3. Thay số và tính toán:
+ - 1/R34 = 1/4 + 1/12 = 1/3 => R34 = 3Ω
+ - R234 = R2 + R34 = 3 + 3 = 6Ω
+ - R = R1 + R234 = 6 + 6 = 12Ω
+ - I = U_AB/R = 12/12 = 1A
+
+ 4. Kết luận:
+ - Dòng điện toàn mạch là 1A."
+DLO069,1.33,A,"1. Nhận diện dữ kiện:
+ - R1 = 10Ω, R2 = 5Ω, R3 = R4 = 6Ω, U = 18V. R1 nối tiếp với đoạn mạch gồm R2 song song với đoạn mạch gồm R3 nối tiếp R4.
+
+ 2. Công thức:
+ - Điện trở tương đương của R3 và R4 (nối tiếp): R34 = R3 + R4
+ - Điện trở tương đương của R2, R3, R4: 1/R234 = 1/R2 + 1/R34
+ - Điện trở tương đương của toàn mạch: Rtđ = R1 + R234
+ - Dòng điện mạch chính: I = U/Rtđ
+
+ 3. Thay số và tính toán:
+ - R34 = 6 + 6 = 12Ω
+ - 1/R234 = 1/5 + 1/12 = 17/60 => R234 = 60/17 Ω
+ - Rtđ = 10 + 60/17 = 230/17 Ω
+ - I = 18 / (230/17) = 306/230 ≈ 1.33A
+
+ 4. Kết luận:
+ - Dòng điện mạch chính xấp xỉ 1.33A."
+DLO071,2097,A,"1. Nhận diện dữ kiện:
+ - R1 = 2Ω, R2 = 4Ω, R3 = 3Ω, R4 = 6Ω, U = 10V. R1 nối tiếp với cụm (R2 // (R3 nt R4)).
+
+ 2. Công thức:
+ - Điện trở tương đương của R3 và R4 (nối tiếp): R34 = R3 + R4
+ - Điện trở tương đương của R2 và R34 (song song): 1/R234 = 1/R2 + 1/R34
+ - Điện trở tương đương toàn mạch: Rtđ = R1 + R234
+ - Cường độ dòng điện toàn mạch: I = U/Rtđ
+
+ 3. Thay số và tính toán:
+ - R34 = R3 + R4 = 3 + 6 = 9Ω
+ - 1/R234 = 1/R2 + 1/R34 = 1/4 + 1/9 = 13/36 => R234 = 36/13 Ω
+ - Rtđ = R1 + R234 = 2 + 36/13 = 62/13 Ω
+ - I = U/Rtđ = 10 / (62/13) = 130/62 = 65/31 ≈ 2.097 A
+
+ 4. Kết luận:
+ - Cường độ dòng điện toàn mạch là khoảng 2.097 A."
+DLO134,90,W,"1. Nhận diện dữ kiện:
+- Dòng điện chạy qua toàn mạch I = 3 A; hiệu điện thế hai đầu mạch U = 30 V.
+
+2. Công thức:
+- Công suất tiêu thụ toàn mạch: P = U * I
+
+3. Thay số và tính toán:
+- P = 30 * 3 = 90 W
+
+4. Kết luận:
+- Công suất tiêu thụ của toàn mạch là 90 W."
+DLO218,6.43,A,"1. Nhận diện dữ kiện:
+- R1 = R3 = R5 = 10 Ω, R2 = R4 = 20 Ω, U_AB = 60 V.
+- Nhánh trên chỉ có R2; nhánh dưới là R1 nối tiếp cụm [(R3 nối tiếp R4) song song R5].
+- Hai nhánh mắc song song giữa A và B.
+
+2. Công thức:
+- R34 = R3 + R4
+- R345 = R34 * R5 / (R34 + R5)
+- R_duoi = R1 + R345
+- R_AB = R_duoi * R2 / (R_duoi + R2)
+- Định luật Ohm: I = U_AB / R_AB
+
+3. Thay số và tính toán:
+- R34 = 10 + 20 = 30 Ω
+- R345 = 30 * 10 / 40 = 7.5 Ω
+- R_duoi = 10 + 7.5 = 17.5 Ω
+- R_AB = 17.5 * 20 / 37.5 = 28/3 Ω
+- I = 60 / (28/3) = 180/28 = 45/7 ≈ 6.43 A
+
+4. Kết luận:
+- Cường độ dòng điện trong mạch chính là 6.43 A."
+DLO220,385.85,W,"1. Nhận diện dữ kiện:
+- Điện trở tương đương toàn mạch R_AB = 9.33 Ω.
+- Hiệu điện thế hai đầu mạch U_AB = 60 V.
+
+2. Công thức:
+- Công suất tiêu thụ toàn mạch: P = U_AB^2 / R_AB
+
+3. Thay số và tính toán:
+- P = 60^2 / 9.33 = 3600 / 9.33 ≈ 385.85 W
+
+4. Kết luận:
+- Công suất tiêu thụ của toàn mạch là 385.85 W."
+DLO321,15,Ω,"1. Nhận diện dữ kiện:
+- Số chỉ vôn kế lý tưởng mắc song song với đoạn dây: U = 4.5 V.
+- Cường độ dòng điện qua đoạn dây: I = 0.3 A.
+
+2. Công thức:
+- Vôn kế lý tưởng không rẽ dòng nên số chỉ của nó bằng hiệu điện thế hai đầu đoạn dây.
+- Định luật Ohm: R = U / I
+
+3. Thay số và tính toán:
+- R = 4.5 / 0.3 = 15 Ω
+
+4. Kết luận:
+- Điện trở của đoạn dây là 15 Ω."
+DLO366,12,V,"1. Nhận diện dữ kiện:
+- Hai nguồn 6 V mắc song song, cụm này nối tiếp với một nguồn 6 V khác.
+
+2. Công thức:
+- Nguồn giống nhau mắc song song: E_ss = E1 = E2
+- Nguồn mắc nối tiếp: E = E_ss + E3
+
+3. Thay số và tính toán:
+- E_ss = 6 V
+- E = 6 + 6 = 12 V
+
+4. Kết luận:
+- Suất điện động tương đương của bộ nguồn là 12 V."
+DLO368,3,V,"1. Nhận diện dữ kiện:
+- Hai bộ nguồn mắc song song, mỗi bộ gồm 2 pin 1.5 V mắc nối tiếp.
+
+2. Công thức:
+- Bộ nguồn nối tiếp: E_bo = E1 + E2
+- Bộ nguồn giống nhau mắc song song: E = E_bo
+
+3. Thay số và tính toán:
+- E_bo = 1.5 + 1.5 = 3 V
+- E = 3 V
+
+4. Kết luận:
+- Suất điện động của bộ nguồn song song này là 3 V."
+DLO377,3,V,"1. Nhận diện dữ kiện:
+- Hai bộ nguồn giống nhau mắc song song (hình 61).
+- Mỗi bộ gồm 2 pin nối tiếp, mỗi pin có suất điện động 1.5 V.
+
+2. Công thức:
+- Bộ nguồn nối tiếp: E_bo = E1 + E2
+- Hai bộ giống nhau mắc song song: E_b = E_bo
+
+3. Thay số và tính toán:
+- E_bo = 1.5 + 1.5 = 3 V
+- E_b = E_bo = 3 V
+
+4. Kết luận:
+- Suất điện động tương đương của toàn bộ nguồn là 3 V."
+DLO470,147.41,V,"1. Nhận diện dữ kiện:
+- Mạch thang: từ A có R1 (dây trên) và R4 (dây dưới) tới cặp nút M (trên) và M' (dưới), R7 nối M với M'.
+- Từ M và M' có R2 (trên) và R5 (dưới) tới cặp nút N (trên) và N' (dưới), R8 nối N với N'.
+- Từ N và N' có R3 (trên) và R6 (dưới) nối tới B.
+- R1 = R4 = 35 Ω, R2 = R5 = 40 Ω, R3 = R8 = 20 Ω, R6 = 60 Ω, R7 = 30 Ω.
+- Công suất toàn mạch P = 234 W, tính U.
+
+2. Công thức:
+- R36 = R3 + R6 (đường đi N - B - N')
+- R_NN' = R36 * R8 / (R36 + R8)
+- R25 = R2 + R5 + R_NN' (đường đi M - N - N' - M')
+- R_MM' = R25 * R7 / (R25 + R7)
+- R_AB = R1 + R4 + R_MM'
+- P = U^2 / R_AB nên U = sqrt(P * R_AB)
+
+3. Thay số và tính toán:
+- R36 = 20 + 60 = 80 Ω
+- R_NN' = 80 * 20 / (80 + 20) = 1600 / 100 = 16 Ω
+- R25 = 40 + 40 + 16 = 96 Ω
+- R_MM' = 96 * 30 / (96 + 30) = 2880 / 126 = 160/7 Ω
+- R_AB = 35 + 35 + 160/7 = 650/7 Ω
+- U = sqrt(234 * 650/7) = sqrt(152100/7) = sqrt(21728.57142857) = 147.40614447 V
+- Làm tròn: U = 147.41 V
+
+4. Kết luận:
+- U = 147.41 V"
+DLO561,20,Ω,"1. Nhận diện dữ kiện:
+- Tám điện trở giống nhau, mỗi điện trở R = 30 Ω; hai đầu đoạn mạch là A và C.
+- Topology đọc từ hình: hình vuông ABCD, mỗi cạnh AB, BC, CD, DA có 1 điện trở R; đường chéo AC gồm 2 điện trở R nối tiếp, đường chéo BD gồm 2 điện trở R nối tiếp; hai đường chéo cắt nhau ở tâm nhưng không có nút nối điện ở đó.
+- Giữa A và C có 3 nhánh song song: A-B-C, A-D-C và đường chéo A-C.
+
+2. Công thức:
+- Nối tiếp: R_nhanh = R + R = 2*R
+- Tính đối xứng: A và C đối xứng qua đường chéo BD nên V_B = V_D, không có dòng qua nhánh BD, bỏ nhánh BD ra khỏi mạch.
+- Song song ba nhánh: 1/R_AC = 1/R_ABC + 1/R_ADC + 1/R_AC_cheo
+
+3. Thay số và tính toán:
+- R_ABC = 30 + 30 = 60 Ω
+- R_ADC = 30 + 30 = 60 Ω
+- R_AC_cheo = 2 * 30 = 60 Ω
+- 1/R_AC = 1/60 + 1/60 + 1/60 = 3/60 = 1/20
+- R_AC = 20 Ω
+
+4. Kết luận:
+- Điện trở tương đương của mạch giữa hai điểm A và C là 20 Ω."
+DLO603,6.67,Ω,"1. Nhận diện dữ kiện:
+- R1 = R2 = 20 Ω; R3 = R4 = 10 Ω; ampe kế lý tưởng nên điện trở bằng 0.
+- Theo sơ đồ: A nối bằng dây thẳng xuống nút C nên A và C cùng điện thế.
+- Giữa A và B có ba nhánh song song: nhánh R1, nhánh R2 (đường chéo từ C lên B), nhánh R3 nt ampe kế nt R4.
+
+2. Công thức:
+- R34 = R3 + R4
+- 1/R_AB = 1/R1 + 1/R2 + 1/R34
+
+3. Thay số và tính toán:
+- R34 = 10 + 10 = 20 Ω
+- 1/R_AB = 1/20 + 1/20 + 1/20 = 3/20
+- R_AB = 20/3 ≈ 6.67 Ω
+
+4. Kết luận:
+- Điện trở tương đương của đoạn mạch AB là 6.67 Ω."
+DLO790,0.88,A,"1. Nhận diện dữ kiện:
+ - U = 2.5V; R0 = 0.5Ω; R1 = 1Ω; R2 = 2Ω; R3 = 6Ω; R4 = 0.5Ω; R5 = 0.5Ω. R1 và R4 mắc song song. R2 và R3 mắc song song. Hai cụm này lại mắc nối tiếp với nhau, sau đó mắc nối tiếp với R5 và R0.
+
+ 2. Công thức:
+ - Điện trở tương đương của R1 và R4: 1/R14 = 1/R1 + 1/R4
+ - Điện trở tương đương của R2 và R3: 1/R23 = 1/R2 + 1/R3
+ - Điện trở tương đương của cả mạch: Rtđ = R14 + R23 + R5 + R0
+ - Cường độ dòng điện chạy trong mạch chính: I = U/Rtđ
+ - Vì R14, R23, R5, R0 mắc nối tiếp nên cường độ dòng điện qua R5 bằng cường độ dòng điện mạch chính: I5 = I
+
+ 3. Thay số và tính toán:
+ - 1/R14 = 1/1 + 1/0.5 = 1 + 2 = 3 => R14 = 1/3 Ω
+ - 1/R23 = 1/2 + 1/6 = 3/6 + 1/6 = 4/6 = 2/3 => R23 = 3/2 = 1.5 Ω
+ - Rtđ = 1/3 + 1.5 + 0.5 + 0.5 = 1/3 + 2.5 = 1/3 + 7.5/3 = 8.5/3 ≈ 2.83 Ω
+ - I = U/Rtđ = 2.5 / (8.5/3) = 7.5/8.5 ≈ 0.88 A
+ - I5 = I ≈ 0.88 A
+
+ 4. Kết luận:
+ - Cường độ dòng điện qua R5 là khoảng 0.88 A."
+RLC011,159,A,"1. Nhận diện dữ kiện:
+ - E = 20V, f = 50Hz, r = 1Ω, R = 9Ω, L = 0.4H. Khóa K chưa đóng.
+
+ 2. Công thức:
+ - Khi khóa K chưa đóng, mạch gồm điện trở trong r, điện trở R và cuộn cảm L mắc nối tiếp.
+ - Tổng trở của mạch: Z = sqrt(((R+r))^2 + ZL^2)
+ - Cảm kháng: ZL = 2pifL
+ - Cường độ dòng điện hiệu dụng: I = E/Z
+
+ 3. Thay số và tính toán:
+ - ZL = 2pifL = 2 * pi * 50 * 0.4 = 40 * pi ≈ 125.66Ω
+ - Z = sqrt(((9+1))^2 + (40 * pi)^2) = sqrt((100 + (125.66))^2) ≈ sqrt((100 + 15791.3)) ≈ sqrt(15891).3 ≈ 126.06Ω
+ - I = E/Z = 20/126.06 ≈ 0.159A
+
+ 4. Kết luận:
+ - Cường độ dòng điện hiệu dụng của mạch chính khi khóa K chưa đóng là xấp xỉ 0.159A."
+RLC015,20,V,"1. Nhận diện dữ kiện:
+ - E = 20V, f = 50Hz, r = 1Ω, R = 9Ω, L = 0.4H. Khóa K đóng, mạch gồm nguồn, điện trở trong r, điện trở R và cuộn cảm L mắc nối tiếp.
+
+ 2. Công thức:
+ - Tổng trở mạch: Z = sqrt[(R+r)^2 + Z_L^2]
+ - Cảm kháng: Z_L = ωL = 2pifL
+ - Dòng điện hiệu dụng trong mạch: I = E/Z
+ - Hiệu điện thế hiệu dụng trên cuộn cảm: U_L = I*Z_L
+
+ 3. Thay số và tính toán:
+ - Z_L = 2pifL = 2 * pi.50.0.4 = 40 * pi ≈ 125.66 Ω
+ - Z = sqrt[(9+1)^2 + (40 * pi)^2] = sqrt((100 + 15791.37)) ≈ 125.7 Ω
+ - I = E/Z = 20/125.7 ≈ 0.159 A
+ - U_L = I*Z_L = 0.159 * 40 * pi ≈ 19.98V
+
+ 4. Kết luận:
+ - Hiệu điện thế hiệu dụng trên cuộn cảm xấp xỉ 20V."
+RLC286,-1093.33,VAR,"1. Nhận diện dữ kiện:
+ - R = 60Ω, L = 0.5/pi H, C = 25/pi μF = 25 * 10^-6/pi F, f = 60Hz, UR = 120V. Mạch RLC nối tiếp.
+ 
+
+ 2. Công thức:
+ - Cảm kháng: ZL = 2pifL
+ - Dung kháng: Z_C = 1/(2pifC)
+ - Cường độ dòng điện: I = UR/R
+ - Công suất phản kháng: Q = I^2.(ZL - Z_C)
+ 
+
+ 3. Thay số và tính toán:
+ - ZL = 2 * pi * 60 * (0.5/pi) = 60Ω
+ - Z_C = 1/(2 * pi * 60 * (25/pi) * 10^-6) = 1000/3 ≈ 333.33Ω
+ - I = UR/R = 120/60 = 2A
+ - Q = 2^2 * (60 - 1000/3) = 4 * (-820/3) = -3280/3 ≈ -1093.33 VAR
+ 
+
+ 4. Kết luận:
+ - Công suất phản kháng của toàn mạch là khoảng -1093.33 VAR."
+RLC302,-1093.33,VAR,"1. Nhận diện dữ kiện:
+  - Mạch RLC nối tiếp gồm R = 60 Ω, L = 0.5/pi H, C = (25/pi)*10^-6 F, f = 60 Hz.
+  - Điện áp hiệu dụng trên R (số chỉ V1): U_R = 120 V.
+  - Cần tính công suất phản kháng của đoạn mạch chỉ chứa cuộn cảm và tụ điện (Q_LC).
+
+2. Công thức:
+  - Cường độ dòng điện qua mạch: I = U_R / R
+  - Cảm kháng: Z_L = 2*pi*f*L
+  - Dung kháng: Z_C = 1 / (2*pi*f*C)
+  - Công suất phản kháng của đoạn mạch LC: Q_LC = I^2 * (Z_L - Z_C)
+
+3. Thay số và tính toán:
+  - I = 120 / 60 = 2 A
+  - Z_L = 2*pi*60*(0.5/pi) = 60 Ω
+  - Z_C = 1 / (2*pi*60*(25/pi)*10^-6) = 1 / (3*10^-3) = 1000/3 Ω
+  - Q_LC = 2^2 * (60 - 1000/3) = 4 * (-820/3) = -3280/3 ≈ -1093.33 VAR
+
+4. Kết luận:
+  - Công suất phản kháng của đoạn mạch chỉ chứa cuộn cảm và tụ điện là -1093.33 VAR."
+RLC305,375,W,"1. Nhận diện dữ kiện:
+  - Mạch RLC nối tiếp gồm R = 60 Ω, L = 0.5/pi H, C = (25/pi)*10^-6 F, f = 60 Hz.
+  - Điện áp hiệu dụng trên cuộn cảm thuần L: U_L = 150 V.
+  - Cần tính công suất tiêu thụ thực P của mạch.
+
+2. Công thức:
+  - Cảm kháng: Z_L = 2*pi*f*L
+  - Cường độ dòng điện hiệu dụng trong mạch: I = U_L / Z_L
+  - Công suất tiêu thụ thực của mạch: P = I^2 * R
+
+3. Thay số và tính toán:
+  - Z_L = 2*pi*60*(0.5/pi) = 60 Ω
+  - I = 150 / 60 = 2.5 A
+  - P = 2.5^2 * 60 = 6.25 * 60 = 375 W
+
+4. Kết luận:
+  - Công suất tiêu thụ thực của mạch khi U_L = 150 V là 375 W."
+RLC463,302.5,W,"1. Nhận diện dữ kiện:
+ - Mạch điện xoay chiều gồm điện trở R, cuộn cảm L và tụ điện C mắc nối tiếp. U_AB = 220V, omega = 100 * pi rad/s, C = (1)/(2 * pi) mF = (10^{-3})/(2 * pi)F, L = (1)/(pi)H. R thay đổi được.
+
+ 2. Công thức:
+ - Công suất tiêu thụ của toàn mạch: P = RI^2 = (U^2 * R)/(R^2 + (Z_L - Z_C)^2)
+ - Z_L = omega L = 100 * pi * (1)/(pi) = 100 \Omega
+ - Z_C = (1)/(omega C) = (1)/(100 * pi * (10^{-3})/(2 * pi)) = 20 \Omega
+ - Để công suất tiêu thụ cực đại thì R = abs(Z_L - Z_C) = abs(100 - 20) = 80\Omega.
+ - Khi đó P_max = (U^2)/(2 * R) = (U^2)/(2abs(Z_L - Z_C))
+
+ 3. Thay số và tính toán:
+ - P_max = (220^2)/(2.80) = (48400)/(160) = 302.5W
+
+ 4. Kết luận:
+ - Công suất tiêu thụ cực đại của toàn mạch là 302.5 W."
+TD217,54,μC,"1. Nhận diện dữ kiện:
+ - C1 = C2 = 3 μF, C3 = C4 = 6 μF. Hiệu điện thế giữa M và N là U = 12V. C1 nối tiếp C2, C3 nối tiếp C4. Bộ C1, C2 song song với bộ C3, C4.
+ 
+
+ 2. Công thức:
+ - Điện dung tương đương của bộ tụ mắc nối tiếp: 1/C = 1/C1 + 1/C2
+ - Điện dung tương đương của bộ tụ mắc song song: C = C1 + C2
+ - Điện tích của tụ: Q = C.U
+ 
+
+ 3. Thay số và tính toán:
+ - Điện dung tương đương của C1 và C2: 1/C12 = 1/C1 + 1/C2 = 1/3 + 1/3 = 2/3 => C12 = 3/2 = 1.5 μF
+ - Điện dung tương đương của C3 và C4: 1/C34 = 1/C3 + 1/C4 = 1/6 + 1/6 = 2/6 = 1/3 => C34 = 3 μF
+ - Điện dung tương đương của cả mạch: C = C12 + C34 = 1.5 + 3 = 4.5 μF = 4.5 * 10^-6 F
+ - Điện tích tổng của mạch: Q = C.U = 4.5 * 10^-6 * 12 = 54 * 10^-6 * C = 54 μC
+ 
+
+ 4. Kết luận:
+ - Điện tích tổng của mạch là 54 μC."
+TD219,4,μF,"1. Nhận diện dữ kiện:
+ - Bốn tụ điện C1, C2, C3, C4 được mắc trong mạch. C1 và C3 mắc nối tiếp thành bộ tụ (C13). C2 và C4 mắc nối tiếp thành bộ tụ (C24). Hai bộ tụ (C13) và (C24) được mắc song song với nhau. Giá trị mới của mỗi tụ là 4 μF.
+ 
+
+ 2. Công thức:
+ - Công thức tính điện dung tương đương của hai tụ mắc nối tiếp: 1/C = 1/C1 + 1/C2
+ - Công thức tính điện dung tương đương của hai tụ mắc song song: C = C1 + C2
+ 
+
+ 3. Thay số và tính toán:
+ - Thay C1 = C2 = C3 = C4 = 4 μF
+ - Điện dung tương đương của C1 và C3: 1/C13 = 1/C1 + 1/C3 = 1/4 + 1/4 = 1/2 => C13 = 2 μF
+ - Điện dung tương đương của C2 và C4: 1/C24 = 1/C2 + 1/C4 = 1/4 + 1/4 = 1/2 => C24 = 2 μF
+ - Điện dung tương đương của cả mạch: C = C13 + C24 = 2 + 2 = 4 μF
+ 
+
+ 4. Kết luận:
+ - Điện dung tương đương của mạch là 4 μF."
+TD242,2.14,μF,"1. Nhận diện dữ kiện:
+ - C1 = C2 = 3 μF, C3 = C4 = 6 μF, C5 = 6 μF. C1 nối tiếp C2, C3 nối tiếp C4. Cặp C1, C2 song song với C5 và cặp C3, C4. Cuối cùng, hai cụm này được mắc nối tiếp nhau.
+ 
+
+ 2. Công thức:
+ - Điện dung tương đương của hai tụ mắc nối tiếp: 1/C = 1/C1 + 1/C2
+ - Điện dung tương đương của hai tụ mắc song song: C = C1 + C2
+ 
+
+ 3. Thay số và tính toán:
+ - Điện dung tương đương của C1 và C2: 1/C12 = 1/C1 + 1/C2 = 1/3 + 1/3 = 2/3 => C12 = 3/2 = 1.5 μF
+ - Điện dung tương đương của C3 và C4: 1/C34 = 1/C3 + 1/C4 = 1/6 + 1/6 = 2/6 = 1/3 => C34 = 3 μF
+ - Điện dung tương đương của C12, C5: C125 = C12 + C5 = 1.5 + 6 = 7.5 μF
+ - Điện dung tương đương của C34 và cụm C125 : 1/CAB = 1/C125 + 1/C34 = 1/7.5 + 1/3 = 2/15 + 5/15 = 7/15 => CAB = 15/7 ≈ 2.14 μF
+ 
+
+ 4. Kết luận:
+ - Điện dung tương đương giữa hai đầu A và B là khoảng 2.14 μF."
+TD258,6,μC,"1. Nhận diện dữ kiện:
+ - Bốn tụ điện C₁ = C₂ = C₃ = C₄ = 2 μF mắc nối tiếp. Hiệu điện thế hai đầu mạch U = 12 V.
+ 
+
+ 2. Công thức:
+ - Điện dung tương đương của bộ tụ mắc nối tiếp: 1/C = 1/C₁ + 1/C₂ + 1/C₃ + 1/C₄
+ - Điện tích của bộ tụ: Q = C.U
+ - Khi các tụ mắc nối tiếp, điện tích trên mỗi tụ bằng nhau và bằng điện tích của bộ tụ: Q₁ = Q₂ = Q₃ = Q₄ = Q
+ 
+
+ 3. Thay số và tính toán:
+ - 1/C = 1/2 + 1/2 + 1/2 + 1/2 = 2 => C = 1/2 = 0.5 μF = 0.5 * 10^-6 F
+ - Q = C.U = 0.5 * 10^-6 * 12 = 6 * 10^-6 * C
+ - Q₁ = Q = 6 * 10^-6 * C
+ 
+
+ 4. Kết luận:
+ - Điện tích trên tụ C₁ là 6 μC."
+TD259,0.5,μF,"1. Nhận diện dữ kiện:
+ - Bốn tụ điện C₁ = 1 μF, C₂ = 2 μF, C₃ = 3 μF, C₄ = 6 μF mắc nối tiếp với nhau.
+ 
+
+ 2. Công thức:
+ - Điện dung tương đương của các tụ mắc nối tiếp được tính theo công thức: 1/C = 1/C₁ + 1/C₂ + 1/C₃ + 1/C₄
+ 
+
+ 3. Thay số và tính toán:
+ - 1/C = 1/1 + 1/2 + 1/3 + 1/6
+ - 1/C = 1 + 0.5 + 0.333 + 0.167
+ - 1/C = 2
+ - C = 1/2 = 0.5 μF
+ 
+
+ 4. Kết luận:
+ - Điện dung tương đương của mạch là 0.5 μF."
+TD261,3,V,"1. Nhận diện dữ kiện:
+ - Bốn tụ điện C₁ = 1 μF, C₂ = 2 μF, C₃ = 3 μF, C₄ = 6 μF mắc nối tiếp với nhau. Hiệu điện thế toàn mạch U = 12V.
+ 
+
+ 2. Công thức:
+ - Công thức tính điện dung tương đương của bộ tụ mắc nối tiếp: 1/C = 1/C₁ + 1/C₂ + 1/C₃ + 1/C₄
+ - Công thức tính điện tích: Q = CU
+ - Do các tụ mắc nối tiếp nên điện tích trên các tụ bằng nhau: Q = Q₁ = Q₂ = Q₃ = Q₄
+ - Công thức tính hiệu điện thế trên từng tụ: Uᵢ = Qᵢ/Cᵢ
+ 
+
+ 3. Thay số và tính toán:
+ - 1/C = 1/1 + 1/2 + 1/3 + 1/6 = 1 + 0.5 + 0.33 + 0.167 = 2 μF^-1 => C = 0.5 μF.
+ - Q = CU = 0.5 * 12 = 6 μC
+ - U₂ = Q₂/C₂ = 6/2 = 3 V
+ 
+
+ 4. Kết luận:
+ - Hiệu điện thế giữa hai bản tụ C₂ là 3V."
+TD275,0.33,μF,"1. Nhận diện dữ kiện:
+ - Bốn tụ điện C₁, C₂, C₃, C₄ mắc nối tiếp. C₁ = C₂ = C₃ = C₄ = 1 μF. Sau đó thay C₄ bằng tụ có điện dung rất lớn.
+ 
+
+ 2. Công thức:
+ - Điện dung tương đương của bộ tụ mắc nối tiếp: 1/C = 1/C₁ + 1/C₂ + 1/C₃ + 1/C₄
+ - Khi C₄ rất lớn, 1/C₄ ≈ 0
+ 
+
+ 3. Thay số và tính toán:
+ - Ban đầu: 1/C = 1/1 + 1/1 + 1/1 + 1/1 = 4 => C = 1/4 = 0.25 μF
+ - Khi C₄ rất lớn: 1/C' = 1/1 + 1/1 + 1/1 + 0 = 3 => C' = 1/3 ≈ 0.33 μF
+ 
+
+ 4. Kết luận:
+ - Điện dung toàn mạch tăng từ 0.25 μF lên xấp xỉ 0.33 μF."
+TD278,50,μJ,"1. Nhận diện dữ kiện:
+ - 4 tụ điện mắc nối tiếp C₁ = C₂ = C₃ = C₄ = 1 μF. Điện tích trên mỗi tụ Q = 5 μC.
+ 
+
+ 2. Công thức:
+ - Năng lượng điện trường của một tụ điện là W = Q^2/2 * C. Do 4 tụ mắc nối tiếp nên điện dung tương đương là 1/C = 1/C₁ + 1/C₂ + 1/C₃ + 1/C₄. Năng lượng của bộ tụ là W = Q^2/2 * C.
+ 
+
+ 3. Thay số và tính toán:
+ - 1/C = 1/1 + 1/1 + 1/1 + 1/1 = 4 (μF^-1) => C = 1/4 μF = 0.25 μF = 0.25 * 10^-6 F
+ - W = (5 * 10^-6)^2 / (2 * 0.25 * 10^-6) = 25 * 10^-12 / 0.5 * 10^-6 = 50 * 10^-6 = 50 μJ.
+ 
+
+ 4. Kết luận:
+ - Năng lượng điện trường của bộ tụ là 50 μJ."
+TD293,216,μJ,"1. Nhận diện dữ kiện:
+ - C₄ = 2 μF, C₅ = C₆ = 2 μF, U_AB = 12V. C₅ và C₆ mắc nối tiếp nhau. Nhánh dưới gồm C₄ mắc song song với cụm C₅, C₆ nối tiếp.
+ 
+
+ 2. Công thức:
+ - Điện dung tương đương của C₅ và C₆ mắc nối tiếp: 1/C₅₆ = 1/C₅ + 1/C₆
+ - Điện dung tương đương của nhánh dưới (C₄ // C₅₆): C = C₄ + C₅₆
+ - Năng lượng điện trường: W = (1/2) * C * U^2
+ 
+
+ 3. Thay số và tính toán:
+ - 1/C₅₆ = 1/2 + 1/2 = 1 (μF^-1) => C₅₆ = 1 μF
+ - C = C₄ + C₅₆ = 2 + 1 = 3 μF = 3 * 10^-6 F
+ - W = (1/2) * 3 * 10^-6 * 12^2 = 1.5 * 10^-6 * 144 = 216 * 10^-6 = 216 μJ
+ 
+
+ 4. Kết luận:
+ - Năng lượng điện trường trong nhánh dưới là 216 μJ."
+THCB049,Dòng điện qua A_1 lớn hơn A_2 (I_A_1 > I_A_2),—,"1. Nhận diện dữ kiện:
+  - Sơ đồ mạch điện gồm hai đèn Đ_1 và Đ_2 mắc song song với nhau.
+  - Ampe kế A_1 mắc nối tiếp với đèn Đ_1, Ampe kế A_2 mắc nối tiếp với đèn Đ_2.
+  - Đèn Đ_1 sáng mạnh hơn đèn Đ_2 (P1 > P2).
+  - Cần so sánh cường độ dòng điện đo được bởi A_1 (I_A_1) và A_2 (I_A_2).
+
+2. Công thức:
+  - Vì hai đèn mắc song song nên hiệu điện thế hai đầu mỗi đèn bằng nhau: U1 = U2 = U_song_song.
+  - Công suất tiêu thụ của đèn: P = U * I.
+  - Vì P1 > P2 và U1 = U2 => I_1 > I_2 => I_A_1 > I_A_2.
+
+3. Thay số và tính toán:
+  - Đèn Đ_1 sáng mạnh hơn nên tiêu thụ công suất lớn hơn đèn Đ_2.
+  - Ở cùng hiệu điện thế, cường độ dòng điện qua Đ_1 lớn hơn Đ_2: I_A_1 > I_A_2.
+
+4. Kết luận:
+  - Cường độ dòng điện đo bởi ampe kế A_1 lớn hơn ampe kế A_2 (I_A_1 > I_A_2)."
+THCB051,1,A,"1. Nhận diện dữ kiện:
+  - Hai đèn giống nhau mắc song song: R_1 = R_2.
+  - Tổng cường độ dòng điện trong mạch chính: I = 2 A.
+  - Cần tính cường độ dòng điện qua mỗi đèn (I_1, I_2).
+
+2. Công thức:
+  - Trong đoạn mạch song song: I = I_1 + I_2.
+  - Vì R_1 = R_2 và U1 = U2 nên dòng điện chia đều cho hai nhánh: I_1 = I_2 = I / 2.
+
+3. Thay số và tính toán:
+  - I_1 = I_2 = 2 / 2 = 1.0 A.
+
+4. Kết luận:
+  - Cường độ dòng điện qua mỗi đèn là 1.0 A."
+THCB053,0.83,A,"1. Nhận diện dữ kiện:
+  - Hai đèn mắc song song: R_1 = 18 Ω, R_2 = 12 Ω.
+  - Hiệu điện thế nguồn: U = 6 V.
+  - Cần tính tổng cường độ dòng điện trong mạch I.
+
+2. Công thức:
+  - Cường độ dòng điện qua Đ_1: I_1 = U / R_1
+  - Cường độ dòng điện qua Đ_2: I_2 = U / R_2
+  - Tổng cường độ dòng điện trong mạch: I = I_1 + I_2
+
+3. Thay số và tính toán:
+  - I_1 = 6 / 18 = 1 / 3 ≈ 0.333 A
+  - I_2 = 6 / 12 = 0.5 A
+  - I = 1 / 3 + 0.5 = 5 / 6 ≈ 0.83 A
+
+4. Kết luận:
+  - Tổng cường độ dòng điện trong mạch là 0.83 A."
+THCB060,Đèn bị đứt là Đ_2; nhánh chứa Đ_1 và A_1 vẫn kín và hoạt động bình thường,—,"1. Nhận diện dữ kiện:
+  - Mạch điện gồm hai đèn Đ_1 và Đ_2 mắc song song.
+  - Ampe kế A_1 mắc nối tiếp với Đ_1, Ampe kế A_2 mắc nối tiếp với Đ_2.
+  - Một đèn bị đứt nhưng ampe kế A_1 vẫn chỉ 0.5 A.
+  - Cần giải thích hiện tượng.
+
+2. Công thức:
+  - Trong mạch điện song song, các nhánh hoạt động độc lập.
+  - Ampe kế A_1 chỉ đo dòng điện chạy qua nhánh chứa đèn Đ_1.
+
+3. Thay số và tính toán:
+  - Vì ampe kế A_1 vẫn có dòng 0.5 A chạy qua nên nhánh chứa Đ_1 vẫn kín.
+  - Đèn bị đứt chính là đèn Đ_2 ở nhánh song song còn lại, do đó nhánh Đ_1 không bị ảnh hưởng.
+
+4. Kết luận:
+  - Đèn bị đứt là Đ_2; nhánh chứa Đ_1 và ampe kế A_1 vẫn kín nên A_1 vẫn chỉ 0.5 A."

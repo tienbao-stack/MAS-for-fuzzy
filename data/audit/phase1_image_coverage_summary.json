@@ -1,0 +1,20 @@
+{
+  "dataset": "data/json/physics_dataset.json",
+  "image_directory": "data/images",
+  "dataset_records": 3605,
+  "records_with_image_ref": 3605,
+  "total_image_reference_occurrences": 3605,
+  "unique_image_refs": 339,
+  "unique_images_present_and_valid": 255,
+  "unique_images_missing": 84,
+  "unique_images_with_signature_or_extension_issues": 0,
+  "unique_images_fully_decoded_by_pillow": 255,
+  "rows_referencing_missing_images": 1636,
+  "rows_referencing_missing_or_invalid_images": 1636,
+  "coverage_by_unique_refs": 0.752212,
+  "status_counts": {
+    "present_readable_image": 255,
+    "missing": 84
+  },
+  "warning": "Image decoding validates file readability, not semantic diagram quality. Missing assets should be recovered before full multimodal evaluation."
+}

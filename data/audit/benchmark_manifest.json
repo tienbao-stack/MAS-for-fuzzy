@@ -1,0 +1,47 @@
+{
+  "manifest_version": "phase2-manifest-v1",
+  "scope": "Physics Text + Image; no audio/video; ManyModalQA not used",
+  "candidate_dataset": {
+    "path": "data/processed/physics_dataset_candidate.json",
+    "records": 1708,
+    "sha256": "124dcdcc5477b82b4a987c2274af226159a3333de22fb5d016bd51c22fd28988"
+  },
+  "phase1_clean_dataset": {
+    "path": "data/processed/physics_dataset_clean_all.json",
+    "records": 1731,
+    "sha256": "b5195b73272de606341806f06bc42c777495871198ce66bcd1ab79efa64dd3f9"
+  },
+  "split_assignments": {
+    "path": "data/splits/split_assignments.json",
+    "sha256": "d8aa9fe13ce2629b321d288dc358b1ecc4da22bad85cd7931aa36d04967fbdd1",
+    "seed": 42,
+    "counts": {
+      "train": 1195,
+      "validation": 257,
+      "test": 256
+    },
+    "component_groups": 195,
+    "leakage_checks": {
+      "image_content_hash_groups_crossing_splits": 0,
+      "exact_question_groups_crossing_splits": 0
+    }
+  },
+  "baseline_config": {
+    "path": "configs/baseline.yaml",
+    "sha256": "6830a5e7fe53e4c0514b6f29706a362eef1015f693eb0b7241fb27c406569d25"
+  },
+  "images": {
+    "referenced_unique_files": 241,
+    "unique_sha256_contents_referenced": 195,
+    "manifest_path": "data/audit/image_manifest.csv",
+    "all_files_in_data_images": 255
+  },
+  "known_quarantine": [
+    "180.png",
+    "181.png",
+    "187.png",
+    "188.png"
+  ],
+  "benchmark_status": "provisional_pilot_candidate_not_fully_human_validated",
+  "created_by": "src/create_manifest.py"
+}

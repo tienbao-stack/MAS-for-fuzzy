@@ -1,0 +1,11 @@
+{
+  "purpose": "Manually identified image-question/solution mismatches during the Phase 1 readiness audit. These groups are excluded from the provisional Phase 2 benchmark candidate pending correction or human adjudication.",
+  "image_refs": ["180.png", "181.png", "187.png", "188.png"],
+  "reasons": {
+    "180.png": "Question and solution describe a five-resistor circuit with an ideal ammeter; the image shows a four-resistor topology and no explicit ammeter.",
+    "181.png": "Question describes an ideal ammeter; the image shows a five-resistor network but no explicit ammeter, and the solution describes a topology not visibly represented by the image.",
+    "187.png": "Question/solution refer to Rx and Ra; the image visibly labels R1, R2, R3, R4 and does not show Rx or Ra.",
+    "188.png": "Question/solution refer to Rx and Ra; the image visibly shows two branches with R1-R2 and R3-R4, but no Rx or Ra."
+  },
+  "status": "quarantined_pending_human_review"
+}

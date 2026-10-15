@@ -1,0 +1,33 @@
+project: multimodal-fuzzy-agent-phase2
+scope:
+  modalities: [text, image]
+  audio: false
+  video: false
+primary_dataset: data/processed/physics_dataset_candidate.json
+image_dir: data/images
+split_file: data/splits/split_assignments.json
+baseline:
+  id: B0
+  name: direct_multimodal_qa
+  prompt_version: b0-direct-v1
+  provider: openai-compatible-chat-completions
+  model_env: OPENAI_MODEL
+  temperature: 0
+  max_tokens: 700
+  input_fields: [input.question, input.image.image_ref]
+  forbidden_inference_fields: [reference.solution_cot, reference.answer, reference.unit]
+evaluation:
+  absolute_tolerance: 0.001
+  relative_tolerance: 0.01
+  metrics:
+    - answer_accuracy_tolerance
+    - answer_exact_accuracy
+    - unit_accuracy
+    - joint_answer_and_unit_accuracy
+    - parse_rate
+    - numeric_mae
+protocol:
+  use_validation_for_prompt_selection: true
+  test_once_after_prompt_freeze: true
+  save_raw_outputs: true
+  exclude_mock_outputs_from_metrics: true
