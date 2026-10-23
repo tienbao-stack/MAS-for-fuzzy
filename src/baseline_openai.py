@@ -9,6 +9,9 @@ import sys
 import time
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
+
+from openai import api_key, base_url
 
 ROOT = Path(__file__).resolve().parents[1]
 try:
@@ -35,16 +38,25 @@ def _read_existing_ids(path: Path) -> set[str]:
     seen: set[str] = set()
     if not path.exists():
         return seen
-    with path.open("r", encoding="utf-8") as f:
-        for line in f:
-            if not line.strip():
-                continue
-            try:
-                row = json.loads(line)
-                if row.get("sample_id"):
-                    seen.add(str(row["sample_id"]))
-            except json.JSONDecodeError:
-                continue
+    content = path.read_text(encoding="utf-8")
+    decoder = json.JSONDecoder()
+    offset = 0
+    while offset < len(content):
+        while offset < len(content) and content[offset].isspace():
+            offset += 1
+        if offset >= len(content):
+            break
+        try:
+            row, offset = decoder.raw_decode(content, offset)
+        except json.JSONDecodeError:
+            # Skip malformed lines so a partial/corrupt record does not block resume.
+            newline = content.find("\n", offset)
+            if newline == -1:
+                break
+            offset = newline + 1
+            continue
+        if isinstance(row, dict) and row.get("sample_id"):
+            seen.add(str(row["sample_id"]))
     return seen
 
 
@@ -129,10 +141,31 @@ def main() -> int:
             from openai import OpenAI
         except ImportError as exc:
             raise SystemExit("The openai package is not installed. Run: python -m pip install -r requirements.txt") from exc
-        base_url = os.getenv("OPENAI_BASE_URL", "").strip()
-        client_kwargs = {"api_key": api_key}
-        if base_url:
-            client_kwargs["base_url"] = base_url
+        # base_url = os.getenv("OPENAI_BASE_URL", "").strip()
+        # client_kwargs = {"api_key": api_key}
+        # if base_url:
+        #     client_kwargs["base_url"] = base_url
+
+        
+        from urllib.parse import urlparse
+
+        base_url = (
+            os.getenv("OPENAI_BASE_URL", "").strip()
+            or "https://api.openai.com/v1"
+        )
+
+        parsed_url = urlparse(base_url)
+        if parsed_url.scheme not in {"http", "https"} or not parsed_url.netloc:
+            raise SystemExit(
+                "OPENAI_BASE_URL không hợp lệ. "
+                "Hãy cung cấp URL đầy đủ có http:// hoặc https://."
+            )
+
+        client_kwargs = {
+            "api_key": api_key,
+            "base_url": base_url,
+        }
+
         client = OpenAI(**client_kwargs)
 
     with out.open("a", encoding="utf-8") as f:
@@ -185,8 +218,9 @@ def main() -> int:
                         "parse_status": "failed",
                         "latency_seconds": round(time.perf_counter() - start, 4),
                         "error": f"{type(exc).__name__}: {exc}",
+                        "error_cause": repr(exc.__cause__),
                     }
-            f.write(json.dumps(result, ensure_ascii=False) + "\n")
+            f.write(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
             f.flush()
             print(f"[{index}/{len(chosen)}] {sid}: {result['status']} ({result.get('parse_status', 'n/a')})")
 
