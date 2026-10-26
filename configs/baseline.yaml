@@ -10,8 +10,12 @@ baseline:
   id: B0
   name: direct_multimodal_qa
   prompt_version: b0-direct-v1
-  provider: openai-compatible-chat-completions
-  model_env: OPENAI_MODEL
+  provider_env: LLM_PROVIDER
+  providers: [openai, gemini, openrouter, ollama]
+  ollama_mode_env: LLM_MODE
+  ollama_modes: [local, cloud]
+  model_env: LLM_MODEL
+  base_url_env: LLM_BASE_URL
   temperature: 0
   max_tokens: 700
   input_fields: [input.question, input.image.image_ref]

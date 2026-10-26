@@ -32,7 +32,8 @@ Gói dự án này tiếp nối Phase 1 của dự án hỏi đáp Vật lý. M�
 │   ├── create_candidate_dataset.py
 │   ├── audit_dataset.py
 │   ├── create_splits.py
-│   ├── baseline_openai.py
+│   ├── baseline.py
+│   ├── multimodal_fuzzy/providers.py
 │   └── evaluate_predictions.py
 └── tests/
 ```
@@ -46,7 +47,17 @@ python -m pip install -r requirements.txt
 Copy-Item .env.example .env
 ```
 
-Mở `.env`, đặt `OPENAI_API_KEY` và `OPENAI_MODEL` tương ứng với một model **có khả năng xử lý hình ảnh** mà bạn có quyền sử dụng. `OPENAI_BASE_URL` là tùy chọn nếu dùng endpoint tương thích với API OpenAI. Không commit file `.env` vào Git hoặc chia sẻ API key.
+Chọn backend trong `.env` bằng `LLM_PROVIDER`, `LLM_MODE` và `LLM_MODEL`. Runner dùng thư viện Python OpenAI để gọi endpoint chat tương thích; Ollama local không cần API key. Chỉ đặt key của provider đang dùng, không commit `.env` hoặc chia sẻ key.
+
+| Cấu hình | Thiết lập cần có |
+| --- | --- |
+| OpenAI | `LLM_PROVIDER=openai`, `OPENAI_API_KEY`, `OPENAI_MODEL` hoặc `LLM_MODEL` |
+| Gemini | `LLM_PROVIDER=gemini`, `GEMINI_API_KEY`, `GEMINI_MODEL` hoặc `LLM_MODEL` |
+| OpenRouter | `LLM_PROVIDER=openrouter`, `OPENROUTER_API_KEY`, `OPENROUTER_MODEL` hoặc `LLM_MODEL` |
+| Ollama local | `LLM_PROVIDER=ollama`, `LLM_MODE=local`, `LLM_MODEL` (mặc định `qwen3-vl:4b-instruct`) |
+| Ollama Cloud API | `LLM_PROVIDER=ollama`, `LLM_MODE=cloud`, `OLLAMA_API_KEY`, `OLLAMA_CLOUD_MODEL` hoặc `LLM_MODEL` |
+
+`LLM_BASE_URL` dùng để ghi đè endpoint. Để gọi Ollama Cloud qua Ollama server đã đăng nhập trên máy, tự chạy `ollama signin`, đặt `LLM_MODE=cloud`, `LLM_MODEL=gemma4:cloud` và `LLM_BASE_URL=http://localhost:11434/v1`; chế độ này không cần API key. Gọi Cloud API trực tiếp dùng `https://ollama.com/v1`, key Ollama và tên model theo API cloud (ví dụ `gemma4:31b`, không thêm hậu tố CLI `:cloud`). Runner không đăng nhập hay tạo key thay bạn.
 
 ## Tạo lại dataset ứng viên và các tập chia sau khi thay đổi dữ liệu
 
@@ -64,14 +75,26 @@ python src/audit_dataset.py --dataset data/processed/physics_dataset_candidate.j
 ## Chạy pilot B0 nhỏ trên tập validation
 
 ```powershell
-python src/baseline_openai.py --split validation --limit 20 --output data/predictions/b0_validation_pilot.jsonl
-python src/evaluate_predictions.py --predictions data/predictions/b0_validation_pilot.jsonl --split validation
+python src/baseline.py --provider ollama --mode local --model qwen3-vl:4b-instruct --split validation --limit 20 --output data/predictions/b0_ollama_qwen3vl4b_validation.jsonl
+python src/evaluate_predictions.py --predictions data/predictions/b0_ollama_qwen3vl4b_validation.jsonl --split validation
 ```
+
+Cũng có thể chọn provider/model trong `.env`; tham số CLI sẽ được ưu tiên hơn cấu hình môi trường. Ví dụ:
+
+```powershell
+python src/baseline.py --provider openai --model gpt-4o-mini --split validation --limit 20 --output data/predictions/openai_validation.jsonl
+python src/baseline.py --provider gemini --model gemini-3.8-flash --split validation --limit 20 --output data/predictions/gemini_validation.jsonl
+python src/baseline.py --provider openrouter --model provider/model-name --split validation --limit 20 --output data/predictions/openrouter_validation.jsonl
+python src/baseline.py --provider ollama --mode local --model gemma4:e2b --split validation --limit 20 --output data/predictions/ollama_gemma4e2b_validation.jsonl
+python src/baseline.py --provider ollama-cloud --model gemma4:31b --split validation --limit 20 --output data/predictions/ollama_cloud_validation.jsonl
+```
+
+Vì dataset gồm văn bản và ảnh, hãy chọn model có vision. Với Ollama local, tải model trước, ví dụ `ollama pull qwen3-vl:4b-instruct`. Suy luận local không dùng quota API; tốc độ phụ thuộc GPU/CPU và bộ nhớ. Dùng file đầu ra riêng cho từng provider/model.
 
 Dùng validation để sửa lỗi phân tích đầu ra và cố định prompt. Sau khi đã cố định cấu hình, chỉ chạy tập test cuối cùng một lần:
 
 ```powershell
-python src/baseline_openai.py --split test --output data/predictions/b0_test_frozen.jsonl
+python src/baseline.py --split test --output data/predictions/b0_test_frozen.jsonl
 python src/evaluate_predictions.py --predictions data/predictions/b0_test_frozen.jsonl --split test
 ```
 
@@ -84,7 +107,7 @@ python src/evaluate_predictions.py --predictions data/predictions/b0_test_frozen
 ## Smoke test không cần API key
 
 ```powershell
-python src/baseline_openai.py --split validation --limit 3 --smoke-test-from-gold --output data/predictions/smoke_test_from_gold.jsonl
+python src/baseline.py --split validation --limit 3 --smoke-test-from-gold --output data/predictions/smoke_test_from_gold.jsonl
 python -m unittest discover -s tests -v
 ```
 

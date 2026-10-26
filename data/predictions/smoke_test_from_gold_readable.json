@@ -1,0 +1,47 @@
+[
+  {
+    "sample_id": "DLO163",
+    "split": "validation",
+    "model": "SMOKE_TEST_NOT_A_MODEL",
+    "provider": "smoke_test_from_gold",
+    "is_mock": true,
+    "image_ref": "012.png",
+    "status": "mock_test_only",
+    "predicted_answer": "45",
+    "predicted_unit": "W",
+    "predicted_explanation": "Synthetic I/O check: copied from gold label; not a model prediction.",
+    "prediction_raw": "SMOKE_TEST_FROM_GOLD",
+    "parse_status": "mock",
+    "latency_seconds": 0.0
+  },
+  {
+    "sample_id": "DLO164",
+    "split": "validation",
+    "model": "SMOKE_TEST_NOT_A_MODEL",
+    "provider": "smoke_test_from_gold",
+    "is_mock": true,
+    "image_ref": "012.png",
+    "status": "mock_test_only",
+    "predicted_answer": "40",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "Synthetic I/O check: copied from gold label; not a model prediction.",
+    "prediction_raw": "SMOKE_TEST_FROM_GOLD",
+    "parse_status": "mock",
+    "latency_seconds": 0.0
+  },
+  {
+    "sample_id": "DLO166",
+    "split": "validation",
+    "model": "SMOKE_TEST_NOT_A_MODEL",
+    "provider": "smoke_test_from_gold",
+    "is_mock": true,
+    "image_ref": "012.png",
+    "status": "mock_test_only",
+    "predicted_answer": "1",
+    "predicted_unit": "A",
+    "predicted_explanation": "Synthetic I/O check: copied from gold label; not a model prediction.",
+    "prediction_raw": "SMOKE_TEST_FROM_GOLD",
+    "parse_status": "mock",
+    "latency_seconds": 0.0
+  }
+]

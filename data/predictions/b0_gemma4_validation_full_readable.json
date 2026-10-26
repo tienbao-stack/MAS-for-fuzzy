@@ -1,0 +1,5139 @@
+[
+  {
+    "sample_id": "DLO163",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "012.png",
+    "predicted_answer": "45",
+    "predicted_unit": "W",
+    "predicted_explanation": "Công suất tiêu thụ trên điện trở R1 được tính bằng công thức P = I^2 * R. Với cường độ dòng điện I = 1.5 A và điện trở R1 = 20 Ω, công suất là P_R1 = (1.5 A)^2 * 20 Ω = 2.25 * 20 = 45 W.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 45,\n  \"unit\": \"W\",\n  \"explanation\": \"Công suất tiêu thụ trên điện trở R1 được tính bằng công thức P = I^2 * R. Với cường độ dòng điện I = 1.5 A và điện trở R1 = 20 Ω, công suất là P_R1 = (1.5 A)^2 * 20 Ω = 2.25 * 20 = 45 W.\"\n}\n```",
+    "latency_seconds": 31.0966,
+    "usage": {
+      "prompt_tokens": 267,
+      "completion_tokens": 549,
+      "total_tokens": 816
+    }
+  },
+  {
+    "sample_id": "DLO164",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "012.png",
+    "predicted_answer": "110",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "Mạch điện là mạch nối tiếp. Điện trở tương đương của mạch nối tiếp được tính bằng tổng các điện trở thành phần: R_tương đương = R1 + R2 + Rb = 20 Ω + 30 Ω + 60 Ω = 110 Ω.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"110\",\n  \"unit\": \"Ω\",\n  \"explanation\": \"Mạch điện là mạch nối tiếp. Điện trở tương đương của mạch nối tiếp được tính bằng tổng các điện trở thành phần: R_tương đương = R1 + R2 + Rb = 20 Ω + 30 Ω + 60 Ω = 110 Ω.\"\n}\n```",
+    "latency_seconds": 18.0026,
+    "usage": {
+      "prompt_tokens": 274,
+      "completion_tokens": 516,
+      "total_tokens": 790
+    }
+  },
+  {
+    "sample_id": "DLO166",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "012.png",
+    "predicted_answer": "6/11",
+    "predicted_unit": "A",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"6/11\",\n  \"unit\": \"A\",\n  \"explanation\": \"Vì các điện trở R",
+    "latency_seconds": 29.4082,
+    "usage": {
+      "prompt_tokens": 281,
+      "completion_tokens": 700,
+      "total_tokens": 981
+    }
+  },
+  {
+    "sample_id": "DLO167",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "012.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 36.5434,
+    "usage": {
+      "prompt_tokens": 264,
+      "completion_tokens": 700,
+      "total_tokens": 964
+    }
+  },
+  {
+    "sample_id": "DLO173",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "014.png",
+    "predicted_answer": "18",
+    "predicted_unit": "V",
+    "predicted_explanation": "Khi hai nguồn điện mắc nối tiếp, điện áp tổng của chúng bằng tổng điện áp của từng nguồn. Do đó, điện áp tổng là U1 + U2 = 12 V + 6 V = 18 V.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"18\",\n  \"unit\": \"V\",\n  \"explanation\": \"Khi hai nguồn điện mắc nối tiếp, điện áp tổng của chúng bằng tổng điện áp của từng nguồn. Do đó, điện áp tổng là U1 + U2 = 12 V + 6 V = 18 V.\"\n}\n```",
+    "latency_seconds": 32.4312,
+    "usage": {
+      "prompt_tokens": 268,
+      "completion_tokens": 560,
+      "total_tokens": 828
+    }
+  },
+  {
+    "sample_id": "DLO174",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "014.png",
+    "predicted_answer": "2",
+    "predicted_unit": "A",
+    "predicted_explanation": "Vì R1 được mắc nối tiếp với nguồn U, ta áp dụng Định luật Ohm: I = U / R. Thay số liệu vào: I = 12 V / 6 Ω = 2 A.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 2,\n  \"unit\": \"A\",\n  \"explanation\": \"Vì R1 được mắc nối tiếp với nguồn U, ta áp dụng Định luật Ohm: I = U / R. Thay số liệu vào: I = 12 V / 6 Ω = 2 A.\"\n}\n```",
+    "latency_seconds": 25.6778,
+    "usage": {
+      "prompt_tokens": 266,
+      "completion_tokens": 449,
+      "total_tokens": 715
+    }
+  },
+  {
+    "sample_id": "DLO175",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "014.png",
+    "predicted_answer": "15",
+    "predicted_unit": "V",
+    "predicted_explanation": "Theo định luật Ohm, hiệu điện thế trên một điện trở được tính bằng công thức V = I * R. Thay các giá trị đã cho vào: V_R1 = I * R1 = 1.5 A * 10 Ω = 15 V.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 15,\n  \"unit\": \"V\",\n  \"explanation\": \"Theo định luật Ohm, hiệu điện thế trên một điện trở được tính bằng công thức V = I * R. Thay các giá trị đã cho vào: V_R1 = I * R1 = 1.5 A * 10 Ω = 15 V.\"\n}\n```",
+    "latency_seconds": 27.0789,
+    "usage": {
+      "prompt_tokens": 263,
+      "completion_tokens": 485,
+      "total_tokens": 748
+    }
+  },
+  {
+    "sample_id": "DLO176",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "014.png",
+    "predicted_answer": "36",
+    "predicted_unit": "W",
+    "predicted_explanation": "Công suất tiêu thụ trên điện trở R1 được tính bằng công thức P = U^2 / R. Thay các giá trị đã cho vào: P = (18 V)^2 / 9 Ω = 324 V^2 / 9 Ω = 36 W.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"36\",\n  \"unit\": \"W\",\n  \"explanation\": \"Công suất tiêu thụ trên điện trở R1 được tính bằng công thức P = U^2 / R. Thay các giá trị đã cho vào: P = (18 V)^2 / 9 Ω = 324 V^2 / 9 Ω = 36 W.\"\n}\n```",
+    "latency_seconds": 29.9873,
+    "usage": {
+      "prompt_tokens": 262,
+      "completion_tokens": 590,
+      "total_tokens": 852
+    }
+  },
+  {
+    "sample_id": "DLO177",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "014.png",
+    "predicted_answer": "5",
+    "predicted_unit": "Ohm",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 5,\n  \"unit\": \"Ohm\",\n  \"explanation\": \"Áp dụng Định luật Ohm ($R = U/I$). Với điện áp $U = 10 \\, \\text{V}$ và dòng điện $I = 2 \\, \\text{A}$, ta có $R_1 = U/I = 10 \\, \\text{V} / 2 \\, \\text{A} = 5 \\, \\Omega$.\"\n}\n```",
+    "latency_seconds": 26.7494,
+    "usage": {
+      "prompt_tokens": 262,
+      "completion_tokens": 554,
+      "total_tokens": 816
+    }
+  },
+  {
+    "sample_id": "DLO227",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "026.png",
+    "predicted_answer": "3",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "Vì R₂ và R₃ mắc song song, điện trở tương đương (R_tương đương) được tính theo công thức: R_tương đương = (R₂ * R₃) / (R₂ + R₃). Thay số vào: R_tương đương = (6 * 6) / (6 + 6) = 36 / 12 = 3Ω.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"3\",\n  \"unit\": \"Ω\",\n  \"explanation\": \"Vì R₂ và R₃ mắc song song, điện trở tương đương (R_tương đương) được tính theo công thức: R_tương đương = (R₂ * R₃) / (R₂ + R₃). Thay số vào: R_tương đương = (6 * 6) / (6 + 6) = 36 / 12 = 3Ω.\"\n}\n```",
+    "latency_seconds": 25.6467,
+    "usage": {
+      "prompt_tokens": 337,
+      "completion_tokens": 496,
+      "total_tokens": 833
+    }
+  },
+  {
+    "sample_id": "DLO228",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "026.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.0053,
+    "usage": {
+      "prompt_tokens": 345,
+      "completion_tokens": 700,
+      "total_tokens": 1045
+    }
+  },
+  {
+    "sample_id": "DLO229",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "026.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.1687,
+    "usage": {
+      "prompt_tokens": 358,
+      "completion_tokens": 700,
+      "total_tokens": 1058
+    }
+  },
+  {
+    "sample_id": "DLO230",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "026.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 36.4983,
+    "usage": {
+      "prompt_tokens": 352,
+      "completion_tokens": 700,
+      "total_tokens": 1052
+    }
+  },
+  {
+    "sample_id": "DLO231",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "026.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 37.0553,
+    "usage": {
+      "prompt_tokens": 342,
+      "completion_tokens": 700,
+      "total_tokens": 1042
+    }
+  },
+  {
+    "sample_id": "DLO237",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "028.png",
+    "predicted_answer": "10",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "Vì ba điện trở R₁ = 2Ω, R₂ = 3Ω, và R₃ = 5Ω mắc nối tiếp, điện trở toàn mạch được tính bằng tổng các điện trở: R_t = R₁ + R₂ + R₃ = 2Ω + 3Ω + 5Ω = 10Ω.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"10\",\n  \"unit\": \"Ω\",\n  \"explanation\": \"Vì ba điện trở R₁ = 2Ω, R₂ = 3Ω, và R₃ = 5Ω mắc nối tiếp, điện trở toàn mạch được tính bằng tổng các điện trở: R_t = R₁ + R₂ + R₃ = 2Ω + 3Ω + 5Ω = 10Ω.\"\n}\n```",
+    "latency_seconds": 26.1227,
+    "usage": {
+      "prompt_tokens": 284,
+      "completion_tokens": 546,
+      "total_tokens": 830
+    }
+  },
+  {
+    "sample_id": "DLO238",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "028.png",
+    "predicted_answer": "1",
+    "predicted_unit": "A",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"1\",\n  \"unit\": \"A\",\n",
+    "latency_seconds": 33.7702,
+    "usage": {
+      "prompt_tokens": 298,
+      "completion_tokens": 700,
+      "total_tokens": 998
+    }
+  },
+  {
+    "sample_id": "DLO239",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "028.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.6681,
+    "usage": {
+      "prompt_tokens": 291,
+      "completion_tokens": 700,
+      "total_tokens": 991
+    }
+  },
+  {
+    "sample_id": "DLO240",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "028.png",
+    "predicted_answer": "10",
+    "predicted_unit": "V",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"10\",\n  \"unit\": \"V\",\n  \"explanation\": \"Mạch điện là mạch nối tiếp. Tổng điện trở ngoài là $R_{ngoài} = R_1 + R_2 + R",
+    "latency_seconds": 32.5382,
+    "usage": {
+      "prompt_tokens": 300,
+      "completion_tokens": 700,
+      "total_tokens": 1000
+    }
+  },
+  {
+    "sample_id": "DLO241",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "028.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.9446,
+    "usage": {
+      "prompt_tokens": 297,
+      "completion_tokens": 700,
+      "total_tokens": 997
+    }
+  },
+  {
+    "sample_id": "DLO252",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "031.png",
+    "predicted_answer": "15",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "Mạch điện là mạch nối tiếp (series circuit) vì tất cả các điện trở được mắc nối tiếp nhau giữa hai điểm A và B. Điện trở tương đương của mạch nối tiếp được tính bằng tổng các điện trở thành phần: R_tương đương = R1 + R2 + R3 + R4 = 3Ω + 3Ω + 3Ω + 6Ω = 15Ω.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"15\",\n  \"unit\": \"Ω\",\n  \"explanation\": \"Mạch điện là mạch nối tiếp (series circuit) vì tất cả các điện trở được mắc nối tiếp nhau giữa hai điểm A và B. Điện trở tương đương của mạch nối tiếp được tính bằng tổng các điện trở thành phần: R_tương đương = R1 + R2 + R3 + R4 = 3Ω + 3Ω + 3Ω + 6Ω = 15Ω.\"\n}\n```",
+    "latency_seconds": 28.2867,
+    "usage": {
+      "prompt_tokens": 278,
+      "completion_tokens": 570,
+      "total_tokens": 848
+    }
+  },
+  {
+    "sample_id": "DLO253",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "031.png",
+    "predicted_answer": "15",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "Mạch điện được vẽ là mạch nối tiếp (series circuit). Điện trở tương đương của mạch nối tiếp được tính bằng tổng các điện trở thành phần. R_tương đương = R1 + R2 + R3 + R4 = 3Ω + 3Ω + 3Ω + 6Ω = 15Ω.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 15,\n  \"unit\": \"Ω\",\n  \"explanation\": \"Mạch điện được vẽ là mạch nối tiếp (series circuit). Điện trở tương đương của mạch nối tiếp được tính bằng tổng các điện trở thành phần. R_tương đương = R1 + R2 + R3 + R4 = 3Ω + 3Ω + 3Ω + 6Ω = 15Ω.\"\n}\n```",
+    "latency_seconds": 28.4491,
+    "usage": {
+      "prompt_tokens": 287,
+      "completion_tokens": 561,
+      "total_tokens": 848
+    }
+  },
+  {
+    "sample_id": "DLO254",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "031.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.2461,
+    "usage": {
+      "prompt_tokens": 295,
+      "completion_tokens": 700,
+      "total_tokens": 995
+    }
+  },
+  {
+    "sample_id": "DLO255",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "031.png",
+    "predicted_answer": "9.6",
+    "predicted_unit": "W",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"9.6\",\n  \"unit\": \"W\",\n  \"explanation\": \"Mạch điện là mạch nối tiếp. Tổng điện trở của",
+    "latency_seconds": 31.6914,
+    "usage": {
+      "prompt_tokens": 285,
+      "completion_tokens": 700,
+      "total_tokens": 985
+    }
+  },
+  {
+    "sample_id": "DLO256",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "031.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.2728,
+    "usage": {
+      "prompt_tokens": 298,
+      "completion_tokens": 700,
+      "total_tokens": 998
+    }
+  },
+  {
+    "sample_id": "DLO292",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "041.png",
+    "predicted_answer": "9",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "Mạch điện là mạch nối tiếp. Điện trở toàn mạch (R_t) được tính bằng tổng các điện trở thành phần: R_t = R₁ + R₂. Thay số: R_t = 3Ω + 6Ω = 9Ω.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 9,\n  \"unit\": \"Ω\",\n  \"explanation\": \"Mạch điện là mạch nối tiếp. Điện trở toàn mạch (R_t) được tính bằng tổng các điện trở thành phần: R_t = R₁ + R₂. Thay số: R_t = 3Ω + 6Ω = 9Ω.\"\n}\n```",
+    "latency_seconds": 35.0326,
+    "usage": {
+      "prompt_tokens": 283,
+      "completion_tokens": 696,
+      "total_tokens": 979
+    }
+  },
+  {
+    "sample_id": "DLO293",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "041.png",
+    "predicted_answer": "1",
+    "predicted_unit": "A",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"1\",\n  \"unit\": \"A\",\n  \"explanation\": \"Mạch điện là mạch nối tiếp. Tổng điện trở của mạch là $R_{tổng} = R_1 + R_2 = 3\\Omega + 6\\Omega = 9\\Omega$. Theo định luật Ohm, cường độ dòng điện $I$ được tính bằng công thức $I = U / R$. Thay số vào, ta có $I = U_{AB} / R_{tổng} = 9V / 9\\Omega = 1A$.\"\n}\n```",
+    "latency_seconds": 26.7418,
+    "usage": {
+      "prompt_tokens": 273,
+      "completion_tokens": 539,
+      "total_tokens": 812
+    }
+  },
+  {
+    "sample_id": "DLO294",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "041.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.1695,
+    "usage": {
+      "prompt_tokens": 272,
+      "completion_tokens": 700,
+      "total_tokens": 972
+    }
+  },
+  {
+    "sample_id": "DLO295",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "041.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.8648,
+    "usage": {
+      "prompt_tokens": 277,
+      "completion_tokens": 700,
+      "total_tokens": 977
+    }
+  },
+  {
+    "sample_id": "DLO296",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "041.png",
+    "predicted_answer": "Độ sáng của bóng đèn giảm",
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"Độ sáng của bóng đèn giảm\",\n  \"unit\": \"\",\n  \"explanation\": \"Mạch điện là mạch nối tiếp. Tổng trở kháng của mạch là $R_{tổng} = R_1 + R_2$. Công suất tiêu thụ của bóng đèn tỉ lệ với bình phương dòng điện ($P = I^2 R_{bóng đèn}$). Khi $R_2$ tăng lên, tổng trở kháng $R_{tổng}$",
+    "latency_seconds": 35.474,
+    "usage": {
+      "prompt_tokens": 255,
+      "completion_tokens": 700,
+      "total_tokens": 955
+    }
+  },
+  {
+    "sample_id": "DLO297",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "044.png",
+    "predicted_answer": "70",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "Mạch điện được mắc nối tiếp (series). Điện trở tương đương của mạch nối tiếp được tính bằng tổng các điện trở thành phần. R_tương đương = R1 + R2 + R3 + R4 + R5 = 10Ω + 20Ω + 10Ω + 20Ω + 10Ω = 70Ω.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"70\",\n  \"unit\": \"Ω\",\n  \"explanation\": \"Mạch điện được mắc nối tiếp (series). Điện trở tương đương của mạch nối tiếp được tính bằng tổng các điện trở thành phần. R_tương đương = R1 + R2 + R3 + R4 + R5 = 10Ω + 20Ω + 10Ω + 20Ω + 10Ω = 70Ω.\"\n}\n```",
+    "latency_seconds": 27.7728,
+    "usage": {
+      "prompt_tokens": 298,
+      "completion_tokens": 572,
+      "total_tokens": 870
+    }
+  },
+  {
+    "sample_id": "DLO298",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "044.png",
+    "predicted_answer": "1.282",
+    "predicted_unit": "A",
+    "predicted_explanation": "Sử dụng Định luật Ohm, cường độ dòng điện (I) được tính bằng công thức I = U / R. Với hiệu điện thế U = 12V và điện trở tương đương R = 9.33Ω, ta có I = 12V / 9.33Ω ≈ 1.282A.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 1.282,\n  \"unit\": \"A\",\n  \"explanation\": \"Sử dụng Định luật Ohm, cường độ dòng điện (I) được tính bằng công thức I = U / R. Với hiệu điện thế U = 12V và điện trở tương đương R = 9.33Ω, ta có I = 12V / 9.33Ω ≈ 1.282A.\"\n}\n```",
+    "latency_seconds": 32.2495,
+    "usage": {
+      "prompt_tokens": 273,
+      "completion_tokens": 678,
+      "total_tokens": 951
+    }
+  },
+  {
+    "sample_id": "DLO300",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "044.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 30.9905,
+    "usage": {
+      "prompt_tokens": 271,
+      "completion_tokens": 700,
+      "total_tokens": 971
+    }
+  },
+  {
+    "sample_id": "DLO301",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "044.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.6827,
+    "usage": {
+      "prompt_tokens": 268,
+      "completion_tokens": 700,
+      "total_tokens": 968
+    }
+  },
+  {
+    "sample_id": "DLO337",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "053.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 38.1939,
+    "usage": {
+      "prompt_tokens": 351,
+      "completion_tokens": 700,
+      "total_tokens": 1051
+    }
+  },
+  {
+    "sample_id": "DLO338",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "053.png",
+    "predicted_answer": "1",
+    "predicted_unit": "A",
+    "predicted_explanation": "Cường độ dòng điện toàn mạch được tính bằng công thức $I = \\frac{\\xi}{R + r}$, trong đó $\\xi$ là suất điện động, $R$ là điện trở ngoài tổng cộng, và $r$ là điện trở trong. Thay số vào công thức: $I = \\frac{6V}{5\\Omega + 1\\Omega} = \\frac{6}{6} = 1A$.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 1,\n  \"unit\": \"A\",\n  \"explanation\": \"Cường độ dòng điện toàn mạch được tính bằng công thức $I = \\\\frac{\\\\xi}{R + r}$, trong đó $\\\\xi$ là suất điện động, $R$ là điện trở ngoài tổng cộng, và $r$ là điện trở trong. Thay số vào công thức: $I = \\\\frac{6V}{5\\\\Omega + 1\\\\Omega} = \\\\frac{6}{6} = 1A$.\"\n}\n```",
+    "latency_seconds": 29.0894,
+    "usage": {
+      "prompt_tokens": 330,
+      "completion_tokens": 541,
+      "total_tokens": 871
+    }
+  },
+  {
+    "sample_id": "DLO339",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "053.png",
+    "predicted_answer": "5",
+    "predicted_unit": "V",
+    "predicted_explanation": "Hiệu điện thế giữa hai cực của nguồn (điện áp tại các cực, U) được tính bằng công thức: U = ξ - Ir. Thay các giá trị đã cho vào: U = 6V - (1Ω * 1A) = 6V - 1V = 5V.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"5\",\n  \"unit\": \"V\",\n  \"explanation\": \"Hiệu điện thế giữa hai cực của nguồn (điện áp tại các cực, U) được tính bằng công thức: U = ξ - Ir. Thay các giá trị đã cho vào: U = 6V - (1Ω * 1A) = 6V - 1V = 5V.\"\n}\n```",
+    "latency_seconds": 34.804,
+    "usage": {
+      "prompt_tokens": 331,
+      "completion_tokens": 638,
+      "total_tokens": 969
+    }
+  },
+  {
+    "sample_id": "DLO340",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "053.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.2602,
+    "usage": {
+      "prompt_tokens": 338,
+      "completion_tokens": 700,
+      "total_tokens": 1038
+    }
+  },
+  {
+    "sample_id": "DLO341",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "053.png",
+    "predicted_answer": "12",
+    "predicted_unit": "W",
+    "predicted_explanation": "Công suất tiêu thụ P được tính bằng công thức P = U^2 / R. Với hiệu điện thế U = 6V và điện trở tổng R = 3Ω, công suất là P = (6^2) / 3 = 36 / 3 = 12 W.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 12,\n  \"unit\": \"W\",\n  \"explanation\": \"Công suất tiêu thụ P được tính bằng công thức P = U^2 / R. Với hiệu điện thế U = 6V và điện trở tổng R = 3Ω, công suất là P = (6^2) / 3 = 36 / 3 = 12 W.\"\n}\n```",
+    "latency_seconds": 29.1753,
+    "usage": {
+      "prompt_tokens": 325,
+      "completion_tokens": 546,
+      "total_tokens": 871
+    }
+  },
+  {
+    "sample_id": "DLO352",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "056.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 36.4075,
+    "usage": {
+      "prompt_tokens": 357,
+      "completion_tokens": 700,
+      "total_tokens": 1057
+    }
+  },
+  {
+    "sample_id": "DLO353",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "056.png",
+    "predicted_answer": "2",
+    "predicted_unit": "A",
+    "predicted_explanation": "Áp dụng Định luật Ohm cho mạch điện: Cường độ dòng điện (I) được tính bằng suất điện động (ξ) chia cho tổng điện trở (R). I = ξ / R. Thay số vào: I = 6V / 3Ω = 2A.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 2,\n  \"unit\": \"A\",\n  \"explanation\": \"Áp dụng Định luật Ohm cho mạch điện: Cường độ dòng điện (I) được tính bằng suất điện động (ξ) chia cho tổng điện trở (R). I = ξ / R. Thay số vào: I = 6V / 3Ω = 2A.\"\n}\n```",
+    "latency_seconds": 27.2146,
+    "usage": {
+      "prompt_tokens": 322,
+      "completion_tokens": 486,
+      "total_tokens": 808
+    }
+  },
+  {
+    "sample_id": "DLO354",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "056.png",
+    "predicted_answer": "2",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"2\",\n  \"unit\": \"Ω\",\n  \"explanation\": \"Điện trở tương đương của hai điện trở mắc song song được tính bằng công thức: R_tương đương = (R1 * R2) / (R1 + R2). Thay số vào: R_tương đương = (3Ω * 6Ω) / (3Ω + 6Ω) = 18Ω",
+    "latency_seconds": 37.576,
+    "usage": {
+      "prompt_tokens": 320,
+      "completion_tokens": 700,
+      "total_tokens": 1020
+    }
+  },
+  {
+    "sample_id": "DLO355",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "056.png",
+    "predicted_answer": "8",
+    "predicted_unit": "W",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 8,\n  \"unit\": \"W\",\n  \"explanation\": \"Công suất tiêu thụ của toàn mạch (công suất tiêu tán trên các",
+    "latency_seconds": 34.6702,
+    "usage": {
+      "prompt_tokens": 329,
+      "completion_tokens": 700,
+      "total_tokens": 1029
+    }
+  },
+  {
+    "sample_id": "DLO356",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "056.png",
+    "predicted_answer": "4",
+    "predicted_unit": "V",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"4\",\n  \"unit\": \"V\",\n  \"explanation\": \"Hiệu điện thế giữa hai cực của nguồn (điện áp cực) được tính bằng công thức: V = ξ - I * r. Thay các giá trị đã cho vào: V = 6V -",
+    "latency_seconds": 36.4611,
+    "usage": {
+      "prompt_tokens": 339,
+      "completion_tokens": 700,
+      "total_tokens": 1039
+    }
+  },
+  {
+    "sample_id": "DLO442",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "076.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 36.2226,
+    "usage": {
+      "prompt_tokens": 400,
+      "completion_tokens": 700,
+      "total_tokens": 1100
+    }
+  },
+  {
+    "sample_id": "DLO443",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "076.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 38.3423,
+    "usage": {
+      "prompt_tokens": 400,
+      "completion_tokens": 700,
+      "total_tokens": 1100
+    }
+  },
+  {
+    "sample_id": "DLO444",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "076.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 38.9681,
+    "usage": {
+      "prompt_tokens": 401,
+      "completion_tokens": 700,
+      "total_tokens": 1101
+    }
+  },
+  {
+    "sample_id": "DLO445",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "076.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 37.1673,
+    "usage": {
+      "prompt_tokens": 399,
+      "completion_tokens": 700,
+      "total_tokens": 1099
+    }
+  },
+  {
+    "sample_id": "DLO446",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "076.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 36.7297,
+    "usage": {
+      "prompt_tokens": 416,
+      "completion_tokens": 700,
+      "total_tokens": 1116
+    }
+  },
+  {
+    "sample_id": "DLO448",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "077.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 39.6393,
+    "usage": {
+      "prompt_tokens": 409,
+      "completion_tokens": 700,
+      "total_tokens": 1109
+    }
+  },
+  {
+    "sample_id": "DLO450",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "077.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 41.1897,
+    "usage": {
+      "prompt_tokens": 411,
+      "completion_tokens": 700,
+      "total_tokens": 1111
+    }
+  },
+  {
+    "sample_id": "DLO451",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "077.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 42.1422,
+    "usage": {
+      "prompt_tokens": 409,
+      "completion_tokens": 700,
+      "total_tokens": 1109
+    }
+  },
+  {
+    "sample_id": "DLO552",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "113.jpg",
+    "predicted_answer": "150",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"150\",\n  \"unit\": \"Ω\",\n  \"explanation\": \"Khi ampe kế (K) ngắt, các điện trở R1, R2, R3, và R4 vẫn được mắc nối tiếp giữa hai điểm A và B. Tổng điện trở R_AB là tổng của các điện trở này: R_AB = R1 + R2",
+    "latency_seconds": 34.4858,
+    "usage": {
+      "prompt_tokens": 286,
+      "completion_tokens": 700,
+      "total_tokens": 986
+    }
+  },
+  {
+    "sample_id": "DLO553",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "113.jpg",
+    "predicted_answer": "152",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"152\",\n  \"unit\": \"Ω\",\n  \"explanation\": \"Mạch điện là mạch nối tiếp. Điện trở tương đương của mạch nối tiếp được tính bằng tổng các điện trở thành phần. Các điện trở là R1 = 20Ω, R2 = 30Ω, R3 = 20Ω, R4 = 80Ω, và điện trở của ampe kế R_",
+    "latency_seconds": 33.2717,
+    "usage": {
+      "prompt_tokens": 285,
+      "completion_tokens": 700,
+      "total_tokens": 985
+    }
+  },
+  {
+    "sample_id": "DLO554",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "113.jpg",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.1892,
+    "usage": {
+      "prompt_tokens": 302,
+      "completion_tokens": 700,
+      "total_tokens": 1002
+    }
+  },
+  {
+    "sample_id": "DLO555",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "113.jpg",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.1923,
+    "usage": {
+      "prompt_tokens": 302,
+      "completion_tokens": 700,
+      "total_tokens": 1002
+    }
+  },
+  {
+    "sample_id": "DLO556",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "113.jpg",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.5838,
+    "usage": {
+      "prompt_tokens": 302,
+      "completion_tokens": 700,
+      "total_tokens": 1002
+    }
+  },
+  {
+    "sample_id": "DLO557",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "113.jpg",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.3748,
+    "usage": {
+      "prompt_tokens": 302,
+      "completion_tokens": 700,
+      "total_tokens": 1002
+    }
+  },
+  {
+    "sample_id": "DLO558",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "113.jpg",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.7468,
+    "usage": {
+      "prompt_tokens": 302,
+      "completion_tokens": 700,
+      "total_tokens": 1002
+    }
+  },
+  {
+    "sample_id": "DLO562",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "116.jpg",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 37.0751,
+    "usage": {
+      "prompt_tokens": 294,
+      "completion_tokens": 700,
+      "total_tokens": 994
+    }
+  },
+  {
+    "sample_id": "DLO563",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "116.jpg",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.2141,
+    "usage": {
+      "prompt_tokens": 294,
+      "completion_tokens": 700,
+      "total_tokens": 994
+    }
+  },
+  {
+    "sample_id": "DLO564",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "116.jpg",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.9015,
+    "usage": {
+      "prompt_tokens": 294,
+      "completion_tokens": 700,
+      "total_tokens": 994
+    }
+  },
+  {
+    "sample_id": "DLO565",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "116.jpg",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.9714,
+    "usage": {
+      "prompt_tokens": 294,
+      "completion_tokens": 700,
+      "total_tokens": 994
+    }
+  },
+  {
+    "sample_id": "DLO568",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "119.jpg",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.5774,
+    "usage": {
+      "prompt_tokens": 278,
+      "completion_tokens": 700,
+      "total_tokens": 978
+    }
+  },
+  {
+    "sample_id": "DLO597",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "139.jpg",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.2919,
+    "usage": {
+      "prompt_tokens": 306,
+      "completion_tokens": 700,
+      "total_tokens": 1006
+    }
+  },
+  {
+    "sample_id": "DLO598",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "140.jpg",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.3753,
+    "usage": {
+      "prompt_tokens": 328,
+      "completion_tokens": 700,
+      "total_tokens": 1028
+    }
+  },
+  {
+    "sample_id": "DLO599",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "141.jpg",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.4927,
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 700,
+      "total_tokens": 1053
+    }
+  },
+  {
+    "sample_id": "DLO616",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "158.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.2146,
+    "usage": {
+      "prompt_tokens": 424,
+      "completion_tokens": 700,
+      "total_tokens": 1124
+    }
+  },
+  {
+    "sample_id": "DLO627",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "167.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 31.8371,
+    "usage": {
+      "prompt_tokens": 301,
+      "completion_tokens": 700,
+      "total_tokens": 1001
+    }
+  },
+  {
+    "sample_id": "DLO628",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "167.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.2623,
+    "usage": {
+      "prompt_tokens": 300,
+      "completion_tokens": 700,
+      "total_tokens": 1000
+    }
+  },
+  {
+    "sample_id": "DLO713",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "182.png",
+    "predicted_answer": "0.5",
+    "predicted_unit": "A",
+    "predicted_explanation": "Mạch điện là mạch nối tiếp. Trong mạch nối tiếp, cường độ dòng điện qua mọi điện trở là như nhau. Vì ampe kế đo được tổng cường độ dòng điện trong mạch là 0.5A, nên cường độ dòng điện qua điện trở R2 cũng bằng 0.5A.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"0.5\",\n  \"unit\": \"A\",\n  \"explanation\": \"Mạch điện là mạch nối tiếp. Trong mạch nối tiếp, cường độ dòng điện qua mọi điện trở là như nhau. Vì ampe kế đo được tổng cường độ dòng điện trong mạch là 0.5A, nên cường độ dòng điện qua điện trở R2 cũng bằng 0.5A.\"\n}\n```",
+    "latency_seconds": 32.6671,
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 576,
+      "total_tokens": 925
+    }
+  },
+  {
+    "sample_id": "DLO716",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "182.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.7743,
+    "usage": {
+      "prompt_tokens": 347,
+      "completion_tokens": 700,
+      "total_tokens": 1047
+    }
+  },
+  {
+    "sample_id": "DLO717",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "182.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.8318,
+    "usage": {
+      "prompt_tokens": 341,
+      "completion_tokens": 700,
+      "total_tokens": 1041
+    }
+  },
+  {
+    "sample_id": "RLC437",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "088.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 39.6713,
+    "usage": {
+      "prompt_tokens": 491,
+      "completion_tokens": 700,
+      "total_tokens": 1191
+    }
+  },
+  {
+    "sample_id": "RLC438",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "088.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 38.1909,
+    "usage": {
+      "prompt_tokens": 491,
+      "completion_tokens": 700,
+      "total_tokens": 1191
+    }
+  },
+  {
+    "sample_id": "RLC439",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "088.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 38.5039,
+    "usage": {
+      "prompt_tokens": 491,
+      "completion_tokens": 700,
+      "total_tokens": 1191
+    }
+  },
+  {
+    "sample_id": "RLC440",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "088.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 39.332,
+    "usage": {
+      "prompt_tokens": 506,
+      "completion_tokens": 700,
+      "total_tokens": 1206
+    }
+  },
+  {
+    "sample_id": "RLC441",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "088.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 39.0646,
+    "usage": {
+      "prompt_tokens": 506,
+      "completion_tokens": 700,
+      "total_tokens": 1206
+    }
+  },
+  {
+    "sample_id": "RLC442",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "088.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 39.1892,
+    "usage": {
+      "prompt_tokens": 491,
+      "completion_tokens": 700,
+      "total_tokens": 1191
+    }
+  },
+  {
+    "sample_id": "RLC443",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "088.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 41.4159,
+    "usage": {
+      "prompt_tokens": 494,
+      "completion_tokens": 700,
+      "total_tokens": 1194
+    }
+  },
+  {
+    "sample_id": "RLC444",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "088.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 41.9403,
+    "usage": {
+      "prompt_tokens": 500,
+      "completion_tokens": 700,
+      "total_tokens": 1200
+    }
+  },
+  {
+    "sample_id": "RLC475",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "099.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 41.9491,
+    "usage": {
+      "prompt_tokens": 416,
+      "completion_tokens": 700,
+      "total_tokens": 1116
+    }
+  },
+  {
+    "sample_id": "RLC476",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "099.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 39.4778,
+    "usage": {
+      "prompt_tokens": 418,
+      "completion_tokens": 700,
+      "total_tokens": 1118
+    }
+  },
+  {
+    "sample_id": "RLC479",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "099.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 42.2617,
+    "usage": {
+      "prompt_tokens": 433,
+      "completion_tokens": 700,
+      "total_tokens": 1133
+    }
+  },
+  {
+    "sample_id": "TD419",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "042.png",
+    "predicted_answer": "9",
+    "predicted_unit": "μF",
+    "predicted_explanation": "Các tụ điện C₁ và C₂ được mắc song song. Công thức tính điện dung tương đương của các tụ điện mắc song song là C_tương đương = C₁ + C₂. Thay số vào, ta có C_tương đương = 6μF + 3μF = 9μF.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"9\",\n  \"unit\": \"μF\",\n  \"explanation\": \"Các tụ điện C₁ và C₂ được mắc song song. Công thức tính điện dung tương đương của các tụ điện mắc song song là C_tương đương = C₁ + C₂. Thay số vào, ta có C_tương đương = 6μF + 3μF = 9μF.\"\n}\n```",
+    "latency_seconds": 28.266,
+    "usage": {
+      "prompt_tokens": 332,
+      "completion_tokens": 523,
+      "total_tokens": 855
+    }
+  },
+  {
+    "sample_id": "TD420",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "042.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.2587,
+    "usage": {
+      "prompt_tokens": 343,
+      "completion_tokens": 700,
+      "total_tokens": 1043
+    }
+  },
+  {
+    "sample_id": "TD421",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "042.png",
+    "predicted_answer": "6",
+    "predicted_unit": "V",
+    "predicted_explanation": "Các tụ điện $C_1$ và $C_2$ được mắc song song. Trong mạch mắc song song, hiệu điện thế trên mỗi tụ điện bằng hiệu điện thế tổng của mạch. Do đó, hiệu điện thế ban đầu trên tụ $C_1$ bằng hiệu điện thế ban đầu của mạch, là 6V.",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"6\",\n  \"unit\": \"V\",\n  \"explanation\": \"Các tụ điện $C_1$ và $C_2$ được mắc song song. Trong mạch mắc song song, hiệu điện thế trên mỗi tụ điện bằng hiệu điện thế tổng của mạch. Do đó, hiệu điện thế ban đầu trên tụ $C_1$ bằng hiệu điện thế ban đầu của mạch, là 6V.\"",
+    "latency_seconds": 34.9572,
+    "usage": {
+      "prompt_tokens": 343,
+      "completion_tokens": 700,
+      "total_tokens": 1043
+    }
+  },
+  {
+    "sample_id": "TD422",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "042.png",
+    "predicted_answer": "6",
+    "predicted_unit": "V",
+    "predicted_explanation": "Mạch điện cho thấy hai tụ điện C₁ và C₂ được mắc song song. Khi các tụ điện mắc song song, hiệu điện thế trên mỗi tụ điện bằng hiệu điện thế của nguồn cấp. Do đó, hiệu điện thế ban đầu trên tụ C₂ bằng hiệu điện thế ban đầu của mạch, là 6V.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 6,\n  \"unit\": \"V\",\n  \"explanation\": \"Mạch điện cho thấy hai tụ điện C₁ và C₂ được mắc song song. Khi các tụ điện mắc song song, hiệu điện thế trên mỗi tụ điện bằng hiệu điện thế của nguồn cấp. Do đó, hiệu điện thế ban đầu trên tụ C₂ bằng hiệu điện thế ban đầu của mạch, là 6V.\"\n}\n```",
+    "latency_seconds": 31.671,
+    "usage": {
+      "prompt_tokens": 344,
+      "completion_tokens": 575,
+      "total_tokens": 919
+    }
+  },
+  {
+    "sample_id": "TD423",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "042.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.7883,
+    "usage": {
+      "prompt_tokens": 343,
+      "completion_tokens": 700,
+      "total_tokens": 1043
+    }
+  },
+  {
+    "sample_id": "TD429",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "047.png",
+    "predicted_answer": "5",
+    "predicted_unit": "V",
+    "predicted_explanation": "Hiệu điện thế giữa hai cực của nguồn (V) được tính bằng công thức: V = E₁ - I * r, trong đó E₁ là suất điện động, I là dòng điện chạy qua nguồn, và r là điện trở trong. Thay số vào công thức: V = 6V - (1A * 1Ω) = 6V - 1V = 5V.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"5\",\n  \"unit\": \"V\",\n  \"explanation\": \"Hiệu điện thế giữa hai cực của nguồn (V) được tính bằng công thức: V = E₁ - I * r, trong đó E₁ là suất điện động, I là dòng điện chạy qua nguồn, và r là điện trở trong. Thay số vào công thức: V = 6V - (1A * 1Ω) = 6V - 1V = 5V.\"\n}\n```",
+    "latency_seconds": 33.3702,
+    "usage": {
+      "prompt_tokens": 287,
+      "completion_tokens": 649,
+      "total_tokens": 936
+    }
+  },
+  {
+    "sample_id": "TD430",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "047.png",
+    "predicted_answer": "24e-6",
+    "predicted_unit": "C",
+    "predicted_explanation": "Điện tích Q của tụ điện được tính bằng công thức Q = C * U. Thay các giá trị đã cho vào: C = 4μF = 4 x 10⁻⁶ F và U = 6V. Q = (4 x 10⁻⁶ F) * 6 V = 24 x 10⁻⁶ C (hoặc 24μC).",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"24e-6\",\n  \"unit\": \"C\",\n  \"explanation\": \"Điện tích Q của tụ điện được tính bằng công thức Q = C * U. Thay các giá trị đã cho vào: C = 4μF = 4 x 10⁻⁶ F và U = 6V. Q = (4 x 10⁻⁶ F) * 6 V = 24 x 10⁻⁶ C (hoặc 24μC).\"\n}\n```",
+    "latency_seconds": 27.693,
+    "usage": {
+      "prompt_tokens": 269,
+      "completion_tokens": 583,
+      "total_tokens": 852
+    }
+  },
+  {
+    "sample_id": "TD431",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "047.png",
+    "predicted_answer": "2",
+    "predicted_unit": "A",
+    "predicted_explanation": "Mạch gồm hai điện trở R₁ = 2Ω và R₂ = 4Ω mắc nối tiếp. Tổng điện trở của mạch là R_t = R₁ + R₂ = 2Ω + 4Ω = 6Ω. Áp dụng định luật Ohm, cường độ dòng điện I được tính bằng công thức I = U / R_t. Thay số vào: I = 12V / 6Ω = 2A.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 2,\n  \"unit\": \"A\",\n  \"explanation\": \"Mạch gồm hai điện trở R₁ = 2Ω và R₂ = 4Ω mắc nối tiếp. Tổng điện trở của mạch là R_t = R₁ + R₂ = 2Ω + 4Ω = 6Ω. Áp dụng định luật Ohm, cường độ dòng điện I được tính bằng công thức I = U / R_t. Thay số vào: I = 12V / 6Ω = 2A.\"\n}\n```",
+    "latency_seconds": 31.6167,
+    "usage": {
+      "prompt_tokens": 279,
+      "completion_tokens": 667,
+      "total_tokens": 946
+    }
+  },
+  {
+    "sample_id": "TD432",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "047.png",
+    "predicted_answer": "12",
+    "predicted_unit": "W",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 12,\n  \"unit\": \"W\",\n  \"explanation\": \"Công suất tiêu thụ (P) của điện trở được tính bằng công thức $P = I^2 R$, trong đó $I$ là cường độ dòng điện và $R$ là điện trở. Thay số vào công thức: $P = (2 \\, A)^2 \\times 3 \\, \\Omega = 4 \\times 3 = 12 \\, W$.\"\n}\n```",
+    "latency_seconds": 31.727,
+    "usage": {
+      "prompt_tokens": 263,
+      "completion_tokens": 622,
+      "total_tokens": 885
+    }
+  },
+  {
+    "sample_id": "TD433",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "047.png",
+    "predicted_answer": "0.5",
+    "predicted_unit": "A",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 0.5,\n  \"unit\": \"A\",\n  \"explanation\": \"Cường độ dòng điện định mức (I) được tính bằng công thức công suất P = U * I. Từ đó, I =",
+    "latency_seconds": 34.2906,
+    "usage": {
+      "prompt_tokens": 271,
+      "completion_tokens": 700,
+      "total_tokens": 971
+    }
+  },
+  {
+    "sample_id": "TD454",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "102.png",
+    "predicted_answer": "16",
+    "predicted_unit": "μF",
+    "predicted_explanation": "Các tụ điện được mắc song song. Điện dung tương đương của các tụ điện mắc song song được tính bằng tổng các điện dung riêng lẻ: C_tương đương = C1 + C2 + C3 + C4 + C5 = 2μF + 3μF + 4μF + 6μF + 1μF = 16μF.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"16\",\n  \"unit\": \"μF\",\n  \"explanation\": \"Các tụ điện được mắc song song. Điện dung tương đương của các tụ điện mắc song song được tính bằng tổng các điện dung riêng lẻ: C_tương đương = C1 + C2 + C3 + C4 + C5 = 2μF + 3μF + 4μF + 6μF + 1μF = 16μF.\"\n}\n```",
+    "latency_seconds": 34.0766,
+    "usage": {
+      "prompt_tokens": 374,
+      "completion_tokens": 685,
+      "total_tokens": 1059
+    }
+  },
+  {
+    "sample_id": "TD455",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "102.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 36.6265,
+    "usage": {
+      "prompt_tokens": 371,
+      "completion_tokens": 700,
+      "total_tokens": 1071
+    }
+  },
+  {
+    "sample_id": "TD457",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "102.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.016,
+    "usage": {
+      "prompt_tokens": 375,
+      "completion_tokens": 700,
+      "total_tokens": 1075
+    }
+  },
+  {
+    "sample_id": "TD458",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "102.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.1547,
+    "usage": {
+      "prompt_tokens": 376,
+      "completion_tokens": 700,
+      "total_tokens": 1076
+    }
+  },
+  {
+    "sample_id": "TD464",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "104.png",
+    "predicted_answer": "10",
+    "predicted_unit": "μF",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"10\",\n  \"unit\": \"μF\",\n  \"explanation\": \"Vì ba tụ điện C1, C2 và C3 được mắc song song, điện dung tương đương (C_eq) được tính bằng tổng điện dung của các tụ điện riêng lẻ: C_eq = C1 + C2 + C3. C_eq = 2μF + 3μF +",
+    "latency_seconds": 35.3363,
+    "usage": {
+      "prompt_tokens": 384,
+      "completion_tokens": 700,
+      "total_tokens": 1084
+    }
+  },
+  {
+    "sample_id": "TD465",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "104.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.8438,
+    "usage": {
+      "prompt_tokens": 382,
+      "completion_tokens": 700,
+      "total_tokens": 1082
+    }
+  },
+  {
+    "sample_id": "TD466",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "104.png",
+    "predicted_answer": "36",
+    "predicted_unit": "uC",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": \"36\",\n  \"unit\": \"uC\",\n  \"explanation\": \"Vì ba tụ điện C1, C2 và C3 mắc song song, nên điện áp trên mỗi tụ điện bằng hiệu điện thế của nguồn $U$. Điện tích trên tụ C2 được tính theo công thức $Q_2 = C_2 \\cdot U$.",
+    "latency_seconds": 35.1779,
+    "usage": {
+      "prompt_tokens": 382,
+      "completion_tokens": 700,
+      "total_tokens": 1082
+    }
+  },
+  {
+    "sample_id": "TD467",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "104.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.349,
+    "usage": {
+      "prompt_tokens": 382,
+      "completion_tokens": 700,
+      "total_tokens": 1082
+    }
+  },
+  {
+    "sample_id": "TD468",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "104.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.8506,
+    "usage": {
+      "prompt_tokens": 384,
+      "completion_tokens": 700,
+      "total_tokens": 1084
+    }
+  },
+  {
+    "sample_id": "TD469",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "104.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "```json\n",
+    "latency_seconds": 33.1672,
+    "usage": {
+      "prompt_tokens": 386,
+      "completion_tokens": 700,
+      "total_tokens": 1086
+    }
+  },
+  {
+    "sample_id": "RLC037",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.8242,
+    "usage": {
+      "prompt_tokens": 350,
+      "completion_tokens": 700,
+      "total_tokens": 1050
+    }
+  },
+  {
+    "sample_id": "RLC038",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.7306,
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 700,
+      "total_tokens": 1053
+    }
+  },
+  {
+    "sample_id": "RLC039",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.9294,
+    "usage": {
+      "prompt_tokens": 354,
+      "completion_tokens": 700,
+      "total_tokens": 1054
+    }
+  },
+  {
+    "sample_id": "RLC040",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.4248,
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 700,
+      "total_tokens": 1053
+    }
+  },
+  {
+    "sample_id": "RLC041",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.0008,
+    "usage": {
+      "prompt_tokens": 359,
+      "completion_tokens": 700,
+      "total_tokens": 1059
+    }
+  },
+  {
+    "sample_id": "RLC042",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.53,
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 700,
+      "total_tokens": 1049
+    }
+  },
+  {
+    "sample_id": "RLC043",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 31.5958,
+    "usage": {
+      "prompt_tokens": 348,
+      "completion_tokens": 700,
+      "total_tokens": 1048
+    }
+  },
+  {
+    "sample_id": "RLC044",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.9938,
+    "usage": {
+      "prompt_tokens": 348,
+      "completion_tokens": 700,
+      "total_tokens": 1048
+    }
+  },
+  {
+    "sample_id": "RLC045",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 31.5698,
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 700,
+      "total_tokens": 1049
+    }
+  },
+  {
+    "sample_id": "RLC046",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.7766,
+    "usage": {
+      "prompt_tokens": 348,
+      "completion_tokens": 700,
+      "total_tokens": 1048
+    }
+  },
+  {
+    "sample_id": "RLC047",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.5225,
+    "usage": {
+      "prompt_tokens": 348,
+      "completion_tokens": 700,
+      "total_tokens": 1048
+    }
+  },
+  {
+    "sample_id": "RLC048",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.3945,
+    "usage": {
+      "prompt_tokens": 366,
+      "completion_tokens": 700,
+      "total_tokens": 1066
+    }
+  },
+  {
+    "sample_id": "RLC049",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.6436,
+    "usage": {
+      "prompt_tokens": 363,
+      "completion_tokens": 700,
+      "total_tokens": 1063
+    }
+  },
+  {
+    "sample_id": "RLC070",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.1428,
+    "usage": {
+      "prompt_tokens": 343,
+      "completion_tokens": 700,
+      "total_tokens": 1043
+    }
+  },
+  {
+    "sample_id": "RLC072",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.3828,
+    "usage": {
+      "prompt_tokens": 346,
+      "completion_tokens": 700,
+      "total_tokens": 1046
+    }
+  },
+  {
+    "sample_id": "RLC073",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.173,
+    "usage": {
+      "prompt_tokens": 345,
+      "completion_tokens": 700,
+      "total_tokens": 1045
+    }
+  },
+  {
+    "sample_id": "RLC074",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.8173,
+    "usage": {
+      "prompt_tokens": 346,
+      "completion_tokens": 700,
+      "total_tokens": 1046
+    }
+  },
+  {
+    "sample_id": "RLC075",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.1326,
+    "usage": {
+      "prompt_tokens": 344,
+      "completion_tokens": 700,
+      "total_tokens": 1044
+    }
+  },
+  {
+    "sample_id": "RLC076",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.8875,
+    "usage": {
+      "prompt_tokens": 340,
+      "completion_tokens": 700,
+      "total_tokens": 1040
+    }
+  },
+  {
+    "sample_id": "RLC077",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.2329,
+    "usage": {
+      "prompt_tokens": 340,
+      "completion_tokens": 700,
+      "total_tokens": 1040
+    }
+  },
+  {
+    "sample_id": "RLC078",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.6295,
+    "usage": {
+      "prompt_tokens": 340,
+      "completion_tokens": 700,
+      "total_tokens": 1040
+    }
+  },
+  {
+    "sample_id": "RLC079",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.455,
+    "usage": {
+      "prompt_tokens": 341,
+      "completion_tokens": 700,
+      "total_tokens": 1041
+    }
+  },
+  {
+    "sample_id": "RLC080",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.1845,
+    "usage": {
+      "prompt_tokens": 340,
+      "completion_tokens": 700,
+      "total_tokens": 1040
+    }
+  },
+  {
+    "sample_id": "RLC081",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.1421,
+    "usage": {
+      "prompt_tokens": 340,
+      "completion_tokens": 700,
+      "total_tokens": 1040
+    }
+  },
+  {
+    "sample_id": "RLC083",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.7259,
+    "usage": {
+      "prompt_tokens": 354,
+      "completion_tokens": 700,
+      "total_tokens": 1054
+    }
+  },
+  {
+    "sample_id": "RLC084",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.8831,
+    "usage": {
+      "prompt_tokens": 343,
+      "completion_tokens": 700,
+      "total_tokens": 1043
+    }
+  },
+  {
+    "sample_id": "RLC085",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 31.7725,
+    "usage": {
+      "prompt_tokens": 341,
+      "completion_tokens": 700,
+      "total_tokens": 1041
+    }
+  },
+  {
+    "sample_id": "RLC086",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.3888,
+    "usage": {
+      "prompt_tokens": 357,
+      "completion_tokens": 700,
+      "total_tokens": 1057
+    }
+  },
+  {
+    "sample_id": "RLC087",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.2542,
+    "usage": {
+      "prompt_tokens": 345,
+      "completion_tokens": 700,
+      "total_tokens": 1045
+    }
+  },
+  {
+    "sample_id": "RLC088",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "205.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.4831,
+    "usage": {
+      "prompt_tokens": 356,
+      "completion_tokens": 700,
+      "total_tokens": 1056
+    }
+  },
+  {
+    "sample_id": "RLC089",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "207.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 31.5808,
+    "usage": {
+      "prompt_tokens": 356,
+      "completion_tokens": 700,
+      "total_tokens": 1056
+    }
+  },
+  {
+    "sample_id": "RLC090",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "207.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.0281,
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 700,
+      "total_tokens": 1053
+    }
+  },
+  {
+    "sample_id": "RLC091",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "207.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.046,
+    "usage": {
+      "prompt_tokens": 354,
+      "completion_tokens": 700,
+      "total_tokens": 1054
+    }
+  },
+  {
+    "sample_id": "RLC092",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "207.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.6273,
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 700,
+      "total_tokens": 1053
+    }
+  },
+  {
+    "sample_id": "RLC093",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "207.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 31.838,
+    "usage": {
+      "prompt_tokens": 366,
+      "completion_tokens": 700,
+      "total_tokens": 1066
+    }
+  },
+  {
+    "sample_id": "RLC094",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "207.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.5984,
+    "usage": {
+      "prompt_tokens": 355,
+      "completion_tokens": 700,
+      "total_tokens": 1055
+    }
+  },
+  {
+    "sample_id": "RLC096",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "207.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.7144,
+    "usage": {
+      "prompt_tokens": 354,
+      "completion_tokens": 700,
+      "total_tokens": 1054
+    }
+  },
+  {
+    "sample_id": "RLC097",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "207.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.5377,
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 700,
+      "total_tokens": 1053
+    }
+  },
+  {
+    "sample_id": "RLC098",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "207.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.1017,
+    "usage": {
+      "prompt_tokens": 384,
+      "completion_tokens": 700,
+      "total_tokens": 1084
+    }
+  },
+  {
+    "sample_id": "RLC100",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "207.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 36.3442,
+    "usage": {
+      "prompt_tokens": 383,
+      "completion_tokens": 700,
+      "total_tokens": 1083
+    }
+  },
+  {
+    "sample_id": "DLO001",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "227.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 37.0418,
+    "usage": {
+      "prompt_tokens": 347,
+      "completion_tokens": 700,
+      "total_tokens": 1047
+    }
+  },
+  {
+    "sample_id": "DLO017",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "233.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 30.9199,
+    "usage": {
+      "prompt_tokens": 290,
+      "completion_tokens": 700,
+      "total_tokens": 990
+    }
+  },
+  {
+    "sample_id": "DLO018",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "233.png",
+    "predicted_answer": "12",
+    "predicted_unit": "V",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 12,\n  \"unit\": \"V\",\n  \"explanation\": \"Mạch điện là mạch nối tiếp. Tổng điện trở $R_{tổng} = R_1 + R_2 + R_3 + R_4 + R_5 = 3 + 2 + 3 + 1 + 4 = 13\\\\Omega$. Cường độ dòng điện qua mạch chính là $I = 3A",
+    "latency_seconds": 33.731,
+    "usage": {
+      "prompt_tokens": 289,
+      "completion_tokens": 700,
+      "total_tokens": 989
+    }
+  },
+  {
+    "sample_id": "DLO019",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "233.png",
+    "predicted_answer": "3",
+    "predicted_unit": "V",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 3,\n  \"unit\": \"V\",\n  \"explanation\": \"Vì các điện trở R1, R2, R3, R4, R5 mắc nối tiếp, cường độ dòng điện qua",
+    "latency_seconds": 33.8691,
+    "usage": {
+      "prompt_tokens": 289,
+      "completion_tokens": 700,
+      "total_tokens": 989
+    }
+  },
+  {
+    "sample_id": "DLO020",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "233.png",
+    "predicted_answer": "9",
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 9,\n  \"unit\": \"\",\n  \"explanation\": \"Mạch điện là mạch nối tiếp. Cường độ dòng điện qua mạch chính là $I = 3A$. Điện áp $U_3$ trên điện trở $R_3$ được tính theo định luật Ohm: $U_3 = I \\cdot R_3$. Thay số vào, ta có $U_3 = 3A \\cdot 3\\Omega = 9V$.\"\n}\n```",
+    "latency_seconds": 27.2438,
+    "usage": {
+      "prompt_tokens": 289,
+      "completion_tokens": 533,
+      "total_tokens": 822
+    }
+  },
+  {
+    "sample_id": "DLO021",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "233.png",
+    "predicted_answer": "6",
+    "predicted_unit": "V",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 6,\n  \"unit\": \"V\",\n  \"explanation\": \"Mạch điện là mạch nối tiếp. Cường độ dòng điện qua tất cả các điện trở là như nhau, $I = 3A$. Điện áp $U_2$ qua điện trở $R_2$ được tính theo định luật Ohm: $U_2 = I \\times R_2$. Thay số: $U_2 = 3A \\times 2\\Omega = 6V$.\"\n}\n```",
+    "latency_seconds": 33.8582,
+    "usage": {
+      "prompt_tokens": 289,
+      "completion_tokens": 683,
+      "total_tokens": 972
+    }
+  },
+  {
+    "sample_id": "DLO022",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "233.png",
+    "predicted_answer": "9",
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 9,\n  \"unit\": \"\",\n  \"explanation\": \"Mạch điện là mạch nối tiếp. Cường độ dòng điện qua tất cả các điện trở là $I = 3A$. Điện trở $R1 = 3\\\\Omega$. Điện áp $",
+    "latency_seconds": 34.2776,
+    "usage": {
+      "prompt_tokens": 289,
+      "completion_tokens": 700,
+      "total_tokens": 989
+    }
+  },
+  {
+    "sample_id": "RLC101",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "207.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.751,
+    "usage": {
+      "prompt_tokens": 383,
+      "completion_tokens": 700,
+      "total_tokens": 1083
+    }
+  },
+  {
+    "sample_id": "RLC102",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "207.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.6982,
+    "usage": {
+      "prompt_tokens": 367,
+      "completion_tokens": 700,
+      "total_tokens": 1067
+    }
+  },
+  {
+    "sample_id": "RLC119",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.7624,
+    "usage": {
+      "prompt_tokens": 346,
+      "completion_tokens": 700,
+      "total_tokens": 1046
+    }
+  },
+  {
+    "sample_id": "RLC120",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.3234,
+    "usage": {
+      "prompt_tokens": 347,
+      "completion_tokens": 700,
+      "total_tokens": 1047
+    }
+  },
+  {
+    "sample_id": "RLC121",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.1156,
+    "usage": {
+      "prompt_tokens": 346,
+      "completion_tokens": 700,
+      "total_tokens": 1046
+    }
+  },
+  {
+    "sample_id": "RLC122",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.8957,
+    "usage": {
+      "prompt_tokens": 345,
+      "completion_tokens": 700,
+      "total_tokens": 1045
+    }
+  },
+  {
+    "sample_id": "RLC123",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.6429,
+    "usage": {
+      "prompt_tokens": 346,
+      "completion_tokens": 700,
+      "total_tokens": 1046
+    }
+  },
+  {
+    "sample_id": "RLC124",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.706,
+    "usage": {
+      "prompt_tokens": 347,
+      "completion_tokens": 700,
+      "total_tokens": 1047
+    }
+  },
+  {
+    "sample_id": "RLC125",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.3795,
+    "usage": {
+      "prompt_tokens": 346,
+      "completion_tokens": 700,
+      "total_tokens": 1046
+    }
+  },
+  {
+    "sample_id": "RLC126",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.4311,
+    "usage": {
+      "prompt_tokens": 346,
+      "completion_tokens": 700,
+      "total_tokens": 1046
+    }
+  },
+  {
+    "sample_id": "RLC127",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": "96",
+    "predicted_unit": "V",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "```json\n{\n  \"answer\": 96,\n  \"unit\": \"V\",\n  \"explanation\": \"Trong mạch điện xoay chiều, điện áp hiệu dụng trên điện trở R ($U_R$) được tính bằng công thức $U_R = I \\cdot R$, trong đó $I$ là cường độ dòng điện hiệu",
+    "latency_seconds": 34.3294,
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 700,
+      "total_tokens": 1080
+    }
+  },
+  {
+    "sample_id": "RLC129",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.1038,
+    "usage": {
+      "prompt_tokens": 377,
+      "completion_tokens": 700,
+      "total_tokens": 1077
+    }
+  },
+  {
+    "sample_id": "RLC130",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.3027,
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 700,
+      "total_tokens": 1049
+    }
+  },
+  {
+    "sample_id": "RLC131",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 38.4226,
+    "usage": {
+      "prompt_tokens": 347,
+      "completion_tokens": 700,
+      "total_tokens": 1047
+    }
+  },
+  {
+    "sample_id": "RLC132",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.3722,
+    "usage": {
+      "prompt_tokens": 352,
+      "completion_tokens": 700,
+      "total_tokens": 1052
+    }
+  },
+  {
+    "sample_id": "RLC133",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.258,
+    "usage": {
+      "prompt_tokens": 352,
+      "completion_tokens": 700,
+      "total_tokens": 1052
+    }
+  },
+  {
+    "sample_id": "RLC134",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 37.5168,
+    "usage": {
+      "prompt_tokens": 379,
+      "completion_tokens": 700,
+      "total_tokens": 1079
+    }
+  },
+  {
+    "sample_id": "RLC135",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.5694,
+    "usage": {
+      "prompt_tokens": 377,
+      "completion_tokens": 700,
+      "total_tokens": 1077
+    }
+  },
+  {
+    "sample_id": "RLC136",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "273.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.1526,
+    "usage": {
+      "prompt_tokens": 360,
+      "completion_tokens": 700,
+      "total_tokens": 1060
+    }
+  },
+  {
+    "sample_id": "RLC138",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.4089,
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 700,
+      "total_tokens": 1053
+    }
+  },
+  {
+    "sample_id": "RLC139",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.4181,
+    "usage": {
+      "prompt_tokens": 358,
+      "completion_tokens": 700,
+      "total_tokens": 1058
+    }
+  },
+  {
+    "sample_id": "RLC140",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.3721,
+    "usage": {
+      "prompt_tokens": 357,
+      "completion_tokens": 700,
+      "total_tokens": 1057
+    }
+  },
+  {
+    "sample_id": "RLC141",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.9569,
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 700,
+      "total_tokens": 1053
+    }
+  },
+  {
+    "sample_id": "RLC142",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.5067,
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 700,
+      "total_tokens": 1053
+    }
+  },
+  {
+    "sample_id": "RLC143",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.8798,
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 700,
+      "total_tokens": 1053
+    }
+  },
+  {
+    "sample_id": "RLC144",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.0228,
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 700,
+      "total_tokens": 1053
+    }
+  },
+  {
+    "sample_id": "RLC145",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.5946,
+    "usage": {
+      "prompt_tokens": 358,
+      "completion_tokens": 700,
+      "total_tokens": 1058
+    }
+  },
+  {
+    "sample_id": "RLC147",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.4779,
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 700,
+      "total_tokens": 1053
+    }
+  },
+  {
+    "sample_id": "RLC148",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.5266,
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 700,
+      "total_tokens": 1053
+    }
+  },
+  {
+    "sample_id": "RLC149",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.759,
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 700,
+      "total_tokens": 1053
+    }
+  },
+  {
+    "sample_id": "RLC150",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.4165,
+    "usage": {
+      "prompt_tokens": 361,
+      "completion_tokens": 700,
+      "total_tokens": 1061
+    }
+  },
+  {
+    "sample_id": "RLC151",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.3686,
+    "usage": {
+      "prompt_tokens": 354,
+      "completion_tokens": 700,
+      "total_tokens": 1054
+    }
+  },
+  {
+    "sample_id": "RLC152",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 37.5815,
+    "usage": {
+      "prompt_tokens": 355,
+      "completion_tokens": 700,
+      "total_tokens": 1055
+    }
+  },
+  {
+    "sample_id": "RLC153",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.5834,
+    "usage": {
+      "prompt_tokens": 369,
+      "completion_tokens": 700,
+      "total_tokens": 1069
+    }
+  },
+  {
+    "sample_id": "RLC154",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 40.2181,
+    "usage": {
+      "prompt_tokens": 368,
+      "completion_tokens": 700,
+      "total_tokens": 1068
+    }
+  },
+  {
+    "sample_id": "RLC155",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.7557,
+    "usage": {
+      "prompt_tokens": 367,
+      "completion_tokens": 700,
+      "total_tokens": 1067
+    }
+  },
+  {
+    "sample_id": "RLC157",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.5814,
+    "usage": {
+      "prompt_tokens": 366,
+      "completion_tokens": 700,
+      "total_tokens": 1066
+    }
+  },
+  {
+    "sample_id": "RLC158",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "274.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.3318,
+    "usage": {
+      "prompt_tokens": 360,
+      "completion_tokens": 700,
+      "total_tokens": 1060
+    }
+  },
+  {
+    "sample_id": "RLC307",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.3156,
+    "usage": {
+      "prompt_tokens": 320,
+      "completion_tokens": 700,
+      "total_tokens": 1020
+    }
+  },
+  {
+    "sample_id": "RLC308",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.5547,
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 700,
+      "total_tokens": 1016
+    }
+  },
+  {
+    "sample_id": "RLC309",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.0727,
+    "usage": {
+      "prompt_tokens": 318,
+      "completion_tokens": 700,
+      "total_tokens": 1018
+    }
+  },
+  {
+    "sample_id": "RLC310",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.7499,
+    "usage": {
+      "prompt_tokens": 322,
+      "completion_tokens": 700,
+      "total_tokens": 1022
+    }
+  },
+  {
+    "sample_id": "RLC311",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.7103,
+    "usage": {
+      "prompt_tokens": 321,
+      "completion_tokens": 700,
+      "total_tokens": 1021
+    }
+  },
+  {
+    "sample_id": "RLC312",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.3983,
+    "usage": {
+      "prompt_tokens": 317,
+      "completion_tokens": 700,
+      "total_tokens": 1017
+    }
+  },
+  {
+    "sample_id": "RLC313",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.6461,
+    "usage": {
+      "prompt_tokens": 317,
+      "completion_tokens": 700,
+      "total_tokens": 1017
+    }
+  },
+  {
+    "sample_id": "RLC314",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 31.7872,
+    "usage": {
+      "prompt_tokens": 318,
+      "completion_tokens": 700,
+      "total_tokens": 1018
+    }
+  },
+  {
+    "sample_id": "RLC315",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.1999,
+    "usage": {
+      "prompt_tokens": 322,
+      "completion_tokens": 700,
+      "total_tokens": 1022
+    }
+  },
+  {
+    "sample_id": "RLC316",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.5955,
+    "usage": {
+      "prompt_tokens": 322,
+      "completion_tokens": 700,
+      "total_tokens": 1022
+    }
+  },
+  {
+    "sample_id": "RLC317",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.1846,
+    "usage": {
+      "prompt_tokens": 317,
+      "completion_tokens": 700,
+      "total_tokens": 1017
+    }
+  },
+  {
+    "sample_id": "RLC318",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.2373,
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 700,
+      "total_tokens": 1016
+    }
+  },
+  {
+    "sample_id": "RLC319",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.4819,
+    "usage": {
+      "prompt_tokens": 316,
+      "completion_tokens": 700,
+      "total_tokens": 1016
+    }
+  },
+  {
+    "sample_id": "RLC320",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.584,
+    "usage": {
+      "prompt_tokens": 327,
+      "completion_tokens": 700,
+      "total_tokens": 1027
+    }
+  },
+  {
+    "sample_id": "RLC321",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.1416,
+    "usage": {
+      "prompt_tokens": 324,
+      "completion_tokens": 700,
+      "total_tokens": 1024
+    }
+  },
+  {
+    "sample_id": "RLC322",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.2253,
+    "usage": {
+      "prompt_tokens": 324,
+      "completion_tokens": 700,
+      "total_tokens": 1024
+    }
+  },
+  {
+    "sample_id": "RLC323",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.7969,
+    "usage": {
+      "prompt_tokens": 322,
+      "completion_tokens": 700,
+      "total_tokens": 1022
+    }
+  },
+  {
+    "sample_id": "RLC324",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.5704,
+    "usage": {
+      "prompt_tokens": 318,
+      "completion_tokens": 700,
+      "total_tokens": 1018
+    }
+  },
+  {
+    "sample_id": "RLC325",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.3454,
+    "usage": {
+      "prompt_tokens": 328,
+      "completion_tokens": 700,
+      "total_tokens": 1028
+    }
+  },
+  {
+    "sample_id": "RLC326",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.4328,
+    "usage": {
+      "prompt_tokens": 327,
+      "completion_tokens": 700,
+      "total_tokens": 1027
+    }
+  },
+  {
+    "sample_id": "RLC327",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 38.1445,
+    "usage": {
+      "prompt_tokens": 324,
+      "completion_tokens": 700,
+      "total_tokens": 1024
+    }
+  },
+  {
+    "sample_id": "RLC328",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 36.1705,
+    "usage": {
+      "prompt_tokens": 323,
+      "completion_tokens": 700,
+      "total_tokens": 1023
+    }
+  },
+  {
+    "sample_id": "RLC329",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.3498,
+    "usage": {
+      "prompt_tokens": 326,
+      "completion_tokens": 700,
+      "total_tokens": 1026
+    }
+  },
+  {
+    "sample_id": "RLC330",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.5828,
+    "usage": {
+      "prompt_tokens": 325,
+      "completion_tokens": 700,
+      "total_tokens": 1025
+    }
+  },
+  {
+    "sample_id": "RLC331",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 36.5492,
+    "usage": {
+      "prompt_tokens": 325,
+      "completion_tokens": 700,
+      "total_tokens": 1025
+    }
+  },
+  {
+    "sample_id": "RLC332",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.4255,
+    "usage": {
+      "prompt_tokens": 325,
+      "completion_tokens": 700,
+      "total_tokens": 1025
+    }
+  },
+  {
+    "sample_id": "RLC333",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.2821,
+    "usage": {
+      "prompt_tokens": 328,
+      "completion_tokens": 700,
+      "total_tokens": 1028
+    }
+  },
+  {
+    "sample_id": "RLC334",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.0895,
+    "usage": {
+      "prompt_tokens": 328,
+      "completion_tokens": 700,
+      "total_tokens": 1028
+    }
+  },
+  {
+    "sample_id": "RLC335",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.3669,
+    "usage": {
+      "prompt_tokens": 328,
+      "completion_tokens": 700,
+      "total_tokens": 1028
+    }
+  },
+  {
+    "sample_id": "RLC336",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.7635,
+    "usage": {
+      "prompt_tokens": 326,
+      "completion_tokens": 700,
+      "total_tokens": 1026
+    }
+  },
+  {
+    "sample_id": "RLC337",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.9797,
+    "usage": {
+      "prompt_tokens": 325,
+      "completion_tokens": 700,
+      "total_tokens": 1025
+    }
+  },
+  {
+    "sample_id": "RLC338",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.4054,
+    "usage": {
+      "prompt_tokens": 325,
+      "completion_tokens": 700,
+      "total_tokens": 1025
+    }
+  },
+  {
+    "sample_id": "RLC339",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.7701,
+    "usage": {
+      "prompt_tokens": 326,
+      "completion_tokens": 700,
+      "total_tokens": 1026
+    }
+  },
+  {
+    "sample_id": "RLC340",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "280.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.5675,
+    "usage": {
+      "prompt_tokens": 328,
+      "completion_tokens": 700,
+      "total_tokens": 1028
+    }
+  },
+  {
+    "sample_id": "RLC371",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.5402,
+    "usage": {
+      "prompt_tokens": 374,
+      "completion_tokens": 700,
+      "total_tokens": 1074
+    }
+  },
+  {
+    "sample_id": "RLC372",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.3774,
+    "usage": {
+      "prompt_tokens": 371,
+      "completion_tokens": 700,
+      "total_tokens": 1071
+    }
+  },
+  {
+    "sample_id": "RLC373",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.8983,
+    "usage": {
+      "prompt_tokens": 374,
+      "completion_tokens": 700,
+      "total_tokens": 1074
+    }
+  },
+  {
+    "sample_id": "RLC374",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.2566,
+    "usage": {
+      "prompt_tokens": 371,
+      "completion_tokens": 700,
+      "total_tokens": 1071
+    }
+  },
+  {
+    "sample_id": "RLC375",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.8134,
+    "usage": {
+      "prompt_tokens": 373,
+      "completion_tokens": 700,
+      "total_tokens": 1073
+    }
+  },
+  {
+    "sample_id": "RLC376",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.9571,
+    "usage": {
+      "prompt_tokens": 373,
+      "completion_tokens": 700,
+      "total_tokens": 1073
+    }
+  },
+  {
+    "sample_id": "RLC377",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.9802,
+    "usage": {
+      "prompt_tokens": 370,
+      "completion_tokens": 700,
+      "total_tokens": 1070
+    }
+  },
+  {
+    "sample_id": "RLC378",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.5853,
+    "usage": {
+      "prompt_tokens": 370,
+      "completion_tokens": 700,
+      "total_tokens": 1070
+    }
+  },
+  {
+    "sample_id": "RLC379",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.6806,
+    "usage": {
+      "prompt_tokens": 370,
+      "completion_tokens": 700,
+      "total_tokens": 1070
+    }
+  },
+  {
+    "sample_id": "RLC380",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 9.6024,
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0
+    }
+  },
+  {
+    "sample_id": "RLC381",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "status": "api_error",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "prediction_raw": "",
+    "parse_status": "failed",
+    "latency_seconds": 0.1098,
+    "error": "BadRequestError: Error code: 400 - {'error': {'message': 'Failed to tokenize prompt', 'type': 'invalid_request_error', 'param': None, 'code': None}}",
+    "error_cause": "None"
+  },
+  {
+    "sample_id": "RLC382",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 7.0013,
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0
+    }
+  },
+  {
+    "sample_id": "RLC383",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 51.2167,
+    "usage": {
+      "prompt_tokens": 373,
+      "completion_tokens": 700,
+      "total_tokens": 1073
+    }
+  },
+  {
+    "sample_id": "RLC384",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 37.2319,
+    "usage": {
+      "prompt_tokens": 375,
+      "completion_tokens": 700,
+      "total_tokens": 1075
+    }
+  },
+  {
+    "sample_id": "RLC385",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.5462,
+    "usage": {
+      "prompt_tokens": 375,
+      "completion_tokens": 700,
+      "total_tokens": 1075
+    }
+  },
+  {
+    "sample_id": "RLC386",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 37.5644,
+    "usage": {
+      "prompt_tokens": 372,
+      "completion_tokens": 700,
+      "total_tokens": 1072
+    }
+  },
+  {
+    "sample_id": "RLC387",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.2208,
+    "usage": {
+      "prompt_tokens": 372,
+      "completion_tokens": 700,
+      "total_tokens": 1072
+    }
+  },
+  {
+    "sample_id": "RLC388",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.1496,
+    "usage": {
+      "prompt_tokens": 372,
+      "completion_tokens": 700,
+      "total_tokens": 1072
+    }
+  },
+  {
+    "sample_id": "RLC389",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.4117,
+    "usage": {
+      "prompt_tokens": 381,
+      "completion_tokens": 700,
+      "total_tokens": 1081
+    }
+  },
+  {
+    "sample_id": "RLC390",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 36.7324,
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 700,
+      "total_tokens": 1080
+    }
+  },
+  {
+    "sample_id": "RLC391",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 37.907,
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 700,
+      "total_tokens": 1080
+    }
+  },
+  {
+    "sample_id": "RLC392",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 37.0375,
+    "usage": {
+      "prompt_tokens": 379,
+      "completion_tokens": 700,
+      "total_tokens": 1079
+    }
+  },
+  {
+    "sample_id": "RLC393",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.3242,
+    "usage": {
+      "prompt_tokens": 384,
+      "completion_tokens": 700,
+      "total_tokens": 1084
+    }
+  },
+  {
+    "sample_id": "RLC394",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.9073,
+    "usage": {
+      "prompt_tokens": 381,
+      "completion_tokens": 700,
+      "total_tokens": 1081
+    }
+  },
+  {
+    "sample_id": "RLC395",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.6497,
+    "usage": {
+      "prompt_tokens": 379,
+      "completion_tokens": 700,
+      "total_tokens": 1079
+    }
+  },
+  {
+    "sample_id": "RLC396",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 36.0925,
+    "usage": {
+      "prompt_tokens": 383,
+      "completion_tokens": 700,
+      "total_tokens": 1083
+    }
+  },
+  {
+    "sample_id": "RLC397",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.9308,
+    "usage": {
+      "prompt_tokens": 381,
+      "completion_tokens": 700,
+      "total_tokens": 1081
+    }
+  },
+  {
+    "sample_id": "RLC398",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 33.9182,
+    "usage": {
+      "prompt_tokens": 386,
+      "completion_tokens": 700,
+      "total_tokens": 1086
+    }
+  },
+  {
+    "sample_id": "RLC399",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 36.8622,
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 700,
+      "total_tokens": 1080
+    }
+  },
+  {
+    "sample_id": "RLC400",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.9806,
+    "usage": {
+      "prompt_tokens": 379,
+      "completion_tokens": 700,
+      "total_tokens": 1079
+    }
+  },
+  {
+    "sample_id": "RLC401",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 32.3613,
+    "usage": {
+      "prompt_tokens": 379,
+      "completion_tokens": 700,
+      "total_tokens": 1079
+    }
+  },
+  {
+    "sample_id": "RLC402",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 36.3306,
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 700,
+      "total_tokens": 1080
+    }
+  },
+  {
+    "sample_id": "RLC403",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.2552,
+    "usage": {
+      "prompt_tokens": 383,
+      "completion_tokens": 700,
+      "total_tokens": 1083
+    }
+  },
+  {
+    "sample_id": "RLC404",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 35.8344,
+    "usage": {
+      "prompt_tokens": 378,
+      "completion_tokens": 700,
+      "total_tokens": 1078
+    }
+  },
+  {
+    "sample_id": "RLC405",
+    "split": "validation",
+    "model": "gemma4:e2b",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "282.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 34.7204,
+    "usage": {
+      "prompt_tokens": 379,
+      "completion_tokens": 700,
+      "total_tokens": 1079
+    }
+  }
+]

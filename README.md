@@ -32,7 +32,8 @@ This package continues the Physics QA project from Phase 1. The current purpose 
 │   ├── create_candidate_dataset.py
 │   ├── audit_dataset.py
 │   ├── create_splits.py
-│   ├── baseline_openai.py
+│   ├── baseline.py
+│   ├── multimodal_fuzzy/providers.py
 │   └── evaluate_predictions.py
 └── tests/
 ```
@@ -46,7 +47,17 @@ python -m pip install -r requirements.txt
 Copy-Item .env.example .env
 ```
 
-Open `.env` and set `OPENAI_API_KEY` and `OPENAI_MODEL` to an available **vision-capable** model. `OPENAI_BASE_URL` is optional for an OpenAI-compatible endpoint. Do not commit the `.env` file or share API keys.
+Choose the backend in `.env` with `LLM_PROVIDER`, `LLM_MODE`, and `LLM_MODEL`. The runner uses the OpenAI Python client against compatible chat endpoints; local Ollama uses no API key. Set only the key for the selected remote provider, and never commit `.env` or share keys.
+
+| Configuration | Required settings |
+| --- | --- |
+| OpenAI | `LLM_PROVIDER=openai`, `OPENAI_API_KEY`, `OPENAI_MODEL` or `LLM_MODEL` |
+| Gemini | `LLM_PROVIDER=gemini`, `GEMINI_API_KEY`, `GEMINI_MODEL` or `LLM_MODEL` |
+| OpenRouter | `LLM_PROVIDER=openrouter`, `OPENROUTER_API_KEY`, `OPENROUTER_MODEL` or `LLM_MODEL` |
+| Ollama local | `LLM_PROVIDER=ollama`, `LLM_MODE=local`, `LLM_MODEL` (defaults to `qwen3-vl:4b-instruct`) |
+| Ollama Cloud API | `LLM_PROVIDER=ollama`, `LLM_MODE=cloud`, `OLLAMA_API_KEY`, `OLLAMA_CLOUD_MODEL` or `LLM_MODEL` |
+
+`LLM_BASE_URL` optionally overrides the endpoint. For Ollama Cloud through a locally signed-in Ollama server, run `ollama signin`, set `LLM_MODE=cloud`, `LLM_MODEL=gemma4:cloud`, and `LLM_BASE_URL=http://localhost:11434/v1`; no API key is needed in that mode. Direct Cloud API calls use `https://ollama.com/v1`, an Ollama key, and the model identifier returned by Ollama's cloud API (for example `gemma4:31b`, without the CLI `:cloud` suffix). The runner does not sign in or create keys.
 
 ## Rebuild candidate and splits after a data decision
 
@@ -64,14 +75,26 @@ Re-read the new audit summary before using a test split, then regenerate the man
 ## Run B0 on a small validation pilot
 
 ```powershell
-python src/baseline_openai.py --split validation --limit 20 --output data/predictions/b0_validation_pilot.jsonl
-python src/evaluate_predictions.py --predictions data/predictions/b0_validation_pilot.jsonl --split validation
+python src/baseline.py --provider ollama --mode local --model qwen3-vl:4b-instruct --split validation --limit 20 --output data/predictions/b0_ollama_qwen3vl4b_validation.jsonl
+python src/evaluate_predictions.py --predictions data/predictions/b0_ollama_qwen3vl4b_validation.jsonl --split validation
 ```
+
+Provider and model can also be selected in `.env`. CLI options override environment settings. Examples:
+
+```powershell
+python src/baseline.py --provider openai --model gpt-4o-mini --split validation --limit 20 --output data/predictions/openai_validation.jsonl
+python src/baseline.py --provider gemini --model gemini-3.8-flash --split validation --limit 20 --output data/predictions/gemini_validation.jsonl
+python src/baseline.py --provider openrouter --model provider/model-name --split validation --limit 20 --output data/predictions/openrouter_validation.jsonl
+python src/baseline.py --provider ollama --mode local --model gemma4:e2b --split validation --limit 20 --output data/predictions/ollama_gemma4e2b_validation.jsonl
+python src/baseline.py --provider ollama-cloud --model gemma4:31b --split validation --limit 20 --output data/predictions/ollama_cloud_validation.jsonl
+```
+
+Use a vision-capable model for this text+image dataset. For local Ollama, pull the model first, for example `ollama pull qwen3-vl:4b-instruct`. Local inference has no API quota; speed depends on available GPU/CPU and memory. Keep separate output files for different providers/models.
 
 Use validation to debug output parsing and freeze the prompt. After configuration is frozen, run the test set once:
 
 ```powershell
-python src/baseline_openai.py --split test --output data/predictions/b0_test_frozen.jsonl
+python src/baseline.py --split test --output data/predictions/b0_test_frozen.jsonl
 python src/evaluate_predictions.py --predictions data/predictions/b0_test_frozen.jsonl --split test
 ```
 
@@ -84,7 +107,7 @@ To resume an interrupted run, use the same output file with `--resume`. If repla
 ## No-key smoke test
 
 ```powershell
-python src/baseline_openai.py --split validation --limit 3 --smoke-test-from-gold --output data/predictions/smoke_test_from_gold.jsonl
+python src/baseline.py --split validation --limit 3 --smoke-test-from-gold --output data/predictions/smoke_test_from_gold.jsonl
 python -m unittest discover -s tests -v
 ```
 

@@ -48,17 +48,17 @@ python -m pip install -r requirements.txt
 Copy-Item .env.example .env
 ```
 
-Set a vision-capable model and credentials in `.env`, then start with a small validation pilot:
+Select a vision-capable provider/model in `.env` or pass it on the command line. For example, start with a local Ollama pilot:
 
 ```powershell
-python src/baseline_openai.py --split validation --limit 20 --output data/predictions/b0_validation_pilot.jsonl
-python src/evaluate_predictions.py --predictions data/predictions/b0_validation_pilot.jsonl --split validation
+python src/baseline.py --provider ollama --mode local --model qwen3-vl:4b-instruct --split validation --limit 20 --output data/predictions/b0_ollama_qwen3vl4b_validation.jsonl
+python src/evaluate_predictions.py --predictions data/predictions/b0_ollama_qwen3vl4b_validation.jsonl --split validation
 ```
 
 Once the model/prompt are stable, run the full validation split, review failures and freeze the protocol. Only then run the test set:
 
 ```powershell
-python src/baseline_openai.py --split test --output data/predictions/b0_test_frozen.jsonl
+python src/baseline.py --split test --output data/predictions/b0_test_frozen.jsonl
 python src/evaluate_predictions.py --predictions data/predictions/b0_test_frozen.jsonl --split test
 ```
 
@@ -67,7 +67,7 @@ If a run is interrupted, use the same output path and `--resume`. If a file exis
 ## Smoke-test command (not research results)
 
 ```powershell
-python src/baseline_openai.py --split validation --limit 3 --smoke-test-from-gold --output data/predictions/smoke_test_from_gold.jsonl
+python src/baseline.py --split validation --limit 3 --smoke-test-from-gold --output data/predictions/smoke_test_from_gold.jsonl
 python -m unittest discover -s tests -v
 ```
 

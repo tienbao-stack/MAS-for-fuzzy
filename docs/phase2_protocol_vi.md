@@ -48,17 +48,17 @@ python -m pip install -r requirements.txt
 Copy-Item .env.example .env
 ```
 
-Đặt thông tin xác thực và tên model có khả năng xử lý hình ảnh trong `.env`, rồi bắt đầu bằng một pilot nhỏ trên validation:
+Chọn provider/model có khả năng xử lý hình ảnh trong `.env` hoặc truyền qua CLI. Ví dụ bắt đầu bằng pilot Ollama local:
 
 ```powershell
-python src/baseline_openai.py --split validation --limit 20 --output data/predictions/b0_validation_pilot.jsonl
-python src/evaluate_predictions.py --predictions data/predictions/b0_validation_pilot.jsonl --split validation
+python src/baseline.py --provider ollama --mode local --model qwen3-vl:4b-instruct --split validation --limit 20 --output data/predictions/b0_ollama_qwen3vl4b_validation.jsonl
+python src/evaluate_predictions.py --predictions data/predictions/b0_ollama_qwen3vl4b_validation.jsonl --split validation
 ```
 
 Khi model và prompt đã ổn định, chạy toàn bộ validation, xem xét các lỗi rồi cố định protocol. Chỉ sau đó mới chạy tập test:
 
 ```powershell
-python src/baseline_openai.py --split test --output data/predictions/b0_test_frozen.jsonl
+python src/baseline.py --split test --output data/predictions/b0_test_frozen.jsonl
 python src/evaluate_predictions.py --predictions data/predictions/b0_test_frozen.jsonl --split test
 ```
 
@@ -67,7 +67,7 @@ Nếu lượt chạy bị gián đoạn, dùng cùng đường dẫn đầu ra v
 ## Lệnh smoke test (không phải kết quả nghiên cứu)
 
 ```powershell
-python src/baseline_openai.py --split validation --limit 3 --smoke-test-from-gold --output data/predictions/smoke_test_from_gold.jsonl
+python src/baseline.py --split validation --limit 3 --smoke-test-from-gold --output data/predictions/smoke_test_from_gold.jsonl
 python -m unittest discover -s tests -v
 ```
 

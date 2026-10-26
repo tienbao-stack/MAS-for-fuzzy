@@ -1,0 +1,402 @@
+[
+  {
+    "sample_id": "DLO163",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "012.png",
+    "predicted_answer": "45",
+    "predicted_unit": "W",
+    "predicted_explanation": "Sơ đồ mạch cho thấy R1 = 1 Ω, nhưng đề bài cho R1 = 20 Ω. Do đó, có mâu thuẫn giữa hình vẽ và dữ kiện đề bài. Dựa vào dữ kiện đề bài (I = 1.5 A, R1 = 20 Ω), công suất tiêu thụ trên R1 là P = I² × R1 = (1.5)² × 20 = 45 W.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "{\n  \"answer\": 45,\n  \"unit\": \"W\",\n  \"explanation\": \"Sơ đồ mạch cho thấy R1 = 1 Ω, nhưng đề bài cho R1 = 20 Ω. Do đó, có mâu thuẫn giữa hình vẽ và dữ kiện đề bài. Dựa vào dữ kiện đề bài (I = 1.5 A, R1 = 20 Ω), công suất tiêu thụ trên R1 là P = I² × R1 = (1.5)² × 20 = 45 W.\"\n}",
+    "latency_seconds": 60.3287,
+    "usage": {
+      "prompt_tokens": 1313,
+      "completion_tokens": 125,
+      "total_tokens": 1438
+    }
+  },
+  {
+    "sample_id": "DLO164",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "012.png",
+    "predicted_answer": "110",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "Sơ đồ mạch cho thấy ba điện trở R1, R2, Rb được nối tiếp. Tuy nhiên, nhãn trên sơ đồ ghi \"R1 1 Ω\" nhưng đề bài cho R1 = 20 Ω, nên có sự mâu thuẫn. Do đó, không thể tính toán chính xác điện trở tương đương nếu không có dữ liệu phù hợp. Tuy nhiên, nếu giả định rằng các giá trị trong đề bài là chính xác và sơ đồ là minh họa cho các giá trị đó (thay vì nhãn ghi sai), thì điện trở tương đương là R1 + R2 + Rb = 20 + 30 + 60 = 110 Ω.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "{\n  \"answer\": \"110\",\n  \"unit\": \"Ω\",\n  \"explanation\": \"Sơ đồ mạch cho thấy ba điện trở R1, R2, Rb được nối tiếp. Tuy nhiên, nhãn trên sơ đồ ghi \\\"R1 1 Ω\\\" nhưng đề bài cho R1 = 20 Ω, nên có sự mâu thuẫn. Do đó, không thể tính toán chính xác điện trở tương đương nếu không có dữ liệu phù hợp. Tuy nhiên, nếu giả định rằng các giá trị trong đề bài là chính xác và sơ đồ là minh họa cho các giá trị đó (thay vì nhãn ghi sai), thì điện trở tương đương là R1 + R2 + Rb = 20 + 30 + 60 = 110 Ω.\"\n}",
+    "latency_seconds": 73.9994,
+    "usage": {
+      "prompt_tokens": 1323,
+      "completion_tokens": 179,
+      "total_tokens": 1502
+    }
+  },
+  {
+    "sample_id": "DLO166",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "012.png",
+    "predicted_answer": "1.0",
+    "predicted_unit": "A",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "{\n  \"answer\": 1.0,\n  \"unit\": \"A\",\n  \"explanation\": \"The diagram shows R1 labeled as 1 Ω, but the question states R1 = 20 Ω. This inconsistency means the given values and diagram do not match. Assuming the question's values are correct, the total resistance is 20 + 30 + 60 = 110 Ω. Current I = U/R = 60/110 ≈ 0.545 A. However, since the diagram contradicts the question, the correct answer based on the diagram's labels is 60 V / (1 Ω + 30 Ω + 60 Ω) = 60/91 ≈ 0.659 A. But the question's values are given, so we must use them. The question asks for current through R2, which in a series circuit is the same as total current. Using question's values: I = 60 V / (20 Ω + 30 Ω + 60 Ω) = 60/110 = 6/11 A ≈ 0.545 A. However, the diagram shows R1 as 1 Ω, which contradicts the question. Since the question explicitly states R1 = 20 Ω, we use those values. The current through R2 is the same as total current: I = 60 / (20 + 30 + 60) = 60/110 = 6/11 A. But the diagram's label '1 Ω' is inconsistent. The question asks for current through R2, and in a series circuit, it equals total current. Using question's values: I = 60 / (20 + 30 + 60) = 60/110 = 6/11 A. However, the diagram's label '1 Ω' for R1 contradicts the question's value of 20 Ω. Since the question provides the values, we must use them. The current through R2 is the same as total current: I = 60 / (20 + 30 + 60) = 60/110 = 6/11 A. But the diagram's label '1 Ω' for R1 contradicts the question's value of 20 Ω. The question asks for current through R2, and in a series circuit, it equals total current. Using question's values: I = 60 / (20 + 30 + 60) = 60/110 = 6/11 A. However, the diagram's label '1 Ω' for R1 contradicts the question's value of 20 Ω. The question asks for current through R2, and in a series circuit, it equals total current. Using question's values: I = 60 / (20 + 30 + 60) = 60/110 = 6/11 A. But the diagram's label '1 Ω' for R1 contradicts the question's value of 20 Ω",
+    "latency_seconds": 138.2618,
+    "usage": {
+      "prompt_tokens": 1330,
+      "completion_tokens": 700,
+      "total_tokens": 2030
+    }
+  },
+  {
+    "sample_id": "DLO167",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "012.png",
+    "predicted_answer": "30",
+    "predicted_unit": "V",
+    "predicted_explanation": "Sơ đồ mạch cho thấy ba điện trở R1, R2, Rb nối tiếp. Tuy nhiên, không có thông tin về giá trị của R2 hoặc Rb, cũng như không có thông tin về cách U1 được đo. Do đó, không thể xác định chính xác hiệu điện thế trên Rb từ dữ kiện đã cho. Đề bài có thể có thiếu sót hoặc giả định không rõ ràng.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "{\n  \"answer\": \"30\",\n  \"unit\": \"V\",\n  \"explanation\": \"Sơ đồ mạch cho thấy ba điện trở R1, R2, Rb nối tiếp. Tuy nhiên, không có thông tin về giá trị của R2 hoặc Rb, cũng như không có thông tin về cách U1 được đo. Do đó, không thể xác định chính xác hiệu điện thế trên Rb từ dữ kiện đã cho. Đề bài có thể có thiếu sót hoặc giả định không rõ ràng.\"\n}",
+    "latency_seconds": 65.0569,
+    "usage": {
+      "prompt_tokens": 1310,
+      "completion_tokens": 111,
+      "total_tokens": 1421
+    }
+  },
+  {
+    "sample_id": "DLO173",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "014.png",
+    "predicted_answer": "18",
+    "predicted_unit": "V",
+    "predicted_explanation": "Sơ đồ không hiển thị các nguồn điện, nên không thể xác định điện áp tổng từ hình vẽ. Tuy nhiên, theo yêu cầu, ta cộng điện áp U1 = 12 V và U2 = 6 V để được 18 V.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "{\n  \"answer\": \"18\",\n  \"unit\": \"V\",\n  \"explanation\": \"Sơ đồ không hiển thị các nguồn điện, nên không thể xác định điện áp tổng từ hình vẽ. Tuy nhiên, theo yêu cầu, ta cộng điện áp U1 = 12 V và U2 = 6 V để được 18 V.\"\n}",
+    "latency_seconds": 60.3955,
+    "usage": {
+      "prompt_tokens": 1313,
+      "completion_tokens": 80,
+      "total_tokens": 1393
+    }
+  },
+  {
+    "sample_id": "DLO174",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "014.png",
+    "predicted_answer": "2",
+    "predicted_unit": "A",
+    "predicted_explanation": "Sơ đồ chỉ có một điện trở R1 nối giữa hai điểm A và B. Giả sử nguồn điện U = 12 V được nối giữa A và B, thì cường độ dòng điện qua R1 là I = U / R1 = 12 V / 6 Ω = 2 A. Không có thông tin nào trong sơ đồ cho thấy có điện trở khác hoặc nguồn điện khác, nên giả định mạch đơn giản là hợp lý.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "{\n  \"answer\": \"2\",\n  \"unit\": \"A\",\n  \"explanation\": \"Sơ đồ chỉ có một điện trở R1 nối giữa hai điểm A và B. Giả sử nguồn điện U = 12 V được nối giữa A và B, thì cường độ dòng điện qua R1 là I = U / R1 = 12 V / 6 Ω = 2 A. Không có thông tin nào trong sơ đồ cho thấy có điện trở khác hoặc nguồn điện khác, nên giả định mạch đơn giản là hợp lý.\"\n}",
+    "latency_seconds": 64.9075,
+    "usage": {
+      "prompt_tokens": 1312,
+      "completion_tokens": 118,
+      "total_tokens": 1430
+    }
+  },
+  {
+    "sample_id": "DLO175",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "014.png",
+    "predicted_answer": "15",
+    "predicted_unit": "V",
+    "predicted_explanation": "Hình vẽ chỉ có một điện trở R1 nối giữa hai điểm A và B. Dữ kiện cho I = 1.5 A và R1 = 10 Ω, nên hiệu điện thế trên R1 là V = I × R = 1.5 × 10 = 15 V.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "{\n  \"answer\": 15,\n  \"unit\": \"V\",\n  \"explanation\": \"Hình vẽ chỉ có một điện trở R1 nối giữa hai điểm A và B. Dữ kiện cho I = 1.5 A và R1 = 10 Ω, nên hiệu điện thế trên R1 là V = I × R = 1.5 × 10 = 15 V.\"\n}",
+    "latency_seconds": 64.5975,
+    "usage": {
+      "prompt_tokens": 1308,
+      "completion_tokens": 91,
+      "total_tokens": 1399
+    }
+  },
+  {
+    "sample_id": "DLO176",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "014.png",
+    "predicted_answer": "36",
+    "predicted_unit": "W",
+    "predicted_explanation": "Sơ đồ chỉ có R1 nối giữa A và B, nên toàn bộ điện áp U = 18 V được áp dụng lên R1. Công suất tiêu thụ trên R1 là P = U²/R1 = (18)²/9 = 324/9 = 36 W.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "{\n  \"answer\": 36,\n  \"unit\": \"W\",\n  \"explanation\": \"Sơ đồ chỉ có R1 nối giữa A và B, nên toàn bộ điện áp U = 18 V được áp dụng lên R1. Công suất tiêu thụ trên R1 là P = U²/R1 = (18)²/9 = 324/9 = 36 W.\"\n}",
+    "latency_seconds": 61.1612,
+    "usage": {
+      "prompt_tokens": 1308,
+      "completion_tokens": 90,
+      "total_tokens": 1398
+    }
+  },
+  {
+    "sample_id": "DLO177",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "014.png",
+    "predicted_answer": "5",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "Hình vẽ chỉ có một điện trở R1 nối giữa hai điểm A và B. Theo định luật Ôm, I = U / R, nên R1 = U / I = 10 V / 2 A = 5 Ω.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "{\n  \"answer\": \"5\",\n  \"unit\": \"Ω\",\n  \"explanation\": \"Hình vẽ chỉ có một điện trở R1 nối giữa hai điểm A và B. Theo định luật Ôm, I = U / R, nên R1 = U / I = 10 V / 2 A = 5 Ω.\"\n}",
+    "latency_seconds": 61.7505,
+    "usage": {
+      "prompt_tokens": 1306,
+      "completion_tokens": 75,
+      "total_tokens": 1381
+    }
+  },
+  {
+    "sample_id": "DLO227",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "026.png",
+    "predicted_answer": "3",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "Hai điện trở R₂ và R₃ đều có giá trị 6Ω và được mắc song song, nên điện trở tương đương là 1/R = 1/6 + 1/6 = 2/6 = 1/3, suy ra R = 3Ω.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "{\n  \"answer\": \"3\",\n  \"unit\": \"Ω\",\n  \"explanation\": \"Hai điện trở R₂ và R₃ đều có giá trị 6Ω và được mắc song song, nên điện trở tương đương là 1/R = 1/6 + 1/6 = 2/6 = 1/3, suy ra R = 3Ω.\"\n}",
+    "latency_seconds": 59.9968,
+    "usage": {
+      "prompt_tokens": 1268,
+      "completion_tokens": 85,
+      "total_tokens": 1353
+    }
+  },
+  {
+    "sample_id": "DLO228",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "026.png",
+    "predicted_answer": "4",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "{\n  \"answer\": \"4\",\n  \"unit\": \"Ω\",\n  \"explanation\": \"R2 và R3 mắc song song, nên điện trở tương đương của chúng là 1/R_eq = 1/6 + 1/6 = 2/6 = 1/3, suy ra R_eq = 3Ω. Sau đó, R1 = 2Ω mắc nối tiếp với đoạn mạch này, nên điện trở toàn mạch là 2 + 3 = 5Ω. Tuy nhiên, hình vẽ cho thấy R2 và R3 nối tiếp nhau (cùng một đường dẫn), không phải song song. Do đó, theo hình vẽ, điện trở toàn mạch là 2 + 6 + 6 = 14Ω. Nhưng đề bài nói rõ R2 // R3, nên ta phải dùng giá trị tính toán theo đề bài. Vậy điện trở toàn mạch là 2 + 3 = 5Ω. Tuy nhiên, hình vẽ không thể hiện đúng cấu trúc mạch như mô tả trong đề bài. Vì vậy, ta sẽ tính theo đề bài: R2 và R3 song song → R_eq = 3Ω, rồi nối tiếp với R1 → R_total = 2 + 3 = 5Ω. Nhưng hình vẽ cho thấy R2 và R3 nối tiếp, nên có thể đề bài và hình vẽ không khớp. Theo đề bài, ta tính theo mô tả: 5Ω. Tuy nhiên, hình vẽ cho thấy R2 và R3 nối tiếp, nên nếu theo hình vẽ thì R_total = 2 + 6 + 6 = 14Ω. Nhưng đề bài nói rõ R2 // R3, nên ta phải tính theo mô tả. Vậy đáp án đúng theo đề bài là 5Ω. Tuy nhiên, hình vẽ không thể hiện đúng cấu trúc mạch như mô tả trong đề bài. Vì vậy, ta sẽ tính theo đề bài: R2 và R3 song song → R_eq = 3Ω, rồi nối tiếp với R1 → R_total = 2 + 3 = 5Ω. Nhưng hình vẽ cho thấy R2 và R3 nối tiếp, nên có thể đề bài và hình vẽ không khớp. Vì vậy, ta sẽ tính theo đề bài: 5Ω. Tuy nhiên, hình vẽ cho thấy R2 và R3 nối tiếp, nên nếu theo hình vẽ thì R_total = 2 + 6 + 6 = 14Ω. Nhưng đề bài nói rõ R2 // R3, nên ta phải tính theo mô tả. Vậy đáp án đúng theo đề bài là 5Ω. Tuy nhiên, hình vẽ không thể hiện đúng cấu trúc mạch như mô tả trong đề bài. Vì vậy, ta sẽ tính theo đề bài: R2 và R3 song song → R_eq = 3Ω, rồi nối tiếp với R1 → R_total = 2 + 3 = 5Ω. Nhưng hình vẽ cho thấy R2 và R3 nối tiếp, nên có thể đề bài và hình vẽ không khớp. Vì vậy, ta sẽ tính theo đề bài: 5Ω. Tuy nhiên, hình vẽ cho thấy R2 và R3 nối tiếp, nên nếu theo hình vẽ thì R_total = 2 + 6 + 6 = 1",
+    "latency_seconds": 133.1919,
+    "usage": {
+      "prompt_tokens": 1276,
+      "completion_tokens": 700,
+      "total_tokens": 1976
+    }
+  },
+  {
+    "sample_id": "DLO229",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "026.png",
+    "predicted_answer": "1.0",
+    "predicted_unit": "A",
+    "predicted_explanation": "",
+    "parse_status": "partial_json_recovered",
+    "status": "ok",
+    "prediction_raw": "{\n  \"answer\": 1.0,\n  \"unit\": \"A\",\n  \"explanation\": \"R2 và R3 nối song song, nên điện trở tương đương là 1/(1/6 + 1/6) = 3Ω. Tổng điện trở mạch là r + R1 + R_parallel = 1 + 2 + 3 = 6Ω. Dòng điện toàn mạch I = ξ / R_total = 10V / 6Ω = 5/3 A. Tuy nhiên, theo hình vẽ, R1 không nằm trong mạch song song với R2 và R3, nên R1 nối tiếp với mạch song song. Do đó, tổng điện trở đúng là 1 + 2 + 3 = 6Ω, và I = 10/6 = 5/3 A. Nhưng hình vẽ không cho thấy R1 nối tiếp với mạch song song, nên có thể có sự nhầm lẫn. Tuy nhiên, theo mô tả, R1 nối tiếp với mạch song song, nên I = 10/(1+2+3) = 5/3 A. Nhưng hình vẽ không cho thấy R1 nối tiếp với mạch song song, nên có thể có sự nhầm lẫn. Tuy nhiên, theo mô tả, R1 nối tiếp với mạch song song, nên I = 10/(1+2+3) = 5/3 A. Nhưng hình vẽ không cho thấy R1 nối tiếp với mạch song song, nên có thể có sự nhầm lẫn. Tuy nhiên, theo mô tả, R1 nối tiếp với mạch song song, nên I = 10/(1+2+3) = 5/3 A. Nhưng hình vẽ không cho thấy R1 nối tiếp với mạch song song, nên có thể có sự nhầm lẫn. Tuy nhiên, theo mô tả, R1 nối tiếp với mạch song song, nên I = 10/(1+2+3) = 5/3 A. Nhưng hình vẽ không cho thấy R1 nối tiếp với mạch song song, nên có thể có sự nhầm lẫn. Tuy nhiên, theo mô tả, R1 nối tiếp với mạch song song, nên I = 10/(1+2+3) = 5/3 A. Nhưng hình vẽ không cho thấy R1 nối tiếp với mạch song song, nên có thể có sự nhầm lẫn. Tuy nhiên, theo mô tả, R1 nối tiếp với mạch song song, nên I = 10/(1+2+3) = 5/3 A. Nhưng hình vẽ không cho thấy R1 nối tiếp với mạch song song, nên có thể có sự nhầm lẫn. Tuy nhiên, theo mô tả, R1 nối tiếp với mạch song song, nên I = 10/(1+2+3) = 5/3 A. Nhưng hình vẽ không cho thấy R1 nối tiếp với mạch song song, nên có thể có sự nhầm lẫn. Tuy nhiên, theo mô tả, R1 nối tiếp với mạch song song, nên I = 10/(1+2+3) = 5/3 A. Nhưng hình vẽ không cho thấy R1 nối tiếp với mạch song song, nên có thể có sự nhầm lẫn. T",
+    "latency_seconds": 138.481,
+    "usage": {
+      "prompt_tokens": 1289,
+      "completion_tokens": 700,
+      "total_tokens": 1989
+    }
+  },
+  {
+    "sample_id": "DLO230",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "026.png",
+    "predicted_answer": "8.57",
+    "predicted_unit": "V",
+    "predicted_explanation": "Hai điện trở R2 và R3 nối song song, tổng điện trở R = (6*6)/(6+6) = 3Ω. Tổng điện trở mạch là r + R = 1 + 3 = 4Ω. Hiệu điện thế giữa hai cực nguồn là ξ - I*r = 10 - 1.43*1 = 8.57V.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "{\n  \"answer\": \"8.57\",\n  \"unit\": \"V\",\n  \"explanation\": \"Hai điện trở R2 và R3 nối song song, tổng điện trở R = (6*6)/(6+6) = 3Ω. Tổng điện trở mạch là r + R = 1 + 3 = 4Ω. Hiệu điện thế giữa hai cực nguồn là ξ - I*r = 10 - 1.43*1 = 8.57V.\"\n}",
+    "latency_seconds": 61.7269,
+    "usage": {
+      "prompt_tokens": 1282,
+      "completion_tokens": 111,
+      "total_tokens": 1393
+    }
+  },
+  {
+    "sample_id": "DLO231",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "026.png",
+    "predicted_answer": "10",
+    "predicted_unit": "V",
+    "predicted_explanation": "Khi khóa K ngắt, mạch không có dòng điện chạy qua, nên vôn kế lý tưởng đo được điện áp nguồn ξ = 10V, vì không có điện trở nào làm giảm điện áp.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "{\n  \"answer\": \"10\",\n  \"unit\": \"V\",\n  \"explanation\": \"Khi khóa K ngắt, mạch không có dòng điện chạy qua, nên vôn kế lý tưởng đo được điện áp nguồn ξ = 10V, vì không có điện trở nào làm giảm điện áp.\"\n}",
+    "latency_seconds": 57.7502,
+    "usage": {
+      "prompt_tokens": 1272,
+      "completion_tokens": 69,
+      "total_tokens": 1341
+    }
+  },
+  {
+    "sample_id": "DLO237",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "028.png",
+    "predicted_answer": "10",
+    "predicted_unit": "Ω",
+    "predicted_explanation": "Các điện trở R1, R2, R3 được mắc nối tiếp theo hình vẽ. Điện trở toàn mạch bằng tổng các điện trở: R_total = R1 + R2 + R3 = 2 + 3 + 5 = 10 Ω.",
+    "parse_status": "json",
+    "status": "ok",
+    "prediction_raw": "{\n  \"answer\": 10,\n  \"unit\": \"Ω\",\n  \"explanation\": \"Các điện trở R1, R2, R3 được mắc nối tiếp theo hình vẽ. Điện trở toàn mạch bằng tổng các điện trở: R_total = R1 + R2 + R3 = 2 + 3 + 5 = 10 Ω.\"\n}",
+    "latency_seconds": 60.4595,
+    "usage": {
+      "prompt_tokens": 1330,
+      "completion_tokens": 82,
+      "total_tokens": 1412
+    }
+  },
+  {
+    "sample_id": "DLO238",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "028.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 1.9393,
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0
+    }
+  },
+  {
+    "sample_id": "DLO239",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "028.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 1.353,
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0
+    }
+  },
+  {
+    "sample_id": "DLO240",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "028.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 1.6888,
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0
+    }
+  },
+  {
+    "sample_id": "DLO241",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "028.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 0.605,
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0
+    }
+  },
+  {
+    "sample_id": "DLO252",
+    "split": "validation",
+    "model": "qwen3-vl:4b-instruct",
+    "provider": "ollama-local",
+    "is_mock": false,
+    "image_ref": "031.png",
+    "predicted_answer": null,
+    "predicted_unit": "",
+    "predicted_explanation": "",
+    "parse_status": "failed",
+    "status": "ok",
+    "prediction_raw": "",
+    "latency_seconds": 1.1318,
+    "usage": {
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0
+    }
+  }
+]
